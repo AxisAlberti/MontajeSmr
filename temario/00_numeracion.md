@@ -5,7 +5,7 @@
 
 ---
 
-![Texto alternativo descriptivo](../recursos/imagen/numero.jpg)
+![Texto alternativo descriptivo](../imagen/numero.jpg)
 ![Número](../imagen/numero.jpg)
 
 ## Índice
