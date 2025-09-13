@@ -294,3 +294,14 @@ Se fija cuántos bits corresponden a la fracción. Operaciones requieren reescal
 ---
 **Autor:** _(Tu nombre)_  
 **Fecha:** _(Actualiza al subir a GitHub)_
+
+# Mi Repositorio de Apuntes
+
+Estos son mis apuntes de sistemas de numeración.
+
+<p align="center">
+  <img src="../imagen/numero.jpg" alt="Número" width="300">
+</p>
+
+Más contenido del tema aquí…
+
