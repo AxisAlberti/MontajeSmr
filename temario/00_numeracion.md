@@ -5,7 +5,7 @@
 
 ---
 
-![Texto alternativo descriptivo](recursos/imagen/numero.jpg )
+![Texto alternativo descriptivo](temario/recursos/imagen/numero.jpg)
 
 ## Índice
 1. [Introducción](#1-introducción)  
