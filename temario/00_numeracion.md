@@ -1,4 +1,4 @@
-# Apuntes Universitarios  
+  
 ## Teorema Fundamental de la Numeración, Sistemas de Numeración y Conversiones
 
 > **Resumen:** Estos apuntes abarcan teoría, demostraciones, ejemplos, algoritmos de conversión (enteros y fracciones), representación de negativos (complementos), coma fija y coma flotante (IEEE 754), aritmética en distintas bases, aplicaciones, ejercicios y soluciones. Documento listo para subir a GitHub como un único archivo.
@@ -36,10 +36,8 @@
    - 8.4 [Redondeo y errores comunes](#84-redondeo-y-errores-comunes)  
 9. [Aritmética en base b](#9-aritmética-en-base-b)  
 10. [Aplicaciones](#10-aplicaciones)  
-11. [Tablas rápidas](#11-tablas-rápidas)  
-12. [Ejercicios propuestos](#12-ejercicios-propuestos)  
-13. [Soluciones seleccionadas](#13-soluciones-seleccionadas)  
-14. [Bibliografía y recursos](#14-bibliografía-y-recursos)  
+11. [Tablas rápidas](#11-tablas-rápidas)   
+12. [Bibliografía y recursos](#14-bibliografía-y-recursos)  
 
 ---
 
@@ -285,56 +283,7 @@ Se fija cuántos bits corresponden a la fracción. Operaciones requieren reescal
 
 ---
 
-## 12. Ejercicios propuestos
-1. (TFN) Demuestra que la representación en base b es única.  
-2. Convierte 345₁₀ a base 2, 8 y 16.  
-3. Convierte 110101110₂ y 7A3₁₆ a decimal.  
-4. Convierte 0.375₁₀ y 0.2₁₀ a binario; clasifica si son finitas o periódicas.  
-5. Convierte 101.101₂ a decimal.  
-6. En 8 bits C2, representa −37 y verifica sumando +100 y luego restando +63.  
-7. Pasa A3₁₆ a binario y a octal por agrupación.  
-8. Representa en IEEE-754 simple x = 5.75 y da su hexadecimal.  
-9. A partir de `0xC1200000`, interpreta el float y da su valor decimal.  
-10. (Redes) Explica por qué /26 tiene 64 direcciones y cuántos hosts útiles admite.  
-
----
-
-## 13. Soluciones seleccionadas
-**2.** 345₁₀:  
-- a binario: dividir ⇒ restos `1 0 0 1 0 1 1 0 1` ⇒ **101011001₂**.  
-- a octal: agrupar 3 bits: 101 011 001 ⇒ **531₈**.  
-- a hex: agrupar 4 bits: 0001 0101 1001 ⇒ **159₁₆**.
-
-**3.**  
-- 110101110₂ = 1·2⁸ + 1·2⁷ + 0·2⁶ + 1·2⁵ + 0·2⁴ + 1·2³ + 1·2² + 1·2¹ + 0  
-  = 256 + 128 + 0 + 32 + 0 + 8 + 4 + 2 + 0 = **430**.  
-- 7A3₁₆ = 7·16² + 10·16 + 3 = 1792 + 160 + 3 = **1955**.
-
-**4.**  
-- 0.375₁₀ = 0.011₂ (finita).  
-- 0.2₁₀ es periódica en base 2 (no finita).
-
-**5.** 101.101₂ = 1·2² + 0·2¹ + 1·2⁰ + 1·2⁻¹ + 0·2⁻² + 1·2⁻³ = 4 + 0 + 1 + 0.5 + 0 + 0.125 = **5.625**.
-
-**6.** En C2 (8 bits):  
-- 37 = 0010\,0101 ⇒ -37: invertir → 1101 1010; +1 → **1101 1011**.  
-- Verificación libre por el alumno.
-
-**7.** A3₁₆ → binario **1010 0011₂** → octal: 010 100 011 ⇒ **243₈**.
-
-**8.** 5.75₁₀ = 101.11₂ = 1.0111₂ × 2².  
-- e = 2 + 127 = 129 ⇒ `10000001`  
-- Mantisa: `01110000000000000000000`  
-- Signo: 0  
-- Hex final: **0x40B80000**.
-
-**9.** `0xC1200000` ⇒ s=1, e=130−? Ver: `1100 0001 0010 ...` ⇒ valor ≈ **−10.0** (interpretación estándar).
-
-**10.** /26 ⇒ bloque de 2³²⁻²⁶ = 64 direcciones; hosts útiles: **62** (se restan red y broadcast).
-
----
-
-## 14. Bibliografía y recursos
+## 12. Bibliografía y recursos
 - Knuth, D. E. *The Art of Computer Programming, Vol. 2*.  
 - Tanenbaum, A. S. *Structured Computer Organization*.  
 - IEEE 754-2008/2019 (resumenes docentes y notas de referencia).  
