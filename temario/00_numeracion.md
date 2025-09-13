@@ -54,9 +54,9 @@ Los **sistemas de numeración** son fundamentales para representar y manipular d
 ## 2. Teorema Fundamental de la Numeración (TFN)
 
 ### 2.1 Enunciado
-Para cualquier entero \(N \ge 0\) y base entera \(b > 1\), existen dígitos \(a_k, \dots, a_0\) con \(0 \le a_i < b\) y \(a_k \neq 0\) tales que:  
+Para cualquier entero \(N \ge 0\) y base entera \(b > 1\), existen dígitos \(a_k, …, a_0\) con \(0 \le a_i < b\) y \(a_k \neq 0\) tales que:  
 \[
-N = a_k b^k + a_{k-1} b^{k-1} + \dots + a_1 b + a_0.
+N = a_k b^k + a_{k-1} b^{k-1} + … + a_1 b + a_0.
 \]  
 La representación es **única**.
 
@@ -83,7 +83,7 @@ Ejemplos:
 - \(3A_{16} = 3\cdot16 + 10 = 58_{10}\)
 
 ### 3.3 Partes enteras y fraccionarias
-La parte fraccionaria en base \(b\): \(0.a_1 a_2 a_3\_b = a_1 b^{-1} + a_2 b^{-2} + \cdots\).  
+La parte fraccionaria en base \(b\): \(0.a_1 a_2 a_3\_b = a_1 b^{-1} + a_2 b^{-2} + …\).  
 No toda fracción decimal es finita en otra base y viceversa (§5.3).
 
 ---
