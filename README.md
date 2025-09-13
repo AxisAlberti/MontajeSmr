@@ -1,4 +1,4 @@
-# Mantenimiento-y-Montaje-de-Equipos-Inform-ticos
+
 # Mantenimiento y Montaje de Equipos Informáticos
 
 Repositorio de apuntes basados en el libro *Mantenimiento y Montaje de Equipos Informáticos* de Wikilibros. Incluye teoría, vocabulario, prácticas y utilidades necesarias para montar, mantener y reparar equipos informáticos.
@@ -99,14 +99,10 @@ Repositorio de apuntes basados en el libro *Mantenimiento y Montaje de Equipos I
 
 ---
 
-## Licencia
 
-Los apuntes basados en *Wikilibros* están bajo la licencia **Creative Commons Atribución-CompartirIgual 4.0**. Asegúrate de citar la fuente original y mantener la misma licencia en tus derivados.
-
----
 
 ## Autor / Actualización
 
-- **Autor:** (Tu nombre)  
-- **Adaptación de:** *Mantenimiento y Montaje de Equipos Informáticos* – Wikilibros  
-- **Fecha de última actualización:** (Fecha en que subas el README)
+- **Autor:** José Manuel González Castillo  
+- **Adaptación de:** *Mantenimiento y Montaje de Equipos Informáticos*  
+- **Fecha de última actualización:** 13/09/2025
