@@ -1,9 +1,17 @@
 
-# Mantenimiento y Montaje de Equipos Informáticos
+## 📚 Mantenimiento y Montaje de Equipos Informáticos
 
-Repositorio de apuntes basados en el libro *Mantenimiento y Montaje de Equipos Informáticos* de Wikilibros. Incluye teoría, vocabulario, prácticas y utilidades necesarias para montar, mantener y reparar equipos informáticos.
+Esta asignatura introduce a los estudiantes en el **mundo del hardware y la infraestructura informática**, enseñando desde la identificación de componentes hasta las técnicas de montaje, mantenimiento y resolución de averías.
 
----
+A lo largo del curso aprenderás a:
+
+- Reconocer y explicar el funcionamiento de los **componentes internos y periféricos** de un computador.  
+- **Montar y configurar equipos** siguiendo estándares de calidad y seguridad.  
+- Aplicar **mantenimiento preventivo, predictivo y correctivo** para prolongar la vida útil de los sistemas.  
+- Usar **herramientas y utilidades de diagnóstico** para clonar discos, realizar copias de seguridad y proteger los sistemas frente a malware.
+
+> **Objetivo final:** Capacitarte para desenvolverte en entornos de reparación y soporte técnico, aplicando buenas prácticas y criterios profesionales que garanticen el correcto funcionamiento de los sistemas informáticos.
+
 
 ## Índice de Temas
 0. [Tema 1: Sistemas de Numeración](temario/00_numeracion.md)  
