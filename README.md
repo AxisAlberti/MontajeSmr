@@ -14,19 +14,20 @@ A lo largo del curso aprenderás a:
 
 
 ## Índice de Temas
-0. [Tema 0: Sistemas de Numeración](temario/00_numeracion.md)  
-  1. [Introducción](#1-introducción)  
-2. [Teorema Fundamental de la Numeración (TFN)](#2-teorema-fundamental-de-la-numeración-tfn)  
-3. [Sistemas de numeración](#3-sistemas-de-numeración)  
-4. [Conversiones de bases — enteros](#4-conversiones-de-bases--enteros)  
-5. [Conversiones con parte fraccionaria](#5-conversiones-con-parte-fraccionaria)  
-6. [Conversiones entre bases potencia (2, 8, 16)](#6-conversiones-entre-bases-potencia-2-8-16)  
-7. [Números con signo y complementos](#7-números-con-signo-y-complementos)  
-8. [Coma fija y coma flotante](#8-coma-fija-y-coma-flotante)  
-9. [Aritmética en base b](#9-aritmética-en-base-b)  
-10. [Aplicaciones](#10-aplicaciones)  
-11. [Tablas rápidas](#11-tablas-rápidas)   
-12. [Bibliografía y recursos](#14-bibliografía-y-recursos)  
+0. Tema 0: Sistemas de Numeración  
+1. Introducción  
+2. Teorema Fundamental de la Numeración (TFN)  
+3. Sistemas de numeración  
+4. Conversiones de bases — enteros  
+5. Conversiones con parte fraccionaria  
+6. Conversiones entre bases potencia (2, 8, 16)  
+7. Números con signo y complementos  
+8. Coma fija y coma flotante  
+9. Aritmética en base b  
+10. Aplicaciones  
+11. Tablas rápidas  
+12. Bibliografía y recursos
+
      
 1. [Tema 1: Introducción](temario/01_introduccion.md)  
    - Vocabulario  
