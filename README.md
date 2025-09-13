@@ -14,7 +14,7 @@ A lo largo del curso aprenderás a:
 
 
 ## Índice de Temas
-0. [Tema 0: Sistemas de Numeración] (temario/00_numeracion.md)  
+0. [Tema 0: Sistemas de Numeración](temario/00_numeracion.md)  
 1. Introducción  
 2. Teorema Fundamental de la Numeración (TFN)  
 3. Sistemas de numeración  
