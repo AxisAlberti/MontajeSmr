@@ -294,6 +294,6 @@ Se fija cuántos bits corresponden a la fracción. Operaciones requieren reescal
 
 ---
 **Autor:** _(José Manuel González Castillo)_  
-**Fecha:** _(Actualiza al subir a GitHub)_
+**Fecha:** _(13/09/2025)_
 
 
