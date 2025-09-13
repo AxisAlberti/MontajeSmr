@@ -4,8 +4,9 @@
 > **Resumen:** Estos apuntes abarcan teoría, demostraciones, ejemplos, algoritmos de conversión (enteros y fracciones), representación de negativos (complementos), coma fija y coma flotante (IEEE 754), aritmética en distintas bases, aplicaciones, ejercicios y soluciones. 
 
 ---
-
-![Texto alternativo descriptivo](../imagen/numera.jpg)
+<p align="center">
+  <img src="/imagen/numera.jpg" alt="Número" width="600">
+</p>
 
 ## Índice
 1. [Introducción](#1-introducción)  
@@ -292,16 +293,7 @@ Se fija cuántos bits corresponden a la fracción. Operaciones requieren reescal
 - [Markdown Guide](https://www.markdownguide.org/) para sintaxis y buenas prácticas.
 
 ---
-**Autor:** _(Tu nombre)_  
+**Autor:** _(José Manuel González Castillo)_  
 **Fecha:** _(Actualiza al subir a GitHub)_
 
-# Mi Repositorio de Apuntes
-
-Estos son mis apuntes de sistemas de numeración.
-
-<p align="center">
-  <img src="/imagen/numera.jpg" alt="Número" width="300">
-</p>
-
-Más contenido del tema aquí…
 
