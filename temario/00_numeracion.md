@@ -54,19 +54,19 @@ Los **sistemas de numeración** son fundamentales para representar y manipular d
 ## 2. Teorema Fundamental de la Numeración (TFN)
 
 ### 2.1 Enunciado
-Para cualquier entero \(N \ge 0\) y base entera \(b > 1\), existen dígitos \(a_k, …, a_0\) con \(0 \le a_i < b\) y \(a_k \neq 0\) tales que:  
-\[
-N = a_k b^k + a_{k-1} b^{k-1} + … + a_1 b + a_0.
-\]  
+Para cualquier entero N ≥ 0 y base entera b > 1, existen dígitos aₖ, …, a₀ con 0 ≤ aᵢ < b y aₖ ≠ 0 tales que:  
+
+N = aₖ bᵏ + aₖ₋₁ bᵏ⁻¹ + … + a₁ b + a₀.
+  
 La representación es **única**.
 
 ### 2.2 Idea de la demostración (existencia y unicidad)
-- **Existencia:** aplicar **división euclídea** repetida de \(N\) por \(b\). Los restos son los dígitos desde el menos significativo (LSB) al más significativo (MSB).  
-- **Unicidad:** si hubiese dos expansiones distintas, su diferencia sería una combinación no trivial de potencias de \(b\) igual a 0 con coeficientes acotados ⇒ contradicción.
+- **Existencia:** aplicar **división euclídea** repetida de N por b. Los restos son los dígitos desde el menos significativo (LSB) al más significativo (MSB).  
+- **Unicidad:** si hubiese dos expansiones distintas, su diferencia sería una combinación no trivial de potencias de b igual a 0 con coeficientes acotados ⇒ contradicción.
 
 ### 2.3 Corolarios algorítmicos
-- **Divisiones sucesivas**: decimal → base \(b\) (enteros).  
-- **Evaluación/Horner**: base \(b\) → decimal (enteros).  
+- **Divisiones sucesivas**: decimal → base b (enteros).  
+- **Evaluación/Horner**: base b → decimal (enteros).  
 
 ---
 
@@ -78,12 +78,12 @@ La representación es **única**.
 
 ### 3.2 Representación en base b
 Ejemplos:  
-- \(234_{10} = 2\cdot10^2 + 3\cdot10^1 + 4\cdot10^0\)  
-- \(1101_2 = 1\cdot2^3 + 1\cdot2^2 + 0\cdot2^1 + 1\cdot2^0 = 13_{10}\)  
-- \(3A_{16} = 3\cdot16 + 10 = 58_{10}\)
+- 234₁₀ = 2·10² + 3·10¹ + 4·10⁰  
+- 1101₂ = 1·2³ + 1·2² + 0·2¹ + 1·2⁰ = 13₁₀  
+- 3A₁₆ = 3·16 + 10 = 58₁₀
 
 ### 3.3 Partes enteras y fraccionarias
-La parte fraccionaria en base \(b\): \(0.a_1 a_2 a_3\_b = a_1 b^{-1} + a_2 b^{-2} + …\).  
+La parte fraccionaria en base b: 0.a₁ a₂ a₃\b = a₁ b⁻¹ + a₂ b⁻² + ·s.  
 No toda fracción decimal es finita en otra base y viceversa (§5.3).
 
 ---
@@ -91,7 +91,7 @@ No toda fracción decimal es finita en otra base y viceversa (§5.3).
 ## 4. Conversiones de bases — enteros
 
 ### 4.1 Decimal → base b (divisiones sucesivas)
-**Ejemplo:** \(45_{10}\) a binario  
+**Ejemplo:** 45₁₀ a binario  
 ```
 45 ÷ 2 = 22 resto 1
 22 ÷ 2 = 11 resto 0
@@ -102,7 +102,7 @@ No toda fracción decimal es finita en otra base y viceversa (§5.3).
 ```
 Lectura de restos de abajo a arriba → **101101₂**.
 
-**Ejemplo:** \(255_{10}\) a hex  
+**Ejemplo:** 255₁₀ a hex  
 ```
 255 ÷ 16 = 15 (F), resto 15 (F)
 15 ÷ 16  = 0,  resto 15 (F)
@@ -116,7 +116,7 @@ valor = 0
 para cada dígito d:
     valor = valor * b + d
 ```
-**Ejemplo:** \(101101_2 \to 45_{10}\).
+**Ejemplo:** 101101₂ \to 45₁₀.
 
 ### 4.3 Pseudocódigo de conversiones (enteros)
 **Decimal → base b**
@@ -145,8 +145,8 @@ function from_base_b(s, b):
 ## 5. Conversiones con parte fraccionaria
 
 ### 5.1 Decimal → base b (multiplicación por b)
-Para fracción \(f \in [0,1)\): multiplicar por \(b\), tomar parte entera como dígito y repetir con la fracción.  
-**Ejemplo:** \(0.625_{10}\) a binario  
+Para fracción f \in [0,1): multiplicar por b, tomar parte entera como dígito y repetir con la fracción.  
+**Ejemplo:** 0.625₁₀ a binario  
 ```
 0.625×2 = 1.25  → 1
 0.25 ×2 = 0.5   → 0
@@ -154,22 +154,22 @@ Para fracción \(f \in [0,1)\): multiplicar por \(b\), tomar parte entera como d
 ```
 Resultado: **0.101₂**.
 
-**Ejemplo periódico:** \(0.1_{10}\) a binario ⇒ **0.0001100110011…₂**.
+**Ejemplo periódico:** 0.1₁₀ a binario ⇒ **0.0001100110011…₂**.
 
 ### 5.2 Base b → decimal (potencias negativas)
-**Ejemplo:** \(0.101_2 = 1·2^{-1} + 0·2^{-2} + 1·2^{-3} = 0.625\).
+**Ejemplo:** 0.101₂ = 1·2⁻¹ + 0·2⁻² + 1·2⁻³ = 0.625.
 
 ### 5.3 Finita o periódica: criterio
-La fracción \( \frac{p}{q} \) (reducida) es **finita** en base \(b\) **ssi** los factores primos de \(q\) están contenidos en los de \(b\).  
-- En decimal (\(b=10=2·5\)): \(1/8\) finita, \(1/3\) periódica.  
-- En binario (\(b=2\)): \(1/8\) finita, \(1/5\) periódica.
+La fracción  \frac{p}{q}  (reducida) es **finita** en base b **ssi** los factores primos de q están contenidos en los de b.  
+- En decimal (b=10=2·5): 1/8 finita, 1/3 periódica.  
+- En binario (b=2): 1/8 finita, 1/5 periódica.
 
 ---
 
 ## 6. Conversiones entre bases potencia (2, 8, 16)
 - **Binario ↔ Hex (×4 bits):** agrupar desde la derecha (entera) y desde la izquierda de la coma (fracción).  
-  Ej.: \(1101\,0110\,1111\,1001_2 = D6F9_{16}\).  
-- **Binario ↔ Octal (×3 bits):** p.ej. \(111\,010\,101_2 = 725_8\).
+  Ej.: 1101\,0110\,1111\,1001₂ = D6F9₁₆.  
+- **Binario ↔ Octal (×3 bits):** p.ej. 111\,010\,101₂ = 725₈.
 
 ---
 
@@ -183,13 +183,13 @@ Negar bits. Persiste ±0. Manejo de acarreo final.
 
 ### 7.3 Complemento a 2 (estándar)
 Para negar: **invertir** bits y **sumar 1**.  
-Rango con \(n\) bits: \([-2^{n-1},\ 2^{n-1}-1]\).
+Rango con n bits: [-2ⁿ⁻¹,\ 2ⁿ⁻¹-1].
 
 **Ejemplo (8 bits):**  
-- \(+13 = 0000\,1101\)  
-- \(-13\): invertir → \(1111\,0010\), +1 → **1111\,0011**
+- +13 = 0000\,1101  
+- -13: invertir → 1111\,0010, +1 → **1111\,0011**
 
-**Suma C2 (8 bits):** \(+25\) (0001 1001) + \((-13)\) (1111 0011)  
+**Suma C2 (8 bits):** +25 (0001 1001) + (-13) (1111 0011)  
 ```
   0001 1001
 + 1111 0011
@@ -210,20 +210,20 @@ Se fija cuántos bits corresponden a la fracción. Operaciones requieren reescal
 
 ### 8.2 IEEE 754 (32 bits, simple precisión)
 - **Signo (1 bit)**, **Exponente (8 bits, sesgo 127)**, **Fracción/Mantisa (23 bits)**.  
-- Valor normalizado: \((-1)^s \times 1.\text{mantisa} \times 2^{e-127}\).  
+- Valor normalizado: (-1)ˢ × 1.\text{mantisa} × 2ᵉ⁻¹²⁷.  
 - Casos especiales: subnormales (e=0,f≠0), ±∞ (e=255,f=0), NaN (e=255,f≠0).
 
 ### 8.3 Ejemplos de conversión IEEE-754
 **A) 13.25₁₀ → binario IEEE-754 simple**  
-1) \(13.25_{10} = 1101.01_2 = 1.10101_2 \times 2^3\)  
-2) \(e = 3 + 127 = 130 \Rightarrow 10000010_2\)  
+1) 13.25₁₀ = 1101.01₂ = 1.10101₂ × 2³  
+2) e = 3 + 127 = 130 \Rightarrow 10000010₂  
 3) Mantisa: `10101` + ceros hasta 23 bits  
-4) Signo \(s=0\)  
+4) Signo s=0  
 **Resultado:** `0 10000010 10101000000000000000000` (hex `0x41540000`).
 
 **B) 0xC2480000 → decimal**  
-- s=1 (negativo), e=`10000100`₂=132 ⇒ \(e-127=5\).  
-- Mantisa ≈ `1.1001000…` ⇒ valor ≈ \(-1.5625 \times 2^5 = -50\).
+- s=1 (negativo), e=`10000100`₂=132 ⇒ e-127=5.  
+- Mantisa ≈ `1.1001000…` ⇒ valor ≈ -1.5625 × 2⁵ = -50.
 
 ### 8.4 Redondeo y errores comunes
 - Modo por defecto: **round to nearest, ties to even**.  
@@ -238,7 +238,7 @@ Se fija cuántos bits corresponden a la fracción. Operaciones requieren reescal
 - **Multiplicación:** sumas de productos parciales desplazados.  
 - En binario, multiplicar es eficiente (AND + desplazamientos).
 
-**Ejemplo:** \(1011_2 (11)\) × \(110_2 (6)\)  
+**Ejemplo:** 1011₂ (11) × 110₂ (6)  
 ```
       1011
     ×  110
@@ -286,43 +286,43 @@ Se fija cuántos bits corresponden a la fracción. Operaciones requieren reescal
 ---
 
 ## 12. Ejercicios propuestos
-1. (TFN) Demuestra que la representación en base \(b\) es única.  
-2. Convierte \(345_{10}\) a base 2, 8 y 16.  
-3. Convierte \(110101110_2\) y \(7A3_{16}\) a decimal.  
-4. Convierte \(0.375_{10}\) y \(0.2_{10}\) a binario; clasifica si son finitas o periódicas.  
-5. Convierte \(101.101_2\) a decimal.  
-6. En 8 bits C2, representa −37 y verifica sumando \(+100\) y luego restando \(+63\).  
-7. Pasa \(A3_{16}\) a binario y a octal por agrupación.  
-8. Representa en IEEE-754 simple \(x = 5.75\) y da su hexadecimal.  
+1. (TFN) Demuestra que la representación en base b es única.  
+2. Convierte 345₁₀ a base 2, 8 y 16.  
+3. Convierte 110101110₂ y 7A3₁₆ a decimal.  
+4. Convierte 0.375₁₀ y 0.2₁₀ a binario; clasifica si son finitas o periódicas.  
+5. Convierte 101.101₂ a decimal.  
+6. En 8 bits C2, representa −37 y verifica sumando +100 y luego restando +63.  
+7. Pasa A3₁₆ a binario y a octal por agrupación.  
+8. Representa en IEEE-754 simple x = 5.75 y da su hexadecimal.  
 9. A partir de `0xC1200000`, interpreta el float y da su valor decimal.  
 10. (Redes) Explica por qué /26 tiene 64 direcciones y cuántos hosts útiles admite.  
 
 ---
 
 ## 13. Soluciones seleccionadas
-**2.** \(345_{10}\):  
+**2.** 345₁₀:  
 - a binario: dividir ⇒ restos `1 0 0 1 0 1 1 0 1` ⇒ **101011001₂**.  
 - a octal: agrupar 3 bits: 101 011 001 ⇒ **531₈**.  
 - a hex: agrupar 4 bits: 0001 0101 1001 ⇒ **159₁₆**.
 
 **3.**  
-- \(110101110_2 = 1·2^8 + 1·2^7 + 0·2^6 + 1·2^5 + 0·2^4 + 1·2^3 + 1·2^2 + 1·2^1 + 0\)  
+- 110101110₂ = 1·2⁸ + 1·2⁷ + 0·2⁶ + 1·2⁵ + 0·2⁴ + 1·2³ + 1·2² + 1·2¹ + 0  
   = 256 + 128 + 0 + 32 + 0 + 8 + 4 + 2 + 0 = **430**.  
-- \(7A3_{16} = 7·16^2 + 10·16 + 3 = 1792 + 160 + 3 = **1955**\).
+- 7A3₁₆ = 7·16² + 10·16 + 3 = 1792 + 160 + 3 = **1955**.
 
 **4.**  
-- \(0.375_{10} = 0.011_2\) (finita).  
-- \(0.2_{10}\) es periódica en base 2 (no finita).
+- 0.375₁₀ = 0.011₂ (finita).  
+- 0.2₁₀ es periódica en base 2 (no finita).
 
-**5.** \(101.101_2 = 1·2^2 + 0·2^1 + 1·2^0 + 1·2^{-1} + 0·2^{-2} + 1·2^{-3} = 4 + 0 + 1 + 0.5 + 0 + 0.125 = **5.625**.\)
+**5.** 101.101₂ = 1·2² + 0·2¹ + 1·2⁰ + 1·2⁻¹ + 0·2⁻² + 1·2⁻³ = 4 + 0 + 1 + 0.5 + 0 + 0.125 = **5.625**.
 
 **6.** En C2 (8 bits):  
-- \(37 = 0010\,0101\) ⇒ \(-37\): invertir → 1101 1010; +1 → **1101 1011**.  
+- 37 = 0010\,0101 ⇒ -37: invertir → 1101 1010; +1 → **1101 1011**.  
 - Verificación libre por el alumno.
 
-**7.** \(A3_{16}\) → binario **1010 0011₂** → octal: 010 100 011 ⇒ **243₈**.
+**7.** A3₁₆ → binario **1010 0011₂** → octal: 010 100 011 ⇒ **243₈**.
 
-**8.** \(5.75_{10} = 101.11_2 = 1.0111_2 × 2^2\).  
+**8.** 5.75₁₀ = 101.11₂ = 1.0111₂ × 2².  
 - e = 2 + 127 = 129 ⇒ `10000001`  
 - Mantisa: `01110000000000000000000`  
 - Signo: 0  
@@ -330,7 +330,7 @@ Se fija cuántos bits corresponden a la fracción. Operaciones requieren reescal
 
 **9.** `0xC1200000` ⇒ s=1, e=130−? Ver: `1100 0001 0010 ...` ⇒ valor ≈ **−10.0** (interpretación estándar).
 
-**10.** /26 ⇒ bloque de \(2^{32-26} = 64\) direcciones; hosts útiles: **62** (se restan red y broadcast).
+**10.** /26 ⇒ bloque de 2³²⁻²⁶ = 64 direcciones; hosts útiles: **62** (se restan red y broadcast).
 
 ---
 
