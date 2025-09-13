@@ -5,6 +5,8 @@
 
 ---
 
+![Texto alternativo descriptivo](recursos/imágenes/numeracion.jpg)
+
 ## Índice
 1. [Introducción](#1-introducción)  
 2. [Teorema Fundamental de la Numeración (TFN)](#2-teorema-fundamental-de-la-numeración-tfn)  
