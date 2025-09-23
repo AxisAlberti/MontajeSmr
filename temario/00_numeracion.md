@@ -3,10 +3,6 @@
 
 > **Resumen:** Estos apuntes abarcan teoría, demostraciones, ejemplos, algoritmos de conversión (enteros y fracciones), representación de negativos (complementos), coma fija y coma flotante (IEEE 754), aritmética en distintas bases, aplicaciones, ejercicios y soluciones. 
 
----
-<p align="center">
-  <img src="../imagen/numera.jpg" alt="Número" width="600">
-</p>
 
 ## Índice
 1. [Introducción](#1-introducción)  
