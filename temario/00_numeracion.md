@@ -5,7 +5,7 @@
 
 ---
 <p align="center">
-  <img src="/imagen/numera.jpg" alt="Número" width="600">
+  <img src="../imagen/numera.jpg" alt="Número" width="600">
 </p>
 
 ## Índice
