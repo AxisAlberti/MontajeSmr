@@ -1,10 +1,7 @@
-
 ## 📚 Mantenimiento y Montaje de Equipos Informáticos
-
 Esta asignatura introduce a los estudiantes en el **mundo del hardware y la infraestructura informática**, enseñando desde la identificación de componentes hasta las técnicas de montaje, mantenimiento y resolución de averías.
 
 A lo largo del curso aprenderás a:
-
 - Reconocer y explicar el funcionamiento de los **componentes internos y periféricos** de un computador.  
 - **Montar y configurar equipos** siguiendo estándares de calidad y seguridad.  
 - Aplicar **mantenimiento preventivo, predictivo y correctivo** para prolongar la vida útil de los sistemas.  
@@ -12,8 +9,8 @@ A lo largo del curso aprenderás a:
 
 > **Objetivo final:** Capacitarte para desenvolverte en entornos de reparación y soporte técnico, aplicando buenas prácticas y criterios profesionales que garanticen el correcto funcionamiento de los sistemas informáticos.
 
-
 ## Índice de Temas
+
 0. [Tema 0: Sistemas de Numeración](temario/00_numeracion.md)  
      - Introducción  
      - Teorema Fundamental de la Numeración (TFN)  
@@ -27,7 +24,6 @@ A lo largo del curso aprenderás a:
      - Aplicaciones  
      - Tablas rápidas  
      - Bibliografía y recursos
-
      
 1. [Tema 1: Introducción](temario/01_introduccion.md)  
    - Vocabulario  
@@ -101,14 +97,12 @@ A lo largo del curso aprenderás a:
 ---
 
 ## Recursos adicionales
-
 - Enlaces externos relacionados con BIOS, hardware, utilidades, documentación de Ubuntu.  
 - Imagenes, diagramas y tablas necesarios para complementar los apuntes.
 
 ---
 
 ## Cómo usar este repositorio
-
 - Cada tema tiene su archivo Markdown dentro de la carpeta `temario/`.  
 - Dentro de cada tema hay sección de vocabulario, teoría, componentes específicos, y actividades al final.  
 - Puedes clonar este repositorio y leer los `.md` directamente o montar una vista web con herramientas como **MkDocs** o **GitHub Pages**.  
@@ -116,10 +110,7 @@ A lo largo del curso aprenderás a:
 
 ---
 
-
-
 ## Autor / Actualización
-
 - **Autor:** José Manuel González Castillo  
 - **Adaptación de:** *Mantenimiento y Montaje de Equipos Informáticos*  
 - **Fecha de última actualización:** 13/09/2025
