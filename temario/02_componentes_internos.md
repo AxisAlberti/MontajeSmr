@@ -79,7 +79,8 @@ La **placa base** es el circuito impreso principal del PC. Sirve para:
 ### 1.3.1 Intel (sobremesa y workstation recientes)
 - **LGA1851** → plataforma **Core Ultra (Series 2) Arrow Lake** de sobremesa; placas con chipsets **Z890 / B860 / H810**. Sustituye a LGA1700. Sirve para habilitar DDR5 y PCIe 5.0 en muchas configuraciones y mejorar potencia/IA en desktop.
 - **LGA1700** → **Core 12.ª/13.ª/14.ª gen** (Alder/Raptor Lake) con **Z790/H770/B760**. Gran parque instalado; útil para reutilizar DDR4 (en algunas placas) o DDR5.
-
+<br>
+<br>
 <p align="center">
   <img src="../imagen/2.jpg"  />
 </p>
@@ -101,7 +102,8 @@ La **placa base** es el circuito impreso principal del PC. Sirve para:
 ### 1.4.1 Intel (consumo)
 - **Serie 700 (LGA1700)**: **Z790** (entusiasta, OC CPU/RAM, I/O abundante), **H770** (gama media), **B760** (mainstream).
 - **Plataforma LGA1851 (Arrow Lake)**: **Z890** (tope de gama), **B860** (mainstream), **H810**.
-
+<br>
+<br>
 <p align="center">
   <img src="../imagen/2a.jpg"  />
 </p>
@@ -111,12 +113,12 @@ La **placa base** es el circuito impreso principal del PC. Sirve para:
 - **X870E / X870**: alta gama con foco en PCIe 5.0 y conectividad moderna; ideales para Ryzen 9000/8000/7000.
 - **B850 / B840**: mainstream; **B850** refuerza prestaciones (más conectividad y Gen5 en M.2 en muchos modelos), **B840** acota costes y características.
 - **X670E / X670 / A620**: siguen vigentes; X670E para equipos entusiastas con PCIe 5.0; A620 como entrada económica.
+<br>
+<br>
 
 <p align="center">
   <img src="../imagen/2b.webp"  />
 </p>
-
-
 ---
 
 ## 1.5 VRM y alimentación
@@ -125,6 +127,7 @@ La **placa base** es el circuito impreso principal del PC. Sirve para:
 - **Elementos clave:** fases (controlador PWM, MOSFETs, chokes, condensadores), **disipadores** con pads térmicos, y sensores térmicos.
 - **Conectores de energía en la placa:** **ATX 24-pin** (principal) y **EPS 8-pin (4+4)** para CPU; algunas placas añaden un **segundo EPS** para CPUs de alto consumo.
 - **Buenas prácticas:** asegurar flujo de aire sobre el VRM; no confundir cables **EPS** y **PCIe** de la PSU. 
+<br>
 
 <p align="center">
   <img src="../imagen/4.jpg"  />
@@ -138,6 +141,7 @@ La **placa base** es el circuito impreso principal del PC. Sirve para:
 - **DDR4 (parte de LGA1700 y todo AM4):** aún común por coste y disponibilidad.
 - **ECC:** en consumo, ECC suele ser **UDIMM** y su soporte depende de CPU y placa; en HEDT/workstation (sTR5, LGA4677) se usan **RDIMM ECC** con 4–8 canales.
 - **Montaje:** poblar primero **A2/B2**, activar EXPO/XMP y comprobar estabilidad. Revisar **QVL** de la placa.
+<br>
 
 
 <p align="center">
@@ -152,6 +156,7 @@ La **placa base** es el circuito impreso principal del PC. Sirve para:
 - **Generaciones:** 3.0 / 4.0 / **5.0** (más GB/s por línea). Retrocompatibles a la menor versión.  
 - **Topologías típicas:** 1× x16 desde la CPU (GPU); bifurcación a **x8/x8** si se puebla una segunda ranura de alto ancho de banda. Varias x4/x1 desde el chipset.  
 - **Consideración (AM5):** en placas **B650** algunos fabricantes retiraron PCIe 5.0 para GPU por estabilidad en BIOS recientes; en **B850/X870** la segmentación Gen5 es más clara.
+<br>
 
 <p align="center">
   <img src="../imagen/6.png"  />
@@ -168,8 +173,20 @@ La **placa base** es el circuito impreso principal del PC. Sirve para:
 - **Generación PCIe:** 4.0 y **5.0** en placas modernas (el 5.0 exige disipadores adecuados).  
 - **Mapa de líneas:** algunos zócalos **comparten** líneas con SATA o con la ranura PCIe principal; al poblarlos, se desactiva un puerto o baja un enlace. 
 
+<br>
+
+<p align="center">
+  <img src="../imagen/6.jpg"  />
+</p>
+
 ### 1.8.2 Puertos **SATA**
 Conectar SSD/HDD de 2,5″/3,5″ con coste por GB bajo. Ideales para bibliotecas de datos, copias y aulas.
+
+<br>
+
+<p align="center">
+  <img src="../imagen/7.jpg"  />
+</p>
 
 ---
 
@@ -335,6 +352,7 @@ Históricamente, los ajustes residían en **CMOS RAM** alimentada por la **pila 
 
 ## 2.9 Buenas prácticas en aula/taller
 Manual a mano, USB **FAT32** preparado, versión probada, localizar **Clear CMOS**, documentar cambios, cambiar **CR2032** con síntomas, no confundir cables **EPS** (CPU) con **PCIe** (GPU), probar con **Defaults** y añadir ajustes paso a paso. 
+
 
 
 
