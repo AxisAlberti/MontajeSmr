@@ -1,45 +1,45 @@
 # Índice
 
-**1. Placa base (motherboard)**
-  - 1. Introducción
-  - 2. Factor de forma (form factor)
-  - 3. Socket (zócalo de CPU)
-    - 3.1 Intel (sobremesa y workstation recientes)
-    - 3.2 AMD (sobremesa y HEDT recientes)
-  - 4. Chipset (PCH)
-    - 4.1 Intel (consumo)
-    - 4.2 AMD (AM5)
-  - 5. VRM y alimentación
-  - 6. Bancos de memoria (DIMM)
-  - 7. Ranuras PCI Express
-  - 8. Almacenamiento: M.2 y SATA
-    - 8.1 Zócalos M.2
-    - 8.2 Puertos SATA
-  - 9. Puertos traseros e internos (headers)
-  - 10. Firmware UEFI (BIOS moderna)
-  - 11. Sensores y diagnóstico
-  - 12. Diseño del PCB y calidad
-  - 13. Selección rápida según uso
-  - 14. Listados de referencia (2024–2025)
-    - 14.1 Chipsets destacados
-    - 14.2 Sockets más relevantes
-  - 15. Checklist de montaje y verificación
+1. Placa base (motherboard)
+   1.1. Introducción
+   1.2. Factor de forma (form factor)
+   1.3. Socket (zócalo de CPU)
+        1.3.1. Intel (sobremesa y workstation recientes)
+        1.3.2. AMD (sobremesa y HEDT recientes)
+   1.4. Chipset (PCH)
+        1.4.1. Intel (consumo)
+        1.4.2. AMD (AM5)
+   1.5. VRM y alimentación
+   1.6. Bancos de memoria (DIMM)
+   1.7. Ranuras PCI Express
+   1.8. Almacenamiento: M.2 y SATA
+        1.8.1. Zócalos M.2
+        1.8.2. Puertos SATA
+   1.9. Puertos traseros e internos (headers)
+   1.10. Firmware UEFI (BIOS moderna)
+   1.11. Sensores y diagnóstico
+   1.12. Diseño del PCB y calidad
+   1.13. Selección rápida según uso
+   1.14. Listados de referencia (2024–2025)
+        1.14.1. Chipsets destacados
+        1.14.2. Sockets más relevantes
+   1.15. Checklist de montaje y verificación
 
-**2. BIOS, memoria CMOS, Dual BIOS y sistemas de reseteo — guía exhaustiva (España)**
-  - 1. Introducción
-  - 2. BIOS vs UEFI
-  - 3. Memoria CMOS, RTC y NVRAM
-  - 4. Dual BIOS (BIOS principal + respaldo)
-  - 5. Sistemas de reseteo (restablecer ajustes)
-    - 5.1 Desde la UEFI
-    - 5.2 Botón Clear CMOS (CLR_CMOS)
-    - 5.3 Jumper CLR_CMOS (2/3 pines)
-    - 5.4 Retirar la pila CR2032
-    - 5.5 BIOS Flashback / Q-Flash Plus / Flash BIOS Button
-    - 5.6 Arranque de rescate en Dual BIOS
-    - 5.7 Borrar contraseñas de BIOS
-  - 6. Actualización del firmware (flasheo) con seguridad
-  - 7. Diagnóstico y síntomas típicos
+2. BIOS, memoria CMOS, Dual BIOS y sistemas de reseteo — guía exhaustiva (España)
+   2.1. Introducción
+   2.2. BIOS vs UEFI
+   2.3. Memoria CMOS, RTC y NVRAM
+   2.4. Dual BIOS (BIOS principal + respaldo)
+   2.5. Sistemas de reseteo (restablecer ajustes)
+        2.5.1. Desde la UEFI
+        2.5.2. Botón Clear CMOS (CLR_CMOS)
+        2.5.3. Jumper CLR_CMOS (2/3 pines)
+        2.5.4. Retirar la pila CR2032
+        2.5.5. BIOS Flashback / Q-Flash Plus / Flash BIOS Button
+        2.5.6. Arranque de rescate en Dual BIOS
+        2.5.7. Borrar contraseñas de BIOS
+   2.6. Actualización del firmware (flasheo) con seguridad
+   2.7. Diagnóstico y síntomas típicos
 
 # 1. Placa base (motherboard): guía exhaustiva 2025 (España)
 
@@ -47,7 +47,7 @@
 
 ---
 
-## 1. Introducción
+## 1.1. Introducción
 
 La **placa base** es el circuito impreso principal del PC. Sirve para:
 
