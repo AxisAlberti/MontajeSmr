@@ -107,6 +107,11 @@ La **placa base** es el circuito impreso principal del PC. Sirve para:
 - **Serie 700 (LGA1700)**: **Z790** (entusiasta, OC CPU/RAM, I/O abundante), **H770** (gama media), **B760** (mainstream).
 - **Plataforma LGA1851 (Arrow Lake)**: **Z890** (tope de gama), **B860** (mainstream), **H810** (entrada). :contentReference[oaicite:8]{index=8}
 
+<p align="center">
+  <img src="../imagen/2.jpg"  />
+</p>
+
+
 ### 1.4.2 AMD (AM5)
 - **X870E / X870**: alta gama con foco en PCIe 5.0 y conectividad moderna; ideales para Ryzen 9000/8000/7000.
 - **B850 / B840**: mainstream; **B850** refuerza prestaciones (más conectividad y Gen5 en M.2 en muchos modelos), **B840** acota costes y características.
@@ -325,6 +330,7 @@ Históricamente, los ajustes residían en **CMOS RAM** alimentada por la **pila 
 
 ## 2.9 Buenas prácticas en aula/taller
 Manual a mano, USB **FAT32** preparado, versión probada, localizar **Clear CMOS**, documentar cambios, cambiar **CR2032** con síntomas, no confundir cables **EPS** (CPU) con **PCIe** (GPU), probar con **Defaults** y añadir ajustes paso a paso. :contentReference[oaicite:32]{index=32}
+
 
 
 
