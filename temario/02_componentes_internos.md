@@ -1,6 +1,6 @@
 # Índice
 
-- **1. Placa base (motherboard): guía exhaustiva 2025 (España)**  :contentReference[oaicite:0]{index=0}
+- **1. Placa base (motherboard):
   - 1.1 Introducción
   - 1.2 Factor de forma (form factor)
   - 1.3 Socket (zócalo de CPU)
@@ -330,6 +330,7 @@ Históricamente, los ajustes residían en **CMOS RAM** alimentada por la **pila 
 
 ## 2.9 Buenas prácticas en aula/taller
 Manual a mano, USB **FAT32** preparado, versión probada, localizar **Clear CMOS**, documentar cambios, cambiar **CR2032** con síntomas, no confundir cables **EPS** (CPU) con **PCIe** (GPU), probar con **Defaults** y añadir ajustes paso a paso. 
+
 
 
 
