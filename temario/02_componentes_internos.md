@@ -154,7 +154,7 @@ La **placa base** es el circuito impreso principal del PC. Sirve para:
 - **Consideración (AM5):** en placas **B650** algunos fabricantes retiraron PCIe 5.0 para GPU por estabilidad en BIOS recientes; en **B850/X870** la segmentación Gen5 es más clara.
 
 <p align="center">
-  <img src="../imagen/6.jpg"  />
+  <img src="../imagen/6.png"  />
 </p>
 ---
 
@@ -335,6 +335,7 @@ Históricamente, los ajustes residían en **CMOS RAM** alimentada por la **pila 
 
 ## 2.9 Buenas prácticas en aula/taller
 Manual a mano, USB **FAT32** preparado, versión probada, localizar **Clear CMOS**, documentar cambios, cambiar **CR2032** con síntomas, no confundir cables **EPS** (CPU) con **PCIe** (GPU), probar con **Defaults** y añadir ajustes paso a paso. 
+
 
 
 
