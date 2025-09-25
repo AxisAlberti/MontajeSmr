@@ -73,7 +73,7 @@ La **placa base** es el circuito impreso principal del PC. Sirve para:
   <img src="../imagen/1.webp"  />
 </p>
 
-**Comprobaciones clave antes de comprar:** compatibilidad con el chasis (standoffs), altura del disipador, longitud de GPU, tamaño y tipo de PSU, ubicación de conectores para un cableado ordenado. :contentReference[oaicite:4]{index=4}
+**Comprobaciones clave antes de comprar:** compatibilidad con el chasis (standoffs), altura del disipador, longitud de GPU, tamaño y tipo de PSU, ubicación de conectores para un cableado ordenado. 
 
 ---
 
@@ -89,14 +89,13 @@ La **placa base** es el circuito impreso principal del PC. Sirve para:
 </p>
 
 **Workstation/servidor de interés docente**
-- **LGA4677** → **Xeon W-2400/W-3400** (chipset W790). Plataformas con muchos carriles PCIe y memoria en varios canales (estaciones de trabajo). :contentReference[oaicite:5]{index=5}
+- **LGA4677** → **Xeon W-2400/W-3400** (chipset W790). Plataformas con muchos carriles PCIe y memoria en varios canales (estaciones de trabajo). 
 
 ### 1.3.2 AMD (sobremesa y HEDT recientes)
 - **AM5 (LGA1718)** → **Ryzen 7000/8000/9000** (Zen 4/Zen 5). DDR5 y PCIe 5.0; chipsets **X870E/X870/B850/B840**, además de **X670E/X670/A620**.
 - **AM4** → **Ryzen 1000–5000** (DDR4; PCIe 3/4 según CPU/chipset). Muy presente por coste/stock en laboratorios.
-- **sTR5** (TRX50/WRX90) → **Threadripper 7000/PRO**. Muchas líneas PCIe y 4 u 8 canales de memoria en estaciones de trabajo. :contentReference[oaicite:6]{index=6}
-
-**Buenas prácticas:** comprobar la **QVL** de CPU del fabricante de la placa; confirmar **kit de anclaje** del disipador para el socket específico. :contentReference[oaicite:7]{index=7}
+- **sTR5** (TRX50/WRX90) → **Threadripper 7000/PRO**. Muchas líneas PCIe y 4 u 8 canales de memoria en estaciones de trabajo.
+**Buenas prácticas:** comprobar la **QVL** de CPU del fabricante de la placa; confirmar **kit de anclaje** del disipador para el socket específico. 
 
 ---
 
@@ -106,6 +105,7 @@ La **placa base** es el circuito impreso principal del PC. Sirve para:
 ### 1.4.1 Intel (consumo)
 - **Serie 700 (LGA1700)**: **Z790** (entusiasta, OC CPU/RAM, I/O abundante), **H770** (gama media), **B760** (mainstream).
 - **Plataforma LGA1851 (Arrow Lake)**: **Z890** (tope de gama), **B860** (mainstream), **H810**.
+- 
 <p align="center">
   <img src="../imagen/2a.jpg"  />
 </p>
@@ -120,7 +120,7 @@ La **placa base** es el circuito impreso principal del PC. Sirve para:
   <img src="../imagen/2b.webp"  />
 </p>
 
-> Nota docente: AMD está consolidando la gama en torno a **B850** (retirada progresiva de **B650**); revisar disponibilidad y hojas técnicas del fabricante. :contentReference[oaicite:9]{index=9}
+> Nota docente: AMD está consolidando la gama en torno a **B850** (retirada progresiva de **B650**); revisar disponibilidad y hojas técnicas del fabricante. 
 
 ---
 
@@ -129,7 +129,7 @@ La **placa base** es el circuito impreso principal del PC. Sirve para:
 
 - **Elementos clave:** fases (controlador PWM, MOSFETs, chokes, condensadores), **disipadores** con pads térmicos, y sensores térmicos.
 - **Conectores de energía en la placa:** **ATX 24-pin** (principal) y **EPS 8-pin (4+4)** para CPU; algunas placas añaden un **segundo EPS** para CPUs de alto consumo.
-- **Buenas prácticas:** asegurar flujo de aire sobre el VRM; no confundir cables **EPS** y **PCIe** de la PSU. :contentReference[oaicite:10]{index=10}
+- **Buenas prácticas:** asegurar flujo de aire sobre el VRM; no confundir cables **EPS** y **PCIe** de la PSU. 
 
 ---
 
@@ -139,7 +139,7 @@ La **placa base** es el circuito impreso principal del PC. Sirve para:
 - **DDR5 (AM5, LGA1851 y muchas LGA1700):** frecuencias elevadas con perfiles **EXPO/XMP**; más ancho de banda por canal.
 - **DDR4 (parte de LGA1700 y todo AM4):** aún común por coste y disponibilidad.
 - **ECC:** en consumo, ECC suele ser **UDIMM** y su soporte depende de CPU y placa; en HEDT/workstation (sTR5, LGA4677) se usan **RDIMM ECC** con 4–8 canales.
-- **Montaje:** poblar primero **A2/B2**, activar EXPO/XMP y comprobar estabilidad. Revisar **QVL** de la placa. :contentReference[oaicite:11]{index=11}
+- **Montaje:** poblar primero **A2/B2**, activar EXPO/XMP y comprobar estabilidad. Revisar **QVL** de la placa.
 
 ---
 
@@ -149,7 +149,7 @@ La **placa base** es el circuito impreso principal del PC. Sirve para:
 - **Tamaños:** x16 / x8 / x4 / x1 (longitud física).  
 - **Generaciones:** 3.0 / 4.0 / **5.0** (más GB/s por línea). Retrocompatibles a la menor versión.  
 - **Topologías típicas:** 1× x16 desde la CPU (GPU); bifurcación a **x8/x8** si se puebla una segunda ranura de alto ancho de banda. Varias x4/x1 desde el chipset.  
-- **Consideración (AM5):** en placas **B650** algunos fabricantes retiraron PCIe 5.0 para GPU por estabilidad en BIOS recientes; en **B850/X870** la segmentación Gen5 es más clara. :contentReference[oaicite:12]{index=12}
+- **Consideración (AM5):** en placas **B650** algunos fabricantes retiraron PCIe 5.0 para GPU por estabilidad en BIOS recientes; en **B850/X870** la segmentación Gen5 es más clara.
 
 ---
 
@@ -333,6 +333,7 @@ Históricamente, los ajustes residían en **CMOS RAM** alimentada por la **pila 
 
 ## 2.9 Buenas prácticas en aula/taller
 Manual a mano, USB **FAT32** preparado, versión probada, localizar **Clear CMOS**, documentar cambios, cambiar **CR2032** con síntomas, no confundir cables **EPS** (CPU) con **PCIe** (GPU), probar con **Defaults** y añadir ajustes paso a paso. :contentReference[oaicite:32]{index=32}
+
 
 
 
