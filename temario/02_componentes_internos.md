@@ -39,9 +39,7 @@
     - 2.5.6 Arranque de rescate en Dual BIOS
     - 2.5.7 Borrar contraseñas de BIOS
   - 2.6 Actualización del firmware (flasheo) con seguridad
-  - 2.7 Diagnóstico y síntomas típicos
-  - 2.8 Procedimientos recomendados (paso a paso)
-  - 2.9 Buenas prácticas en aula/taller
+
 
 ---
 
@@ -293,27 +291,5 @@ Históricamente, los ajustes residían en **CMOS RAM** alimentada por la **pila 
 
 ---
 
-## 2.7 Diagnóstico y síntomas típicos
-- **Pitidos/códigos POST** → apunta al subsistema (RAM, CPU, VGA, BOOT).  
-- **Bucle de arranque** tras toquetear memoria/OC → **Clear CMOS**, un solo módulo en **A2**, Defaults, reactivar XMP/EXPO con prudencia.  
-- **Hora reseteada** → **CR2032** agotada.  
-- **Sin vídeo** tras actualizar → **Flashback** o **Dual BIOS**; revisar CSM/UEFI y orden de arranque.  
-- **USB/SATA intermitentes** → Defaults y BIOS estable; revisar qué M.2 anula qué SATA. :contentReference[oaicite:30]{index=30}
 
----
 
-## 2.8 Procedimientos recomendados (paso a paso)
-
-**A) Restablecer rápido:**  
-1) PSU en “O”, 2) **Clear CMOS** 5–10 s o **jumper**, 3) Defaults, hora/fecha, **XMP/EXPO**, orden de arranque.
-
-**B) Recuperar BIOS corrupta (Flashback):**  
-1) Descargar correcta, 2) USB **FAT32** y renombrado, 3) Puerto dedicado + botón, 4) Esperar fin, 5) Defaults y reconfigurar.
-
-**C) Usar Dual BIOS tras fallo:**  
-1) Selector → **BIOS_B** o esperar failover, 2) Reflashear **BIOS_A**, 3) Sincronizar respaldo si es posible. :contentReference[oaicite:31]{index=31}
-
----
-
-## 2.9 Buenas prácticas en aula/taller
-Manual a mano, USB **FAT32** preparado, versión probada, localizar **Clear CMOS**, documentar cambios, cambiar **CR2032** con síntomas, no confundir cables **EPS** (CPU) con **PCIe** (GPU), probar con **Defaults** y añadir ajustes paso a paso. :contentReference[oaicite:32]{index=32}
