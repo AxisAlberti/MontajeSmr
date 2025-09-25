@@ -1,6 +1,6 @@
 # Índice
 
-- **1. Placa base (motherboard): guía exhaustiva 2025 (España)**
+- **1. Placa base (motherboard)**
   - 1. Introducción
   - 2. Factor de forma (form factor)
   - 3. Socket (zócalo de CPU)
@@ -298,4 +298,5 @@ Históricamente, los ajustes residían en **CMOS RAM** alimentada por la **pila 
 - **USB/SATA intermitentes** → Defaults y BIOS estable; revisar qué M.2 anula qué SATA.
 
 ---
+
 
