@@ -139,6 +139,7 @@ La **placa base** es el circuito impreso principal del PC. Sirve para:
 - **ECC:** en consumo, ECC suele ser **UDIMM** y su soporte depende de CPU y placa; en HEDT/workstation (sTR5, LGA4677) se usan **RDIMM ECC** con 4–8 canales.
 - **Montaje:** poblar primero **A2/B2**, activar EXPO/XMP y comprobar estabilidad. Revisar **QVL** de la placa.
 
+
 <p align="center">
   <img src="../imagen/5.jpg"  />
 </p>
@@ -152,6 +153,9 @@ La **placa base** es el circuito impreso principal del PC. Sirve para:
 - **Topologías típicas:** 1× x16 desde la CPU (GPU); bifurcación a **x8/x8** si se puebla una segunda ranura de alto ancho de banda. Varias x4/x1 desde el chipset.  
 - **Consideración (AM5):** en placas **B650** algunos fabricantes retiraron PCIe 5.0 para GPU por estabilidad en BIOS recientes; en **B850/X870** la segmentación Gen5 es más clara.
 
+<p align="center">
+  <img src="../imagen/6.jpg"  />
+</p>
 ---
 
 ## 1.8 Almacenamiento: M.2 y SATA
@@ -331,6 +335,7 @@ Históricamente, los ajustes residían en **CMOS RAM** alimentada por la **pila 
 
 ## 2.9 Buenas prácticas en aula/taller
 Manual a mano, USB **FAT32** preparado, versión probada, localizar **Clear CMOS**, documentar cambios, cambiar **CR2032** con síntomas, no confundir cables **EPS** (CPU) con **PCIe** (GPU), probar con **Defaults** y añadir ajustes paso a paso. 
+
 
 
 
