@@ -84,6 +84,10 @@ La **placa base** es el circuito impreso principal del PC. Sirve para:
 - **LGA1851** → plataforma **Core Ultra (Series 2) Arrow Lake** de sobremesa; placas con chipsets **Z890 / B860 / H810**. Sustituye a LGA1700. Sirve para habilitar DDR5 y PCIe 5.0 en muchas configuraciones y mejorar potencia/IA en desktop.
 - **LGA1700** → **Core 12.ª/13.ª/14.ª gen** (Alder/Raptor Lake) con **Z790/H770/B760**. Gran parque instalado; útil para reutilizar DDR4 (en algunas placas) o DDR5.
 
+<p align="center">
+  <img src="../imagen/2.jpg"  />
+</p>
+
 **Workstation/servidor de interés docente**
 - **LGA4677** → **Xeon W-2400/W-3400** (chipset W790). Plataformas con muchos carriles PCIe y memoria en varios canales (estaciones de trabajo). :contentReference[oaicite:5]{index=5}
 
@@ -321,5 +325,6 @@ Históricamente, los ajustes residían en **CMOS RAM** alimentada por la **pila 
 
 ## 2.9 Buenas prácticas en aula/taller
 Manual a mano, USB **FAT32** preparado, versión probada, localizar **Clear CMOS**, documentar cambios, cambiar **CR2032** con síntomas, no confundir cables **EPS** (CPU) con **PCIe** (GPU), probar con **Defaults** y añadir ajustes paso a paso. :contentReference[oaicite:32]{index=32}
+
 
 
