@@ -1,4 +1,4 @@
-# Placa base (motherboard): guía exhaustiva 2025 (España)
+
 
 > Objetivo: explicar **para qué sirve** cada elemento de una placa base y cómo elegir con criterio técnico (Intel y AMD, 2024–2025). Redacción en español de España.
 
@@ -170,3 +170,4 @@ La **placa base** es el circuito impreso principal del PC. Sirve para:
 
 
 ---
+
