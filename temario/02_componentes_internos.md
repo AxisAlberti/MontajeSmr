@@ -1,6 +1,6 @@
 # Índice
 
-1. Placa base (motherboard):
+**1. Placa base (motherboard):**
   - 1.1 Introducción
   - 1.2 Factor de forma (form factor)
   - 1.3 Socket (zócalo de CPU)
@@ -25,7 +25,7 @@
     - 1.14.2 Sockets más relevantes
   - 1.15 Checklist de montaje y verificación
 
-2. BIOS, memoria CMOS, Dual BIOS y sistemas de reseteo 
+**2. BIOS, memoria CMOS, Dual BIOS y sistemas de reseteo**
   - 2.1 Introducción
   - 2.2 BIOS vs UEFI
   - 2.3 Memoria CMOS, RTC y NVRAM
@@ -326,6 +326,7 @@ Históricamente, los ajustes residían en **CMOS RAM** alimentada por la **pila 
 
 ## 2.9 Buenas prácticas en aula/taller
 Manual a mano, USB **FAT32** preparado, versión probada, localizar **Clear CMOS**, documentar cambios, cambiar **CR2032** con síntomas, no confundir cables **EPS** (CPU) con **PCIe** (GPU), probar con **Defaults** y añadir ajustes paso a paso. 
+
 
 
 
