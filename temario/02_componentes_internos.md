@@ -127,7 +127,7 @@ La **placa base** es el circuito impreso principal del PC. Sirve para:
 - **Buenas prácticas:** asegurar flujo de aire sobre el VRM; no confundir cables **EPS** y **PCIe** de la PSU. 
 
 <p align="center">
-  <img src="../imagen/3.webp"  />
+  <img src="../imagen/4.jpg"  />
 </p>
 ---
 
@@ -140,7 +140,7 @@ La **placa base** es el circuito impreso principal del PC. Sirve para:
 - **Montaje:** poblar primero **A2/B2**, activar EXPO/XMP y comprobar estabilidad. Revisar **QVL** de la placa.
 
 <p align="center">
-  <img src="../imagen/2b.webp"  />
+  <img src="../imagen/5.jpg"  />
 </p>
 ---
 
@@ -331,6 +331,7 @@ Históricamente, los ajustes residían en **CMOS RAM** alimentada por la **pila 
 
 ## 2.9 Buenas prácticas en aula/taller
 Manual a mano, USB **FAT32** preparado, versión probada, localizar **Clear CMOS**, documentar cambios, cambiar **CR2032** con síntomas, no confundir cables **EPS** (CPU) con **PCIe** (GPU), probar con **Defaults** y añadir ajustes paso a paso. 
+
 
 
 
