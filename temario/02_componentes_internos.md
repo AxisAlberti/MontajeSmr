@@ -64,7 +64,7 @@ La **placa base** es el circuito impreso principal del PC. Sirve para:
 - **microATX** (244×244 mm): hasta 4 ranuras; equilibrio precio/prestaciones para aulas y oficinas.
 - **Mini-ITX** (170×170 mm): ultra-compacta (1× PCIe x16). Exige chasis bien ventilado y cableado limpio.
 - **E-ATX / SSI-EEB**: formatos grandes para estaciones de trabajo (más fases de VRM, más M.2 y más puertos).
-
+<br>
 <p align="center">
   <img src="../imagen/1.webp"  />
 </p>
@@ -335,6 +335,7 @@ Históricamente, los ajustes residían en **CMOS RAM** alimentada por la **pila 
 
 ## 2.9 Buenas prácticas en aula/taller
 Manual a mano, USB **FAT32** preparado, versión probada, localizar **Clear CMOS**, documentar cambios, cambiar **CR2032** con síntomas, no confundir cables **EPS** (CPU) con **PCIe** (GPU), probar con **Defaults** y añadir ajustes paso a paso. 
+
 
 
 
