@@ -108,7 +108,7 @@ La **placa base** es el circuito impreso principal del PC. Sirve para:
 - **Plataforma LGA1851 (Arrow Lake)**: **Z890** (tope de gama), **B860** (mainstream), **H810** (entrada). :contentReference[oaicite:8]{index=8}
 
 <p align="center">
-  <img src="../imagen/2.jpg"  />
+  <img src="../imagen/2b.webp"  />
 </p>
 
 
@@ -117,6 +117,9 @@ La **placa base** es el circuito impreso principal del PC. Sirve para:
 - **B850 / B840**: mainstream; **B850** refuerza prestaciones (más conectividad y Gen5 en M.2 en muchos modelos), **B840** acota costes y características.
 - **X670E / X670 / A620**: siguen vigentes; X670E para equipos entusiastas con PCIe 5.0; A620 como entrada económica.
 
+<p align="center">
+  <img src="../imagen/2b.jpg"  />
+</p>
 > Nota docente: AMD está consolidando la gama en torno a **B850** (retirada progresiva de **B650**); revisar disponibilidad y hojas técnicas del fabricante. :contentReference[oaicite:9]{index=9}
 
 ---
@@ -330,6 +333,7 @@ Históricamente, los ajustes residían en **CMOS RAM** alimentada por la **pila 
 
 ## 2.9 Buenas prácticas en aula/taller
 Manual a mano, USB **FAT32** preparado, versión probada, localizar **Clear CMOS**, documentar cambios, cambiar **CR2032** con síntomas, no confundir cables **EPS** (CPU) con **PCIe** (GPU), probar con **Defaults** y añadir ajustes paso a paso. :contentReference[oaicite:32]{index=32}
+
 
 
 
