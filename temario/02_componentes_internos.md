@@ -118,7 +118,8 @@ La **placa base** es el circuito impreso principal del PC. Sirve para:
 
 <p align="center">
   <img src="../imagen/2b.webp"  />
-</p>
+</p
+  
 ---
 
 ## 1.5 VRM y alimentación
@@ -132,6 +133,7 @@ La **placa base** es el circuito impreso principal del PC. Sirve para:
 <p align="center">
   <img src="../imagen/4.jpg"  />
 </p>
+
 ---
 
 ## 1.6 Bancos de memoria (DIMM)
@@ -147,6 +149,7 @@ La **placa base** es el circuito impreso principal del PC. Sirve para:
 <p align="center">
   <img src="../imagen/5.jpg"  />
 </p>
+
 ---
 
 ## 1.7 Ranuras PCI Express
@@ -161,6 +164,7 @@ La **placa base** es el circuito impreso principal del PC. Sirve para:
 <p align="center">
   <img src="../imagen/6.png"  />
 </p>
+
 ---
 
 ## 1.8 Almacenamiento: M.2 y SATA
@@ -352,6 +356,7 @@ Históricamente, los ajustes residían en **CMOS RAM** alimentada por la **pila 
 
 ## 2.9 Buenas prácticas en aula/taller
 Manual a mano, USB **FAT32** preparado, versión probada, localizar **Clear CMOS**, documentar cambios, cambiar **CR2032** con síntomas, no confundir cables **EPS** (CPU) con **PCIe** (GPU), probar con **Defaults** y añadir ajustes paso a paso. 
+
 
 
 
