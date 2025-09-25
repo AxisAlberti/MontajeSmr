@@ -57,7 +57,7 @@ La **placa base** es el circuito impreso principal del PC. Sirve para:
 - **Distribuir y regular** la energía (VRM) para que llegue con la tensión y estabilidad correctas.
 - **Aportar servicios de plataforma** (chipset/PCH): puertos USB, SATA, líneas PCIe adicionales, RAID, etc.
 - **Inicializar y configurar** el hardware (firmware UEFI) y aplicar políticas de seguridad (Secure Boot, TPM/fTPM).
-- **Anclar físicamente** los componentes y encajar en el chasis según un **factor de forma**. :contentReference[oaicite:3]{index=3}
+- **Anclar físicamente** los componentes y encajar en el chasis según un **factor de forma**. 
 
 ---
 
@@ -161,10 +161,10 @@ La **placa base** es el circuito impreso principal del PC. Sirve para:
 - **Claves (keys):** **M** (NVMe x4 habitual), **B** (NVMe x2 / SATA), **B+M** (compatibilidad física, con menor rendimiento).  
 - **Longitudes:** 2230 / 2242 / 2260 / **2280** / 22110.  
 - **Generación PCIe:** 4.0 y **5.0** en placas modernas (el 5.0 exige disipadores adecuados).  
-- **Mapa de líneas:** algunos zócalos **comparten** líneas con SATA o con la ranura PCIe principal; al poblarlos, se desactiva un puerto o baja un enlace. :contentReference[oaicite:13]{index=13}
+- **Mapa de líneas:** algunos zócalos **comparten** líneas con SATA o con la ranura PCIe principal; al poblarlos, se desactiva un puerto o baja un enlace. 
 
 ### 1.8.2 Puertos **SATA**
-Conectar SSD/HDD de 2,5″/3,5″ con coste por GB bajo. Ideales para bibliotecas de datos, copias y aulas. :contentReference[oaicite:14]{index=14}
+Conectar SSD/HDD de 2,5″/3,5″ con coste por GB bajo. Ideales para bibliotecas de datos, copias y aulas.
 
 ---
 
@@ -177,7 +177,7 @@ Conectividad exterior y del panel frontal del chasis.
 - **Audio:** códecs Realtek ALCxxx con salidas analógicas y **S/PDIF**; PCB con zona de audio aislada.
 - **Iluminación:** **ARGB 5 V 3-pin** y **RGB 12 V 4-pin** (no intercambiables).
 - **Front-panel:** **PWR_SW**, **RESET_SW**, **PWR_LED**, **HDD_LED**.
-- **Ventiladores/bombas:** **CPU_FAN**, **CPU_OPT**, **AIO_PUMP**, **SYS_FAN** (PWM/DC). :contentReference[oaicite:15]{index=15}
+- **Ventiladores/bombas:** **CPU_FAN**, **CPU_OPT**, **AIO_PUMP**, **SYS_FAN** (PWM/DC). 
 
 ---
 
@@ -186,20 +186,20 @@ Realiza **POST**, detecta hardware, aplica la configuración y arranca el SO.
 
 - **Ajustes:** orden de arranque, **XMP/EXPO**, **curvas de ventiladores**, límites de potencia, **Secure Boot**, **fTPM/Intel PTT**.  
 - **Actualización:** **Flashback / EZ-Flash / M-Flash / Q-Flash**; actualizar cuando aporte soporte/estabilidad.  
-- **Perfiles:** guardar perfiles de ventilación y memoria antes de flashear. :contentReference[oaicite:16]{index=16}
+- **Perfiles:** guardar perfiles de ventilación y memoria antes de flashear. 
 
 ---
 
 ## 1.11 Sensores y diagnóstico
 - **Q-LED / códigos POST / displays** de dos dígitos para localizar fallos (RAM, CPU, VGA, BOOT).  
-- **Botones en placa (Power/Reset/Clr-CMOS/Flashback)** para pruebas en bancada. :contentReference[oaicite:17]{index=17}
+- **Botones en placa (Power/Reset/Clr-CMOS/Flashback)** para pruebas en bancada. 
 
 ---
 
 ## 1.12 Diseño del PCB y calidad
 - **Capas** y **zonas** aisladas (alta velocidad, audio, RF) para integridad de señal.  
 - **Blindajes**, **backplate** y disipadores M.2 para rigidez y temperaturas.  
-- **Protecciones ESD** y componentes de **grado sólido** para durabilidad. :contentReference[oaicite:18]{index=18}
+- **Protecciones ESD** y componentes de **grado sólido** para durabilidad.
 
 ---
 
@@ -208,7 +208,7 @@ Realiza **POST**, detecta hardware, aplica la configuración y arranca el SO.
 - **Equilibrio (Intel):** **B760/H770** (12.ª–14.ª gen) o **B860** (Core Ultra Series 2).  
 - **Entusiasta/OC (AMD):** **X870E/X670E** (AM5) para Ryzen 7/9 con PCIe 5.0 sólido y varios M.2.  
 - **Equilibrio (AMD):** **B850** (mainstream) con DDR5 y conectividad actual; **B840** opción más económica.  
-- **Workstation/HEDT:** **sTR5 TRX50/WRX90** (Threadripper) o **LGA4677/W790** (Xeon W): muchas líneas PCIe y memoria multicanal. :contentReference[oaicite:19]{index=19}
+- **Workstation/HEDT:** **sTR5 TRX50/WRX90** (Threadripper) o **LGA4677/W790** (Xeon W): muchas líneas PCIe y memoria multicanal.
 
 ---
 
@@ -220,7 +220,7 @@ Realiza **POST**, detecta hardware, aplica la configuración y arranca el SO.
 
 ### 1.14.2 Sockets más relevantes
 - **Intel:** **LGA1851** (Core Ultra Series 2 / Arrow Lake), **LGA1700** (Core 12.ª–14.ª).  
-- **AMD:** **AM5** (Ryzen 7000/8000/9000), **AM4** (Ryzen 1000–5000), **sTR5** (Threadripper 7000/PRO). :contentReference[oaicite:21]{index=21}
+- **AMD:** **AM5** (Ryzen 7000/8000/9000), **AM4** (Ryzen 1000–5000), **sTR5** (Threadripper 7000/PRO). 
 
 ---
 
@@ -232,19 +232,17 @@ Realiza **POST**, detecta hardware, aplica la configuración y arranca el SO.
 5. Conecta **ATX 24-pin** y **EPS 8-pin**; añade GPU y periféricos.  
 6. Conecta **front-panel** y **USB/Audio** frontales según manual.  
 7. Primer POST con lo mínimo; activa **EXPO/XMP**, ajusta **curvas** y verifica temperaturas.  
-8. Comprueba enlace de GPU (x16/x8) y que M.2 no desactive puertos que necesitas. :contentReference[oaicite:22]{index=22}
-
+8. Comprueba enlace de GPU (x16/x8) y que M.2 no desactive puertos que necesitas. 
 ---
 
 # 2. BIOS, memoria CMOS, Dual BIOS y sistemas de reseteo — guía exhaustiva (España)
 
-> Objetivo: comprender qué es la BIOS/UEFI, cómo y dónde se guardan sus ajustes (CMOS/NVRAM), qué aporta **Dual BIOS** y cuáles son los **métodos de reseteo** y recuperación más seguros en placas base modernas. :contentReference[oaicite:23]{index=23}
-
+> Objetivo: comprender qué es la BIOS/UEFI, cómo y dónde se guardan sus ajustes (CMOS/NVRAM), qué aporta **Dual BIOS** y cuáles son los **métodos de reseteo** y recuperación más seguros en placas base modernas. 
 ---
 
 ## 2.1 Introducción
 El **firmware** (BIOS clásica o **UEFI** moderna) inicializa el hardware, realiza el **POST**, aplica la configuración guardada (arranque, XMP/EXPO, potencia, seguridad) y entrega el control al sistema operativo.  
-Históricamente, los ajustes residían en **CMOS RAM** alimentada por la **pila CR2032**; hoy gran parte vive en **flash SPI/NVRAM**, pero la pila sigue manteniendo el **RTC** (reloj en tiempo real) y ciertos estados. :contentReference[oaicite:24]{index=24}
+Históricamente, los ajustes residían en **CMOS RAM** alimentada por la **pila CR2032**; hoy gran parte vive en **flash SPI/NVRAM**, pero la pila sigue manteniendo el **RTC** (reloj en tiempo real) y ciertos estados.
 
 ---
 
@@ -252,7 +250,7 @@ Históricamente, los ajustes residían en **CMOS RAM** alimentada por la **pila 
 - **BIOS (Legacy):** INT 13h/MBR; limitaciones en discos >2 TB y arranque moderno.  
 - **UEFI (moderna):** GPT, **Secure Boot**, utilidades gráficas integradas (flash, diagnóstico), drivers pre-arranque. El término “BIOS” se usa coloquialmente para UEFI.
 
-**Ajustes típicos:** orden de arranque, **XMP/EXPO**, curvas de ventilador, límites de potencia/voltaje, **Secure Boot**, **fTPM/Intel PTT**, activación de periféricos y puertos SATA/M.2. :contentReference[oaicite:25]{index=25}
+**Ajustes típicos:** orden de arranque, **XMP/EXPO**, curvas de ventilador, límites de potencia/voltaje, **Secure Boot**, **fTPM/Intel PTT**, activación de periféricos y puertos SATA/M.2. 
 
 ---
 
@@ -261,7 +259,7 @@ Históricamente, los ajustes residían en **CMOS RAM** alimentada por la **pila 
 - **RTC:** reloj con cristal de 32,768 kHz que mantiene **fecha/hora** apagado el equipo.  
 - **NVRAM / SPI flash (actual):** configuración y firmware en chip de **flash**; la pila mantiene el **RTC** y, según placa, algunos estados menores.
 
-**Pila agotada:** hora/fecha incorrectas, “CMOS checksum error”, pérdida de ajustes (en placas antiguas). → Sustituir **CR2032** (polaridad “+” arriba) y reconfigurar UEFI. :contentReference[oaicite:26]{index=26}
+**Pila agotada:** hora/fecha incorrectas, “CMOS checksum error”, pérdida de ajustes (en placas antiguas). → Sustituir **CR2032** (polaridad “+” arriba) y reconfigurar UEFI. 
 
 ---
 
@@ -270,7 +268,7 @@ Históricamente, los ajustes residían en **CMOS RAM** alimentada por la **pila 
 
 - **Redundancia:** si la actualización falla o se corrompe el chip principal, el sistema puede **arrancar desde el respaldo** (automático o con **selector físico**).  
 - **Copia espejo:** algunas utilidades permiten **replicar** la versión estable en el chip secundario.  
-- **Uso docente:** ideal para enseñar actualización segura y recuperación tras fallos. :contentReference[oaicite:27]{index=27}
+- **Uso docente:** ideal para enseñar actualización segura y recuperación tras fallos. 
 
 ---
 
@@ -298,14 +296,14 @@ Históricamente, los ajustes residían en **CMOS RAM** alimentada por la **pila 
 - Conmutar a **BIOS_B** (si hay selector) o dejar que el **failover** automático actúe tras varios fallos de POST. Luego reflashear **BIOS_A**.
 
 ### 2.5.7 Borrar **contraseñas** de BIOS
-- En muchas placas, **CLR_CMOS** limpia Supervisor/Setup y Power-On. En portátiles/proprietarias puede requerir procedimientos específicos. :contentReference[oaicite:28]{index=28}
+- En muchas placas, **CLR_CMOS** limpia Supervisor/Setup y Power-On. En portátiles/proprietarias puede requerir procedimientos específicos. 
 
 ---
 
 ## 2.6 Actualización del firmware (flasheo) con seguridad
 - **Actualizar cuando:** soporte de **CPU/memoria**, estabilidad o seguridad.  
 - **Evitar cuando:** el equipo es estable y no necesitas cambios.  
-- **Buenas prácticas:** usar **EZ-Flash/M-Flash/Q-Flash** o **Flashback**, no interrumpir energía, **Defaults** tras flasheo y restaurar perfiles guardados. :contentReference[oaicite:29]{index=29}
+- **Buenas prácticas:** usar **EZ-Flash/M-Flash/Q-Flash** o **Flashback**, no interrumpir energía, **Defaults** tras flasheo y restaurar perfiles guardados. 
 
 ---
 
@@ -314,7 +312,7 @@ Históricamente, los ajustes residían en **CMOS RAM** alimentada por la **pila 
 - **Bucle de arranque** tras toquetear memoria/OC → **Clear CMOS**, un solo módulo en **A2**, Defaults, reactivar XMP/EXPO con prudencia.  
 - **Hora reseteada** → **CR2032** agotada.  
 - **Sin vídeo** tras actualizar → **Flashback** o **Dual BIOS**; revisar CSM/UEFI y orden de arranque.  
-- **USB/SATA intermitentes** → Defaults y BIOS estable; revisar qué M.2 anula qué SATA. :contentReference[oaicite:30]{index=30}
+- **USB/SATA intermitentes** → Defaults y BIOS estable; revisar qué M.2 anula qué SATA. 
 
 ---
 
@@ -327,12 +325,12 @@ Históricamente, los ajustes residían en **CMOS RAM** alimentada por la **pila 
 1) Descargar correcta, 2) USB **FAT32** y renombrado, 3) Puerto dedicado + botón, 4) Esperar fin, 5) Defaults y reconfigurar.
 
 **C) Usar Dual BIOS tras fallo:**  
-1) Selector → **BIOS_B** o esperar failover, 2) Reflashear **BIOS_A**, 3) Sincronizar respaldo si es posible. :contentReference[oaicite:31]{index=31}
-
+1) Selector → **BIOS_B** o esperar failover, 2) Reflashear **BIOS_A**, 3) Sincronizar respaldo si es posible.
 ---
 
 ## 2.9 Buenas prácticas en aula/taller
-Manual a mano, USB **FAT32** preparado, versión probada, localizar **Clear CMOS**, documentar cambios, cambiar **CR2032** con síntomas, no confundir cables **EPS** (CPU) con **PCIe** (GPU), probar con **Defaults** y añadir ajustes paso a paso. :contentReference[oaicite:32]{index=32}
+Manual a mano, USB **FAT32** preparado, versión probada, localizar **Clear CMOS**, documentar cambios, cambiar **CR2032** con síntomas, no confundir cables **EPS** (CPU) con **PCIe** (GPU), probar con **Defaults** y añadir ajustes paso a paso. 
+
 
 
 
