@@ -116,7 +116,6 @@ La **placa base** es el circuito impreso principal del PC. Sirve para:
   <img src="../imagen/2b.webp"  />
 </p>
 
-> Nota docente: AMD está consolidando la gama en torno a **B850** (retirada progresiva de **B650**); revisar disponibilidad y hojas técnicas del fabricante. 
 
 ---
 
@@ -127,6 +126,9 @@ La **placa base** es el circuito impreso principal del PC. Sirve para:
 - **Conectores de energía en la placa:** **ATX 24-pin** (principal) y **EPS 8-pin (4+4)** para CPU; algunas placas añaden un **segundo EPS** para CPUs de alto consumo.
 - **Buenas prácticas:** asegurar flujo de aire sobre el VRM; no confundir cables **EPS** y **PCIe** de la PSU. 
 
+<p align="center">
+  <img src="../imagen/3.webp"  />
+</p>
 ---
 
 ## 1.6 Bancos de memoria (DIMM)
@@ -137,6 +139,9 @@ La **placa base** es el circuito impreso principal del PC. Sirve para:
 - **ECC:** en consumo, ECC suele ser **UDIMM** y su soporte depende de CPU y placa; en HEDT/workstation (sTR5, LGA4677) se usan **RDIMM ECC** con 4–8 canales.
 - **Montaje:** poblar primero **A2/B2**, activar EXPO/XMP y comprobar estabilidad. Revisar **QVL** de la placa.
 
+<p align="center">
+  <img src="../imagen/2b.webp"  />
+</p>
 ---
 
 ## 1.7 Ranuras PCI Express
@@ -326,6 +331,7 @@ Históricamente, los ajustes residían en **CMOS RAM** alimentada por la **pila 
 
 ## 2.9 Buenas prácticas en aula/taller
 Manual a mano, USB **FAT32** preparado, versión probada, localizar **Clear CMOS**, documentar cambios, cambiar **CR2032** con síntomas, no confundir cables **EPS** (CPU) con **PCIe** (GPU), probar con **Defaults** y añadir ajustes paso a paso. 
+
 
 
 
