@@ -45,11 +45,7 @@
 
 ---
 
-# 1. Placa base (motherboard): guía exhaustiva 2025 (España)
-
-> Objetivo: explicar **para qué sirve** cada elemento de una placa base y cómo elegir con criterio técnico (Intel y AMD, 2024–2025). Redacción en español de España. 
-
----
+# 1. Placa base (motherboard)
 
 ## 1.1 Introducción
 La **placa base** es el circuito impreso principal del PC. Sirve para:
@@ -330,6 +326,7 @@ Históricamente, los ajustes residían en **CMOS RAM** alimentada por la **pila 
 
 ## 2.9 Buenas prácticas en aula/taller
 Manual a mano, USB **FAT32** preparado, versión probada, localizar **Clear CMOS**, documentar cambios, cambiar **CR2032** con síntomas, no confundir cables **EPS** (CPU) con **PCIe** (GPU), probar con **Defaults** y añadir ajustes paso a paso. 
+
 
 
 
