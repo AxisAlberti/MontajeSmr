@@ -205,6 +205,11 @@ Conectividad exterior y del panel frontal del chasis.
 - **Front-panel:** **PWR_SW**, **RESET_SW**, **PWR_LED**, **HDD_LED**.
 - **Ventiladores/bombas:** **CPU_FAN**, **CPU_OPT**, **AIO_PUMP**, **SYS_FAN** (PWM/DC). 
 
+<br>
+
+<p align="center">
+  <img src="../imagen/8.jpg"  />
+</p>
 ---
 
 ## 1.10 Firmware UEFI (BIOS moderna)
@@ -356,6 +361,7 @@ Históricamente, los ajustes residían en **CMOS RAM** alimentada por la **pila 
 
 ## 2.9 Buenas prácticas en aula/taller
 Manual a mano, USB **FAT32** preparado, versión probada, localizar **Clear CMOS**, documentar cambios, cambiar **CR2032** con síntomas, no confundir cables **EPS** (CPU) con **PCIe** (GPU), probar con **Defaults** y añadir ajustes paso a paso. 
+
 
 
 
