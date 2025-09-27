@@ -210,6 +210,7 @@ Conectividad exterior y del panel frontal del chasis.
 <p align="center">
   <img src="../imagen/8.jpg"  />
 </p>
+
 ---
 
 ## 1.10 Firmware UEFI (BIOS moderna)
@@ -218,6 +219,19 @@ Realiza **POST**, detecta hardware, aplica la configuración y arranca el SO.
 - **Ajustes:** orden de arranque, **XMP/EXPO**, **curvas de ventiladores**, límites de potencia, **Secure Boot**, **fTPM/Intel PTT**.  
 - **Actualización:** **Flashback / EZ-Flash / M-Flash / Q-Flash**; actualizar cuando aporte soporte/estabilidad.  
 - **Perfiles:** guardar perfiles de ventilación y memoria antes de flashear. 
+
+<br>
+
+<p align="center">
+  <img src="../imagen/13.webp"  />
+</p>
+
+<br>
+
+<p align="center">
+  <img src="../imagen/14.png"  />
+</p>
+
 
 ---
 
@@ -361,6 +375,7 @@ Históricamente, los ajustes residían en **CMOS RAM** alimentada por la **pila 
 
 ## 2.9 Buenas prácticas en aula/taller
 Manual a mano, USB **FAT32** preparado, versión probada, localizar **Clear CMOS**, documentar cambios, cambiar **CR2032** con síntomas, no confundir cables **EPS** (CPU) con **PCIe** (GPU), probar con **Defaults** y añadir ajustes paso a paso. 
+
 
 
 
