@@ -261,7 +261,7 @@ Realiza **POST**, detecta hardware, aplica la configuración y arranca el SO.
 8. Comprueba enlace de GPU (x16/x8) y que M.2 no desactive puertos que necesitas. 
 ---
 
-# 2. BIOS, memoria CMOS, Dual BIOS y sistemas de reseteo — guía exhaustiva (España)
+# 2. BIOS, memoria CMOS, Dual BIOS y sistemas de reseteo
 
 > Objetivo: comprender qué es la BIOS/UEFI, cómo y dónde se guardan sus ajustes (CMOS/NVRAM), qué aporta **Dual BIOS** y cuáles son los **métodos de reseteo** y recuperación más seguros en placas base modernas. 
 ---
@@ -356,6 +356,7 @@ Históricamente, los ajustes residían en **CMOS RAM** alimentada por la **pila 
 
 ## 2.9 Buenas prácticas en aula/taller
 Manual a mano, USB **FAT32** preparado, versión probada, localizar **Clear CMOS**, documentar cambios, cambiar **CR2032** con síntomas, no confundir cables **EPS** (CPU) con **PCIe** (GPU), probar con **Defaults** y añadir ajustes paso a paso. 
+
 
 
 
