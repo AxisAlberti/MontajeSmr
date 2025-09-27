@@ -72,7 +72,10 @@ Actúa de intermediario haciendo posible la comunicación entre el usuario y el 
 ---
 
 # 4. La máquina de Von Neumann
+<br>
 
+<img src="../imagen/vn.png" alt="Mi imagen"
+     style="width:100%;height:auto;display:block;" />
 La **arquitectura de Von Neumann** es el modelo sobre el que se basan la mayoría de los PC modernos. Propone que tanto los datos como las instrucciones se almacenan en la misma memoria, permitiendo que el procesador ejecute diversos programas sin necesidad de modificar el hardware.
 
 ## 4.1 Unidad Central de Procesamiento (CPU)
@@ -162,3 +165,4 @@ Estos tres tipos de buses trabajan de forma coordinada:
 Además, los buses permiten la expansión y actualización de sistemas mediante la incorporación de periféricos, tarjetas de expansión, y otros componentes.
 
 ---
+
