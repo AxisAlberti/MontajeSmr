@@ -220,11 +220,7 @@ Realiza **POST**, detecta hardware, aplica la configuración y arranca el SO.
 - **Actualización:** **Flashback / EZ-Flash / M-Flash / Q-Flash**; actualizar cuando aporte soporte/estabilidad.  
 - **Perfiles:** guardar perfiles de ventilación y memoria antes de flashear. 
 
-<br>
 
-<p align="center">
-  <img src="../imagen/13.webp"  />
-</p>
 
 <br>
 
@@ -283,17 +279,27 @@ Realiza **POST**, detecta hardware, aplica la configuración y arranca el SO.
 # 2. BIOS, memoria CMOS, Dual BIOS y sistemas de reseteo
 
 > Objetivo: comprender qué es la BIOS/UEFI, cómo y dónde se guardan sus ajustes (CMOS/NVRAM), qué aporta **Dual BIOS** y cuáles son los **métodos de reseteo** y recuperación más seguros en placas base modernas. 
+
+
 ---
 
 ## 2.1 Introducción
 El **firmware** (BIOS clásica o **UEFI** moderna) inicializa el hardware, realiza el **POST**, aplica la configuración guardada (arranque, XMP/EXPO, potencia, seguridad) y entrega el control al sistema operativo.  
 Históricamente, los ajustes residían en **CMOS RAM** alimentada por la **pila CR2032**; hoy gran parte vive en **flash SPI/NVRAM**, pero la pila sigue manteniendo el **RTC** (reloj en tiempo real) y ciertos estados.
 
+
 ---
 
 ## 2.2 BIOS vs UEFI
 - **BIOS (Legacy):** INT 13h/MBR; limitaciones en discos >2 TB y arranque moderno.  
 - **UEFI (moderna):** GPT, **Secure Boot**, utilidades gráficas integradas (flash, diagnóstico), drivers pre-arranque. El término “BIOS” se usa coloquialmente para UEFI.
+
+
+<br>
+
+<p align="center">
+  <img src="../imagen/13.webp"  />
+</p>
 
 **Ajustes típicos:** orden de arranque, **XMP/EXPO**, curvas de ventilador, límites de potencia/voltaje, **Secure Boot**, **fTPM/Intel PTT**, activación de periféricos y puertos SATA/M.2. 
 
@@ -303,6 +309,8 @@ Históricamente, los ajustes residían en **CMOS RAM** alimentada por la **pila 
 - **CMOS RAM:** pequeña RAM de bajo consumo (equipos clásicos) que guardaba parámetros y hora; necesita **CR2032**.  
 - **RTC:** reloj con cristal de 32,768 kHz que mantiene **fecha/hora** apagado el equipo.  
 - **NVRAM / SPI flash (actual):** configuración y firmware en chip de **flash**; la pila mantiene el **RTC** y, según placa, algunos estados menores.
+
+Puedes leer más en [UEFI en NVRAM]([https://docs.python.org/3/](https://www.profesionalreview.com/2018/12/08/nvram/)).
 
 **Pila agotada:** hora/fecha incorrectas, “CMOS checksum error”, pérdida de ajustes (en placas antiguas). → Sustituir **CR2032** (polaridad “+” arriba) y reconfigurar UEFI. 
 
@@ -375,6 +383,7 @@ Históricamente, los ajustes residían en **CMOS RAM** alimentada por la **pila 
 
 ## 2.9 Buenas prácticas en aula/taller
 Manual a mano, USB **FAT32** preparado, versión probada, localizar **Clear CMOS**, documentar cambios, cambiar **CR2032** con síntomas, no confundir cables **EPS** (CPU) con **PCIe** (GPU), probar con **Defaults** y añadir ajustes paso a paso. 
+
 
 
 
