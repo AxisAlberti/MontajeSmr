@@ -310,7 +310,7 @@ Históricamente, los ajustes residían en **CMOS RAM** alimentada por la **pila 
 - **RTC:** reloj con cristal de 32,768 kHz que mantiene **fecha/hora** apagado el equipo.  
 - **NVRAM / SPI flash (actual):** configuración y firmware en chip de **flash**; la pila mantiene el **RTC** y, según placa, algunos estados menores.
 
-**Puedes leer más en** [UEFI en NVRAM] ([https://docs.python.org/3/](https://www.profesionalreview.com/2018/12/08/nvram/))
+**Puedes leer más en** [UEFI en NVRAM] ((https://www.profesionalreview.com/2018/12/08/nvram/))
 
 **Pila agotada:** hora/fecha incorrectas, “CMOS checksum error”, pérdida de ajustes (en placas antiguas). → Sustituir **CR2032** (polaridad “+” arriba) y reconfigurar UEFI. 
 
@@ -383,6 +383,7 @@ Históricamente, los ajustes residían en **CMOS RAM** alimentada por la **pila 
 
 ## 2.9 Buenas prácticas en aula/taller
 Manual a mano, USB **FAT32** preparado, versión probada, localizar **Clear CMOS**, documentar cambios, cambiar **CR2032** con síntomas, no confundir cables **EPS** (CPU) con **PCIe** (GPU), probar con **Defaults** y añadir ajustes paso a paso. 
+
 
 
 
