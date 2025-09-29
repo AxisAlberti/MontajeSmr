@@ -114,6 +114,19 @@ La **placa base** es el circuito impreso principal del PC. Sirve para:
 
 ---
 
+| Ecosistema | Chipset | Orientación    | RAM           | PCIe/M.2                       | Conectividad                      |
+|------------|---------|---------------|---------------|---------------------------------|-----------------------------------|
+| AMD AM5    | B650    | Equilibrio    | DDR5          | PCIe 4.0 base; 5.0 en algunos   | 2.5 GbE, Wi-Fi 6E/7               |
+| AMD AM5    | B850    | Gaming 2025   | DDR5          | Más PCIe 5.0 en M.2/GPU         | USB-C/USB4                        |
+| AMD AM5    | X670    | Alta gama 2024| DDR5          | Más líneas/puertos              | VRM premium, muchos puertos       |
+| AMD AM5    | X870    | Alta gama 2025| DDR5          | Énfasis en PCIe 5.0             | USB4, Wi-Fi 7                     |
+| Intel 1700 | B760    | Gama media    | DDR4/DDR5     | PCIe 4.0                        | 2.5 GbE, Wi-Fi 6E/7               |
+| Intel 1851 | B860    | Gama media    | DDR5          | Más foco en PCIe 5.0 M.2        | USB-C/USB4                        |
+| Intel 1700 | Z790    | Alta gama     | DDR4/DDR5     | Más líneas y puertos            | VRM premium, puertos extra        |
+| Intel 1851 | Z890    | Alta gama     | DDR5          | PCIe 5.0 extendido              | Opciones creator/PRO, Wi-Fi 7     |
+
+---
+
 ### 1.4.2 AMD (AM5)
 - **X870E / X870**: alta gama con foco en PCIe 5.0 y conectividad moderna; ideales para Ryzen 9000/8000/7000.
 - **B850 / B840**: mainstream; **B850** refuerza prestaciones (más conectividad y Gen5 en M.2 en muchos modelos), **B840** acota costes y características.
@@ -396,6 +409,7 @@ Históricamente, los ajustes residían en **CMOS RAM** alimentada por la **pila 
 
 ## 2.9 Buenas prácticas en aula/taller
 Manual a mano, USB **FAT32** preparado, versión probada, localizar **Clear CMOS**, documentar cambios, cambiar **CR2032** con síntomas, no confundir cables **EPS** (CPU) con **PCIe** (GPU), probar con **Defaults** y añadir ajustes paso a paso. 
+
 
 
 
