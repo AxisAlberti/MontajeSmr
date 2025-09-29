@@ -124,6 +124,8 @@ La **placa base** es el circuito impreso principal del PC. Sirve para:
   <img src="../imagen/2b.webp"  />
 </p>
 
+---
+
 ## 1.5 VRM y alimentación
 **Para qué sirve:** el **VRM** convierte los 12 V de la fuente en tensiones **bajas y estables** para CPU, iGPU y memoria. Un VRM de calidad mantiene frecuencia bajo carga, evita caídas de rendimiento y posibilita **overclock** en placas y CPUs que lo permiten.
 
@@ -394,6 +396,7 @@ Históricamente, los ajustes residían en **CMOS RAM** alimentada por la **pila 
 
 ## 2.9 Buenas prácticas en aula/taller
 Manual a mano, USB **FAT32** preparado, versión probada, localizar **Clear CMOS**, documentar cambios, cambiar **CR2032** con síntomas, no confundir cables **EPS** (CPU) con **PCIe** (GPU), probar con **Defaults** y añadir ajustes paso a paso. 
+
 
 
 
