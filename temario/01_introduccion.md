@@ -4,18 +4,21 @@
 
 # Índice
 
-1. Vocabulario  
-2. Introducción a los sistemas informáticos  
-3. Funcionamiento del PC  
-4. La máquina de Von Neumann  
- 4.1. Unidad Central de Procesamiento (CPU)  
-  4.1.1. Unidad de control  
-  4.1.2. Unidad aritmético-lógica (ALU)  
-  4.1.3. Registros  
- 4.2. Memoria principal  
- 4.3. Dispositivos de entrada/salida (I/O)  
- 4.4. Buses  
-5. Tipos de buses en el PC  
+## Índice
+
+- [1. Vocabulario](#1-vocabulario)
+- [2. Introducción a los sistemas informáticos](#2-introduccion-a-los-sistemas-informaticos)
+- [3. Funcionamiento del PC](#3-funcionamiento-del-pc)
+- [4. La máquina de Von Neumann](#4-la-maquina-de-von-neumann)
+  - [4.1. Unidad Central de Procesamiento (CPU)](#41-unidad-central-de-procesamiento-cpu)
+    - [4.1.1. Unidad de control](#411-unidad-de-control)
+    - [4.1.2. Unidad aritmético-lógica (ALU)](#412-unidad-aritmetico-logica-alu)
+    - [4.1.3. Registros](#413-registros)
+  - [4.2. Memoria principal](#42-memoria-principal)
+  - [4.3. Dispositivos de entrada/salida (I/O)](#43-dispositivos-de-entrada-salida-io)
+  - [4.4. Buses](#44-buses)
+- [5. Tipos de buses en el PC](#5-tipos-de-buses-en-el-pc)
+
 
 ---
 
@@ -169,5 +172,6 @@ Estos tres tipos de buses trabajan de forma coordinada:
 Además, los buses permiten la expansión y actualización de sistemas mediante la incorporación de periféricos, tarjetas de expansión, y otros componentes.
 
 ---
+
 
 
