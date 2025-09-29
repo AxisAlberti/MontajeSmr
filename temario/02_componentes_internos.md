@@ -124,7 +124,6 @@ La **placa base** es el circuito impreso principal del PC. Sirve para:
 | Intel 1851 | B860    | Gama media    | DDR5          | Más foco en PCIe 5.0 M.2        | USB-C/USB4                        |
 | Intel 1700 | Z790    | Alta gama     | DDR4/DDR5     | Más líneas y puertos            | VRM premium, puertos extra        |
 | Intel 1851 | Z890    | Alta gama     | DDR5          | PCIe 5.0 extendido              | Opciones creator/PRO, Wi-Fi 7     |
-|------------|---------|---------------|---------------|---------------------------------|-----------------------------------|
 
 ---
 
@@ -410,6 +409,7 @@ Históricamente, los ajustes residían en **CMOS RAM** alimentada por la **pila 
 
 ## 2.9 Buenas prácticas en aula/taller
 Manual a mano, USB **FAT32** preparado, versión probada, localizar **Clear CMOS**, documentar cambios, cambiar **CR2032** con síntomas, no confundir cables **EPS** (CPU) con **PCIe** (GPU), probar con **Defaults** y añadir ajustes paso a paso. 
+
 
 
 
