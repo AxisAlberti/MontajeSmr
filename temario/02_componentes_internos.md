@@ -119,13 +119,10 @@ La **placa base** es el circuito impreso principal del PC. Sirve para:
 - **B850 / B840**: mainstream; **B850** refuerza prestaciones (más conectividad y Gen5 en M.2 en muchos modelos), **B840** acota costes y características.
 - **X670E / X670 / A620**: siguen vigentes; X670E para equipos entusiastas con PCIe 5.0; A620 como entrada económica.
 <br>
-<br>
 
 <p align="center">
   <img src="../imagen/2b.webp"  />
-</p
-  
----
+</p>
 
 ## 1.5 VRM y alimentación
 **Para qué sirve:** el **VRM** convierte los 12 V de la fuente en tensiones **bajas y estables** para CPU, iGPU y memoria. Un VRM de calidad mantiene frecuencia bajo carga, evita caídas de rendimiento y posibilita **overclock** en placas y CPUs que lo permiten.
@@ -397,6 +394,7 @@ Históricamente, los ajustes residían en **CMOS RAM** alimentada por la **pila 
 
 ## 2.9 Buenas prácticas en aula/taller
 Manual a mano, USB **FAT32** preparado, versión probada, localizar **Clear CMOS**, documentar cambios, cambiar **CR2032** con síntomas, no confundir cables **EPS** (CPU) con **PCIe** (GPU), probar con **Defaults** y añadir ajustes paso a paso. 
+
 
 
 
