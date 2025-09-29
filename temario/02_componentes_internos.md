@@ -69,6 +69,8 @@ La **placa base** es el circuito impreso principal del PC. Sirve para:
   <img src="../imagen/1.webp"  />
 </p>
 
+---
+
 **Comprobaciones clave antes de comprar:** compatibilidad con el chasis (standoffs), altura del disipador, longitud de GPU, tamaño y tipo de PSU, ubicación de conectores para un cableado ordenado. 
 
 ---
@@ -84,6 +86,8 @@ La **placa base** es el circuito impreso principal del PC. Sirve para:
 <p align="center">
   <img src="../imagen/2.jpg"  />
 </p>
+
+---
 
 **Workstation/servidor de interés docente**
 - **LGA4677** → **Xeon W-2400/W-3400** (chipset W790). Plataformas con muchos carriles PCIe y memoria en varios canales (estaciones de trabajo). 
@@ -108,6 +112,7 @@ La **placa base** es el circuito impreso principal del PC. Sirve para:
   <img src="../imagen/2a.jpg"  />
 </p>
 
+---
 
 ### 1.4.2 AMD (AM5)
 - **X870E / X870**: alta gama con foco en PCIe 5.0 y conectividad moderna; ideales para Ryzen 9000/8000/7000.
@@ -392,6 +397,7 @@ Históricamente, los ajustes residían en **CMOS RAM** alimentada por la **pila 
 
 ## 2.9 Buenas prácticas en aula/taller
 Manual a mano, USB **FAT32** preparado, versión probada, localizar **Clear CMOS**, documentar cambios, cambiar **CR2032** con síntomas, no confundir cables **EPS** (CPU) con **PCIe** (GPU), probar con **Defaults** y añadir ajustes paso a paso. 
+
 
 
 
