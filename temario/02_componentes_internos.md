@@ -183,6 +183,8 @@ La **placa base** es el circuito impreso principal del PC. Sirve para:
   <img src="../imagen/6.jpg"  />
 </p>
 
+---
+
 ### 1.8.2 Puertos **SATA**
 Conectar SSD/HDD de 2,5″/3,5″ con coste por GB bajo. Ideales para bibliotecas de datos, copias y aulas.
 
@@ -273,7 +275,9 @@ Realiza **POST**, detecta hardware, aplica la configuración y arranca el SO.
 5. Conecta **ATX 24-pin** y **EPS 8-pin**; añade GPU y periféricos.  
 6. Conecta **front-panel** y **USB/Audio** frontales según manual.  
 7. Primer POST con lo mínimo; activa **EXPO/XMP**, ajusta **curvas** y verifica temperaturas.  
-8. Comprueba enlace de GPU (x16/x8) y que M.2 no desactive puertos que necesitas. 
+8. Comprueba enlace de GPU (x16/x8) y que M.2 no desactive puertos que necesitas.
+
+   
 ---
 
 # 2. BIOS, memoria CMOS, Dual BIOS y sistemas de reseteo
@@ -300,6 +304,9 @@ Históricamente, los ajustes residían en **CMOS RAM** alimentada por la **pila 
 <p align="center">
   <img src="../imagen/13.webp"  />
 </p>
+
+---
+
 
 **Ajustes típicos:** orden de arranque, **XMP/EXPO**, curvas de ventilador, límites de potencia/voltaje, **Secure Boot**, **fTPM/Intel PTT**, activación de periféricos y puertos SATA/M.2. 
 
@@ -379,10 +386,13 @@ Históricamente, los ajustes residían en **CMOS RAM** alimentada por la **pila 
 
 **C) Usar Dual BIOS tras fallo:**  
 1) Selector → **BIOS_B** o esperar failover, 2) Reflashear **BIOS_A**, 3) Sincronizar respaldo si es posible.
+
+   
 ---
 
 ## 2.9 Buenas prácticas en aula/taller
 Manual a mano, USB **FAT32** preparado, versión probada, localizar **Clear CMOS**, documentar cambios, cambiar **CR2032** con síntomas, no confundir cables **EPS** (CPU) con **PCIe** (GPU), probar con **Defaults** y añadir ajustes paso a paso. 
+
 
 
 
