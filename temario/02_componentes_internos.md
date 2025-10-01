@@ -2,22 +2,20 @@
 
 ## TEMA 2. COMPONENTES INTERNOS FUNDAMENTALES
 
-## Índice
-
-- [0. Definición y Función General (Placa base)](#0-definición-y-función-general-placa-base)
-- [1 Vocabulario Fundamental](#1-vocabulario-fundamental)
-- [2. Factor de forma](#2-factor-de-forma)
+- [0. **Definición y Función General (Placa base)**](#0-definición-y-función-general-placa-base)
+- [1 **Vocabulario Fundamental**](#1-vocabulario-fundamental)
+- [2. **Factor de forma**](#2-factor-de-forma)
   - [2.1 Concepto y importancia](#21-concepto-y-importancia)
   - [2.2 Factores de forma más utilizados (2025)](#22-factores-de-forma-más-utilizados-2025)
   - [2.3 Detalle de factores actuales](#23-detalle-de-factores-actuales)
   - [2.4 Tabla comparativa resumida](#24-tabla-comparativa-resumida)
   - [2.5 Recomendaciones](#25-recomendaciones)
-- [3 Chasis o Caja del pc](#3-chasis-o-caja-del-pc)
+- [3 **Chasis o Caja del pc**](#3-chasis-o-caja-del-pc)
   - [3.1 Partes principales modernas](#31-partes-principales-modernas)
   - [3.2 Factor de Forma y Tipos](#32-factor-de-forma-y-tipos)
   - [3.3 Paneles y cableado moderno](#33-paneles-y-cableado-moderno)
   - [3.4 Consejos prácticos](#34-consejos-prácticos)
-- [4. Conectores](#4-conectores)
+- [4. **Conectores**](#4-conectores)
   - [4.1 Conectores Externos](#41-conectores-externos)
   - [4.2 Conectores Internos (Desarrollado y Ampliado)](#42-conectores-internos-desarrollado-y-ampliado)
     - [4.2.1   SATA III (Serial ATA Revisado)\*\*](#421---sata-iii-serial-ata-revisado)
@@ -509,6 +507,7 @@ El **VRM (Voltage Regulator Module, Módulo Regulador de Voltaje)** es un circui
 
 
 ---
+
 
 
 
