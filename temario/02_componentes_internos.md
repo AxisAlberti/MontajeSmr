@@ -224,6 +224,15 @@ Los conectores internos conectan la placa base con todos los componentes crític
   - Persisten en placas modernas por compatibilidad, aunque pierden peso frente a M.2/NVMe.
 - **Usos actuales**: HDD de almacenamiento barato, SSD económicos.
 
+---
+</br>
+<div style="text-align: center;">
+  <img src="../imagen/componentes/7.png" alt="Descripción de la imagen" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+</div>
+</br>
+
+---
+
 ### 4.2.2   M.2 (Socket sobre placa base)**
 - **Definición**: Ranura compacta multifunción (SSD NVMe/SATA, Wi-Fi, Bluetooth, expansión).
 - **Características**:
@@ -234,6 +243,15 @@ Los conectores internos conectan la placa base con todos los componentes crític
 - **Ventajas**: Sin cables, máxima velocidad, ideal para gamer y ultrabooks.
 - **Usos**: SSD ultrarrápidos, Wi-Fi 7, Bluetooth 5.3, aceleradoras compactas.
 
+  ---
+</br>
+<div style="text-align: center;">
+  <img src="../imagen/componentes/8.png" alt="Descripción de la imagen" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+</div>
+</br>
+
+---
+
 ### 4.2.3  PCI Express (PCIe)
 - **Definición**: Bus de expansión para GPU, red, sonido, capturadoras, almacenamiento avanzado.
 - **Características**:
@@ -241,6 +259,15 @@ Los conectores internos conectan la placa base con todos los componentes crític
   - Velocidades: PCIe 4.0/5.0 mainstream; PCIe 6.0 (128 GB/s, x16) ya en workstation y servidores.
   - Modularidad y máxima velocidad para tarjetas gráficas y periféricos de alto caudal.
 - **Usos actuales**: Gráficas RTX/RADEON, NVMe para IA, redes 10GbE+, tarjetas streaming.
+
+  ---
+</br>
+<div style="text-align: center;">
+  <img src="../imagen/componentes/17.png" alt="Descripción de la imagen" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+</div>
+</br>
+
+---
 
 ### 4.2.4  Conectores de Alimentación internos
 - **ATX 24 pines**: Alimenta la placa base completa.
@@ -522,6 +549,7 @@ El **VRM (Voltage Regulator Module, Módulo Regulador de Voltaje)** es un circui
 
 
 ---
+
 
 
 
