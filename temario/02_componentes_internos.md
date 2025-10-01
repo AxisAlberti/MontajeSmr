@@ -188,7 +188,6 @@ Usado en OEM y all-in-one, dificultad de actualización e intercambios.
 
 ---
 
----
 # 4. Conectores
 ## 4.1 Conectores Externos
 | Conector        | Uso                    | Detalles técnicos        | Ejemplo de uso          |
@@ -205,6 +204,14 @@ Usado en OEM y all-in-one, dificultad de actualización e intercambios.
 *Nota*: Los conectores BTF (Back To Front) ahora se sitúan tras la placa base para mejor gestión de cables y refrigeración.
 
 ---
+</br>
+<div style="text-align: center;">
+  <img src="../imagen/componentes/6.png" alt="Descripción de la imagen" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+</div>
+</br>
+
+---
+
 
 ## 4.2 Conectores Internos (Desarrollado y Ampliado)
 Los conectores internos conectan la placa base con todos los componentes críticos: almacenamiento, gráficos, alimentación y paneles del chasis. Son clave tanto en rendimiento como en facilidad de mantenimiento y actualización.
@@ -515,6 +522,7 @@ El **VRM (Voltage Regulator Module, Módulo Regulador de Voltaje)** es un circui
 
 
 ---
+
 
 
 
