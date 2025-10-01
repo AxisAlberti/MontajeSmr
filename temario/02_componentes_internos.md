@@ -97,7 +97,7 @@ El **factor de forma** define las dimensiones físicas, el diseño de los conect
 | MicroATX          | 244 x 244        | 4 PCIe + 2–4 RAM     | Oficina, gaming compactos    | ATX/MicroATX               |
 | MiniITX           | 170 x 170        | 1 PCIe + 2 RAM       | HTPC, ultracompactos, SFF    | Mini/micro ATX, ITX        |
 | E-ATX             | 305 x 330        | 8 PCIe + 8 RAM       | Workstation, gaming extremo  | Full Tower, E-ATX          |
-| XL-ATX            | Hasta 345 x 262  | 8+ PCIe + 8+ RAM     | Servidor, entusiasta         | Full Tower XL, server rack |
+| XL-ATX            | Hasta 345 x 262  | 8+ PCIe + 8+ RAM     | Servidor         | Full Tower XL, server rack |
 | DTX/Mini-DTX      | 203 x 244/170x203| 2 PCIe + 2 RAM       | SFF, embebidos, industria    | Mini/Micro ATX, DTX        |
 | BTF/Back Connect  | Variable         | Mismas que ATX/ITX   | PC moderno cableado limpio   | Chasis BTF homologados     |
 | CAMM2             | N/A (RAM modular)| —                    | Portátiles premium, SFF      | Cajas y disipadores específicos |
@@ -509,6 +509,7 @@ El **VRM (Voltage Regulator Module, Módulo Regulador de Voltaje)** es un circui
 
 
 ---
+
 
 
 
