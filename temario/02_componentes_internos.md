@@ -84,6 +84,7 @@ El **factor de forma** define las dimensiones físicas, el diseño de los conect
   <img src="../imagen/componentes/16.png" alt="Descripción de la imagen" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
 </div>
 </br>
+
 ---
 
 ## 2.1 Concepto y importancia
@@ -514,6 +515,7 @@ El **VRM (Voltage Regulator Module, Módulo Regulador de Voltaje)** es un circui
 
 
 ---
+
 
 
 
