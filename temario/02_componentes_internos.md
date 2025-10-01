@@ -12,7 +12,7 @@
   - [2.3 Detalle de factores actuales](#23-detalle-de-factores-actuales)
   - [2.4 Tabla comparativa resumida](#24-tabla-comparativa-resumida)
   - [2.5 Recomendaciones](#25-recomendaciones)
-- [3 Chasis o Caja del computador](#3-chasis-o-caja-del-computador)
+- [3 Chasis o Caja del pc](#3-chasis-o-caja-del-pc)
   - [3.1 Partes principales modernas](#31-partes-principales-modernas)
   - [3.2 Factor de Forma y Tipos](#32-factor-de-forma-y-tipos)
   - [3.3 Paneles y cableado moderno](#33-paneles-y-cableado-moderno)
@@ -151,7 +151,7 @@ Usado en OEM y all-in-one, dificultad de actualización e intercambios.
 
 ---
 
-# 3 Chasis o Caja del computador
+# 3 Chasis o Caja del pc
 ## 3.1 Partes principales modernas
 - **Cubierta**: Acero galvanizado, paneles laterales de cristal templado, sistemas magnéticos y modulares.
 - **Panel frontal**: Botones táctiles, displays LCD/AMOLED (monitoreo en tiempo real), puertos USB-C, USB 4.0, salida/entrada audio, pantalla de temperatura y carga.
@@ -509,6 +509,7 @@ El **VRM (Voltage Regulator Module, Módulo Regulador de Voltaje)** es un circui
 
 
 ---
+
 
 
 
