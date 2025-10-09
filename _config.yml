@@ -2,11 +2,7 @@ otitle: Apuntes de Grado Medio
 description: Material docente para Grado Medio
 theme: jekyll-theme-cayman
 
-# Configuración del botón personalizado
-show_downloads: true
-github:
-  zip_url: https://axisalberti.github.io/MontajeSmr/
-  tar_url: false
+
 
 # Motor de renderizado de Markdown
 markdown: kramdown
