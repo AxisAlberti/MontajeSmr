@@ -1,4 +1,3 @@
-# 📚 Mantenimiento y Montaje de Equipos Informáticos
 
 ## TEMA 2. COMPONENTES INTERNOS FUNDAMENTALES
 
@@ -574,6 +573,7 @@ El **VRM (Voltage Regulator Module, Módulo Regulador de Voltaje)** es un circui
 
 
 ---
+
 
 
 
