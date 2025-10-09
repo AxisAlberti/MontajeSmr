@@ -1,11 +1,14 @@
-
-
 <header class="page-header" role="banner">
-  <h1 class="project-name">{{ site.title }}</h1>
-  <h2 class="project-tagline">{{ site.description }}</h2>
+  <h1 class="project-name">{{ page.title | default: site.title }}</h1>
+  {% if page.description %}
+    <h2 class="project-tagline">{{ page.description }}</h2>
+  {% else %}
+    <h2 class="project-tagline">{{ site.description }}</h2>
+  {% endif %}
 
   <!-- ÚNICO BOTÓN PERSONALIZADO -->
-  <a href="https://axisalberti.github.io/MontajeSmr/" class="btn" target="_blank" rel="noopener">
-    Ir al temario
+  <a href="https://axisalberti.github.io/MontajeSmr/" class="btn" target="_self" rel="noopener">
+    Inicio
   </a>
 </header>
+
