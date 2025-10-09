@@ -1,4 +1,5 @@
-  
+## 📚 Mantenimiento y Montaje de Equipos Informáticos
+
 ## Teorema Fundamental de la Numeración, Sistemas de Numeración y Conversiones
 
 > **Resumen:** Estos apuntes abarcan teoría, demostraciones, ejemplos, algoritmos de conversión (enteros y fracciones), representación de negativos (complementos), coma fija y coma flotante (IEEE 754), aritmética en distintas bases, aplicaciones, ejercicios y soluciones. 
