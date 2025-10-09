@@ -115,6 +115,7 @@ El **factor de forma** define las dimensiones físicas, el diseño de los conect
 
 ## 2.2 Factores de forma más utilizados (2025)
 
+
 | Factor de forma   | Dimensiones (mm) | Puestos de expansión | Uso principal                | Compatibilidad chasis      |
 |-------------------|------------------|----------------------|------------------------------|----------------------------|
 | ATX               | 305 x 244        | 7 PCIe + 4–8 RAM     | Gaming, workstation, desktop | Universal                  |
@@ -125,6 +126,7 @@ El **factor de forma** define las dimensiones físicas, el diseño de los conect
 | DTX/Mini-DTX      | 203 x 244/170x203| 2 PCIe + 2 RAM       | SFF, embebidos, industria    | Mini/Micro ATX, DTX        |
 | BTF/Back Connect  | Variable         | Mismas que ATX/ITX   | PC moderno cableado limpio   | Chasis BTF homologados     |
 | CAMM2             | N/A (RAM modular)| —                    | Portátiles premium, SFF      | Cajas y disipadores específicos |
+
 
 ---
 
@@ -572,6 +574,7 @@ El **VRM (Voltage Regulator Module, Módulo Regulador de Voltaje)** es un circui
 
 
 ---
+
 
 
 
