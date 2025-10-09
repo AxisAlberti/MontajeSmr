@@ -1,10 +1,8 @@
 ---
 layout: default
-title: Inicio
+title: 📚 Mantenimiento y Montaje de Equipos Informáticos
 ---
 
-
-## 📚 Mantenimiento y Montaje de Equipos Informáticos
 
 Esta asignatura introduce a los estudiantes en el **mundo del hardware y la infraestructura informática**, enseñando desde la identificación de componentes hasta las técnicas de montaje, mantenimiento y resolución de averías.
 
