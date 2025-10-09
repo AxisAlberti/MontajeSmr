@@ -115,6 +115,7 @@ El **factor de forma** define las dimensiones físicas, el diseño de los conect
 ---
 
 ## 2.2 Factores de forma más utilizados (2025)
+
 | Factor de forma   | Dimensiones (mm) | Puestos de expansión | Uso principal                | Compatibilidad chasis      |
 |-------------------|------------------|----------------------|------------------------------|----------------------------|
 | ATX               | 305 x 244        | 7 PCIe + 4–8 RAM     | Gaming, workstation, desktop | Universal                  |
@@ -567,6 +568,7 @@ El **VRM (Voltage Regulator Module, Módulo Regulador de Voltaje)** es un circui
 
 
 ---
+
 
 
 
