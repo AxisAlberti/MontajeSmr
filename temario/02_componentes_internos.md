@@ -74,6 +74,7 @@ La **placa base** es la plataforma esencial donde se interconectan todos los com
 # 1. Vocabulario Fundamental
 
 # 1 Vocabulario Fundamental
+
 | **Término**         | **Definición**  |
 | **Término** | **Definición** |
 |---------------------|----------------------------------|
@@ -571,6 +572,7 @@ El **VRM (Voltage Regulator Module, Módulo Regulador de Voltaje)** es un circui
 
 
 ---
+
 
 
 
