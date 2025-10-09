@@ -75,7 +75,7 @@ La **placa base** es la plataforma esencial donde se interconectan todos los com
 
 # 1 Vocabulario Fundamental
 
-| **Término**         | **Definición**  |
+
 | **Término** | **Definición** |
 |---------------------|----------------------------------|
 | **Cuello de botella** | Limitación de rendimiento causada porque un componente (CPU, GPU, RAM, SSD) es más rápido que el resto de la cadena y la transmisión de datos se ve frenada; hoy afecta sobre todo a buses y almacenamiento en gaming de alta gama. |
@@ -572,6 +572,7 @@ El **VRM (Voltage Regulator Module, Módulo Regulador de Voltaje)** es un circui
 
 
 ---
+
 
 
 
