@@ -1,17 +1,17 @@
 otitle: Apuntes de Grado Medio
 description: Material docente para Grado Medio
-theme: jekyll-theme-cayman
 
 
+# Forzar uso del tema Cayman compatible con GitHub Pages
+remote_theme: pages-themes/cayman@v0.2.0
+plugins:
+  - jekyll-remote-theme
+
+# Oculta los botones de descarga por defecto del tema
+show_downloads: false
 
 # Motor de renderizado de Markdown
 markdown: kramdown
 kramdown:
   input: GFM
   hard_wrap: false
-
-# Plugins recomendados para compatibilidad con tablas y enlaces relativos
-plugins:
-  - jekyll-relative-links
-  - jekyll-readme-index
-  - jekyll-optional-front-matter
