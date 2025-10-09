@@ -110,9 +110,8 @@ El **factor de forma** define las dimensiones físicas, el diseño de los conect
 ## 2.1 Concepto y importancia
 
 - Un factor de forma es un estándar que dicta cómo se fabrican y disponen las placas base y sus componentes. Su objetivo es garantizar compatibilidad entre placas, torres y demás hardware modular.
-- Afecta a:
-- Número y tipo de ranuras de expansión (PCIe, M.2, RAM).
-@@ -97,471 +65,13 @@ El **factor de forma** define las dimensiones físicas, el diseño de los conect
+- Afecta a: Número y tipo de ranuras de expansión (PCIe, M.2, RAM).
+
 ---
 
 ## 2.2 Factores de forma más utilizados (2025)
@@ -568,6 +567,7 @@ El **VRM (Voltage Regulator Module, Módulo Regulador de Voltaje)** es un circui
 
 
 ---
+
 
 
 
