@@ -157,6 +157,7 @@ Usado en OEM y all-in-one, dificultad de actualización e intercambios.
 ---
 
 ## 2.4 Tabla comparativa resumida
+
 | Nombre     | Expansión Máx. | Dimensiones | Uso                       | Expansibilidad |
 |------------|----------------|-------------|---------------------------|----------------|
 | ATX        | Alta           | 305x244     | Gaming general, workstation| Muy alta        |
@@ -184,6 +185,7 @@ Usado en OEM y all-in-one, dificultad de actualización e intercambios.
 - **Fuente alimentación**: Zona separada, formato ATX 3.0/SFX-L, modulable y con soporte para GPU PCIe 5.0.
 
 ## 3.2 Factor de Forma y Tipos
+
 | Tipo                  | Fit/Expansión        | Ventajas                  | Limitaciones/Contexto                    |
 |-----------------------|----------------------|---------------------------|------------------------------------------|
 | Barebone/MiniPC       | 1–2 slots            | Compacto, bajo consumo    | Sin expansión, solo tareas ligeras       |
@@ -193,6 +195,7 @@ Usado en OEM y all-in-one, dificultad de actualización e intercambios.
 | Servidor/Rack         | Bayas U, redundantes | Eficiencia y redundancia  | Uso profesional, no doméstico            |
 
 ## 3.3 Paneles y cableado moderno
+
 - **Panel trasero:** Salida múltiple para todos los periféricos.
 - **Panel frontal:** Control RGB, pantalla LCD, puertos tipo C/a, quick charge, ranuras para docking SSD hot swap.
 - **Paneles inteligentes:** Chasis actuales integran softwares propios y sensores.
@@ -209,6 +212,7 @@ Usado en OEM y all-in-one, dificultad de actualización e intercambios.
 
 # 4. Conectores
 ## 4.1 Conectores Externos
+
 | Conector        | Uso                    | Detalles técnicos        | Ejemplo de uso          |
 |-----------------|------------------------|------------------------------|-------------------------|
 | **RJ-45**       | Red LAN; Multi-Gig     | Hasta 10 GbE (Cat7/8)        | Conexión de red doméstica o profesional, transmisión 4K/8K |
@@ -336,6 +340,7 @@ Los conectores internos conectan la placa base con todos los componentes crític
   - **Ejemplo:** CPUs de portátiles de bajo consumo, mini PC OEM.
 
 ## 5.2 Principales sockets modernos (2022–2025)
+
 | Plataforma         | Socket     | Tipo | CPUs compatibles                  | Lanzam.  | Observaciones                   |
 |--------------------|------------|------|-----------------------------------|----------|---------------------------------|
 | **Intel Desktop**  | LGA 1200   | LGA  | 10ª/11ª Gen Core (Comet/Rocket)   | 2020     | DDR4, PCIe 3.0/4.0              |
@@ -568,6 +573,7 @@ El **VRM (Voltage Regulator Module, Módulo Regulador de Voltaje)** es un circui
 
 
 ---
+
 
 
 
