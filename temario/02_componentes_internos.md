@@ -99,11 +99,10 @@ La **placa base** es la plataforma esencial donde se interconectan todos los com
 El **factor de forma** define las dimensiones físicas, el diseño de los conectores y la organización interna de la placa base, lo que determina la compatibilidad con chasis, fuentes de alimentación y componentes. Elegir el adecuado afecta la capacidad de expansión, refrigeración, estética y futuro upgrade del sistema.
 
 ---
-</br>
+
 <div style="text-align: center;">
   <img src="../imagen/componentes/16.png" alt="Descripción de la imagen" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
 </div>
-</br>
 
 ---
 
@@ -573,6 +572,7 @@ El **VRM (Voltage Regulator Module, Módulo Regulador de Voltaje)** es un circui
 
 
 ---
+
 
 
 
