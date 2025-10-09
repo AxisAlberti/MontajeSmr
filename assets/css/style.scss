@@ -1,0 +1,91 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* Reducción de márgenes generales */
+.page-header {
+  padding: 2rem 1rem;
+}
+
+.main-content {
+  max-width: 100%;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.main-content h1,
+.main-content h2,
+.main-content h3,
+.main-content h4,
+.main-content h5,
+.main-content h6 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.main-content p {
+  margin-bottom: 0.5rem;
+}
+
+.main-content ul,
+.main-content ol {
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+}
+
+/* Responsive design - Móvil (pantallas pequeñas) */
+@media screen and (max-width: 767px) {
+  .page-header {
+    padding: 1.5rem 0.5rem;
+  }
+  
+  .main-content {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .main-content h1 {
+    font-size: 1.5rem;
+  }
+  
+  .main-content h2 {
+    font-size: 1.3rem;
+  }
+  
+  .main-content h3 {
+    font-size: 1.1rem;
+  }
+}
+
+/* Responsive design - Tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .page-header {
+    padding: 2rem 1.5rem;
+  }
+  
+  .main-content {
+    padding: 1.5rem;
+    max-width: 95%;
+  }
+}
+
+/* Responsive design - Escritorio */
+@media screen and (min-width: 1024px) {
+  .page-header {
+    padding: 3rem 2rem;
+  }
+  
+  .main-content {
+    padding: 2rem;
+    max-width: 90%;
+  }
+}
+
+/* Responsive design - Pantallas grandes */
+@media screen and (min-width: 1440px) {
+  .main-content {
+    max-width: 85%;
+    padding: 2.5rem;
+  }
+}
