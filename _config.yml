@@ -4,9 +4,12 @@ description: Material docente para Grado Medio
 
 # Forzar uso del tema Cayman compatible con GitHub Pages
 remote_theme: pages-themes/cayman@v0.2.0
+
 plugins:
   - jekyll-remote-theme
-
+  - jekyll-relative-links
+  - jekyll-readme-index
+  - jekyll-optional-front-matter
 # Oculta los botones de descarga por defecto del tema
 show_downloads: false
 
@@ -15,3 +18,8 @@ markdown: kramdown
 kramdown:
   input: GFM
   hard_wrap: false
+
+
+
+
+
