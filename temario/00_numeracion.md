@@ -2,9 +2,6 @@
 
 ## Teorema Fundamental de la Numeración, Sistemas de Numeración y Conversiones
 
-> **Resumen:** Estos apuntes abarcan teoría, demostraciones, ejemplos, algoritmos de conversión (enteros y fracciones), representación de negativos (complementos), coma fija y coma flotante (IEEE 754), aritmética en distintas bases, aplicaciones, ejercicios y soluciones. 
-
-
 ## Índice
 1. [Introducción](#1-introducción)  
 2. [Teorema Fundamental de la Numeración (TFN)](#2-teorema-fundamental-de-la-numeración-tfn)  
