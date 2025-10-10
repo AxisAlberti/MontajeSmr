@@ -7,7 +7,7 @@ title: 📚 Mantenimiento y Montaje de Equipos Informáticos
 Esta asignatura introduce a los estudiantes en el **mundo del hardware y la infraestructura informática**, enseñando desde la identificación de componentes hasta las técnicas de montaje, mantenimiento y resolución de averías.
 
 A lo largo del curso aprenderás a:
-- Reconocer y explicar el funcionamiento de los **componentes internos y periféricos** de un computador.  
+- Reconocer y explicar el funcionamiento de los **componentes internos y periféricos** de un pc.  
 - **Montar y configurar equipos** siguiendo estándares de calidad y seguridad.  
 - Aplicar **mantenimiento preventivo, predictivo y correctivo** para prolongar la vida útil de los sistemas.  
 - Usar **herramientas y utilidades de diagnóstico** para clonar discos, realizar copias de seguridad y proteger los sistemas frente a malware.
@@ -34,44 +34,45 @@ A lo largo del curso aprenderás a:
 1. [Tema 1: Introducción](temario/01_introduccion.md)  
    - Vocabulario  
    - Introducción a los sistemas informáticos  
-   - Funcionamiento del computador  
+   - Funcionamiento del pc  
    - Actividades  
 
 2. [Tema 2: Componentes internos fundamentales](temario/02_componentes_internos.md)  
-   - Vocabulario  
-   - Conectores  
-   - Chasis o caja del computador  
-   - La placa base  
-   - El chipset  
-   - Memoria RAM  
-   - Tarjeta gráfica  
-   - Los buses  
-   - El microprocesador  
-   - Tarjetas de expansión  
-   - Actividades  
+     - La placa base  
+     - Vocabulario fundamental  
+     - Factor de forma  
+     - Chasis o caja del pc  
+     - Conectores  
+     - Zócalo del procesador (Socket)  
+     - Chipset  
+     - Memoria RAM y arquitectura multicanal  
+     - Comunicación interna  
+     - VRM (Voltage Regulator Module)  
+     - Gestión térmica  
+     - Instalación y mantenimiento   
 
-3. [Tema 3: Dispositivos de almacenamiento](temario/03_dispositivos_almacenamiento.md)  
+4. [Tema 3: Dispositivos de almacenamiento](temario/03_dispositivos_almacenamiento.md)  
    - Vocabulario  
    - Almacenamiento magnético  
    - Almacenamiento óptico  
    - Almacenamiento electrónico  
    - Actividades  
 
-4. [Tema 4: Periféricos](temario/04_perifericos.md)  
+5. [Tema 4: Periféricos](temario/04_perifericos.md)  
    - Vocabulario  
    - Periféricos de entrada  
    - Periféricos de salida  
    - Periféricos de entrada y salida  
    - Actividades  
 
-5. [Tema 5: Sistemas de alimentación de los computadores](temario/05_alimentacion.md)  
+6. [Tema 5: Sistemas de alimentación de los pc's](temario/05_alimentacion.md)  
    - Vocabulario  
    - Medición de los parámetros eléctricos  
    - Fuente de alimentación  
    - S.A.I. (Sistema de Alimentación Ininterrumpida)  
    - Actividades  
 
-6. [Tema 6: Montaje de computadores](temario/06_montaje_computadores.md)  
+7. [Tema 6: Montaje de pc's](temario/06_montaje_pc's.md)  
    - Vocabulario  
    - Precauciones  
    - Protección ambiental  
@@ -79,7 +80,7 @@ A lo largo del curso aprenderás a:
    - Secuenciado del montaje  
    - Actividades  
 
-7. [Tema 7: Mantenimiento de computadores](temario/07_mantenimiento_computadores.md)  
+8. [Tema 7: Mantenimiento de pc's](temario/07_mantenimiento_pc's.md)  
    - Vocabulario  
    - El BIOS  
    - Mantenimiento general  
@@ -88,7 +89,7 @@ A lo largo del curso aprenderás a:
    - Mantenimiento correctivo  
    - Actividades  
 
-8. [Tema 8: Utilidades para el mantenimiento](temario/08_utilidades_mantenimiento.md)  
+9. [Tema 8: Utilidades para el mantenimiento](temario/08_utilidades_mantenimiento.md)  
    - Vocabulario  
    - Clonación de dispositivos de almacenamiento  
    - Copias de seguridad (respaldo de ficheros)  
@@ -97,7 +98,7 @@ A lo largo del curso aprenderás a:
    - Otras utilidades  
    - Actividades  
 
-9. [Tema 9: Actividad final](temario/09_actividad_final.md)  
+10. [Tema 9: Actividad final](temario/09_actividad_final.md)  
    - Enunciado  
 
 ---
