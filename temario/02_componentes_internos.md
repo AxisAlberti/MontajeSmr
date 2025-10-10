@@ -152,6 +152,25 @@ Además de los principales, existen marcas **OEM** (Original Equipment Manufactu
 
 ---
 
+# 1. Vocabulario Fundamental
+
+| **Término** | **Definición** |
+|--------------|----------------|
+| **Cuello de botella** | Limitación de rendimiento causada porque un componente (CPU, GPU, RAM, SSD) es más rápido que el resto de la cadena y la transmisión de datos se ve frenada; hoy afecta sobre todo a buses y almacenamiento en gaming de alta gama. |
+| **Coma flotante** | Notación para representar números reales con mucha precisión, clave en procesadores y sobre todo en IA moderna y tarjetas gráficas, que ahora realizan trillones de cálculos de coma flotante por segundo. |
+| **Factor de forma** | Estándar físico de placas base y chasis: ATX, MicroATX, MiniITX, y el nuevo BTF (Back To Front) en cableado oculto; las RAM CAMM2 empiezan a desplazar a SO-DIMM en portátiles. |
+| **Fan (ventilador)** | Elemento crítico de refrigeración. Actualmente la mayoría incluyen control digital (PWM), sensores de temperatura y efecto RGB sincronizable. |
+| **FSB (Front Side Bus)** | Bus frontal ya obsoleto, sustituido hoy por buses PCIe, DMI (Intel) o Infinity Fabric (AMD). |
+| **Gigahercio (GHz)** | Unidad de frecuencia. Las CPUs actuales alcanzan más de 5.5 GHz y la RAM DDR5 para gaming puede funcionar a más de 8000 MHz. |
+| **Memoria flash** | Base tecnológica de los SSDs NVMe y UltraRAM, que superan en velocidad a los discos SATA convencionales. |
+| **Nanosegundo (ns)** | Tiempo mínimo de acceso en chips RAM y SSD. En memorias de gama alta se alcanzan valores de 7–12 ns. |
+| **Nanómetro (nm)** | Milmillonésima parte de un metro; hace referencia al proceso de fabricación de chips: las tecnologías de 3 nm y 4 nm dominan en CPUs y GPUs modernas. |
+
+---
+
+*Actualizado — Octubre 2025*
+
+
 # 2. Factor de forma
 
 El **factor de forma** define las dimensiones físicas, el diseño de los conectores y la organización interna de la placa base, lo que determina la compatibilidad con chasis, fuentes de alimentación y componentes. Elegir el adecuado afecta la capacidad de expansión, refrigeración, estética y futuro upgrade del sistema.
@@ -653,3 +672,4 @@ Un control térmico adecuado prolonga la vida útil y evita reducciones automát
 - Revisa compatibilidades: socket, chipset, RAM, disipación, VRMs.
 - Consulta el manual para instalación correcta según socket (alineación pines/marcas, presión justa, configurar BIOS/UEFI tras montaje).
 - Mantén BIOS actualizado para máximo soporte.
+
