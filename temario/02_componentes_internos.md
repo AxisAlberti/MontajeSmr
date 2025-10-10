@@ -3,83 +3,152 @@ layout: default
 title: 📚 Mantenimiento y Montaje de Equipos Informáticos
 ---
 
-## TEMA 2. COMPONENTES INTERNOS FUNDAMENTALES
-
-# Índice
-
 - [0. **Definición y Función General (Placa base)**](#0-definición-y-función-general-placa-base)
-- [1 **Vocabulario Fundamental**](#1-vocabulario-fundamental)
+  - [0.1 **Principales Fabricantes de Placas Base (2025)**](#01-principales-fabricantes-de-placas-base-2025)
+    - [0.1.1 Panorama Actual](#011-panorama-actual)
+    - [0.1.2 Fabricantes Secundarios o OEM](#012-fabricantes-secundarios-oem)
+    - [0.1.3 Innovaciones Recientes (2024–2025)](#013-innovaciones-recientes-20242025)
+    - [0.1.4 Criterios de Selección para Técnicos](#014-criterios-de-selección-para-técnicos)
+- [1. **Vocabulario Fundamental**](#1-vocabulario-fundamental)
 - [2. **Factor de forma**](#2-factor-de-forma)
-  - [2.1 Concepto y importancia](#21-concepto-y-importancia)
+  - [2.1 Concepto e importancia](#21-concepto-e-importancia)
   - [2.2 Factores de forma más utilizados (2025)](#22-factores-de-forma-más-utilizados-2025)
   - [2.3 Detalle de factores actuales](#23-detalle-de-factores-actuales)
   - [2.4 Tabla comparativa resumida](#24-tabla-comparativa-resumida)
   - [2.5 Recomendaciones](#25-recomendaciones)
-- [3 **Chasis o Caja del pc**](#3-chasis-o-caja-del-pc)
+- [3. **Chasis o Caja del PC**](#3-chasis-o-caja-del-pc)
   - [3.1 Partes principales modernas](#31-partes-principales-modernas)
   - [3.2 Factor de Forma y Tipos](#32-factor-de-forma-y-tipos)
   - [3.3 Paneles y cableado moderno](#33-paneles-y-cableado-moderno)
   - [3.4 Consejos prácticos](#34-consejos-prácticos)
 - [4. **Conectores**](#4-conectores)
   - [4.1 Conectores Externos](#41-conectores-externos)
-  - [4.2 Conectores Internos (Desarrollado y Ampliado)](#42-conectores-internos-desarrollado-y-ampliado)
-    - [4.2.1   SATA III (Serial ATA Revisado)\*\*](#421---sata-iii-serial-ata-revisado)
-    - [4.2.2   M.2 (Socket sobre placa base)\*\*](#422---m2-socket-sobre-placa-base)
-    - [4.2.3  PCI Express (PCIe)](#423--pci-express-pcie)
-    - [4.2.4  Conectores de Alimentación internos](#424--conectores-de-alimentación-internos)
-    - [4.2.5 Headers para el panel frontal y periféricos](#425-headers-para-el-panel-frontal-y-periféricos)
+  - [4.2 Conectores Internos](#42-conectores-internos)
+    - [4.2.1 SATA III (Serial ATA Revisado)](#421-sata-iii-serial-ata-revisado)
+    - [4.2.2 M.2 (Socket sobre placa base)](#422-m2-socket-sobre-placa-base)
+    - [4.2.3 PCI Express (PCIe)](#423-pci-express-pcie)
+    - [4.2.4 Conectores de Alimentación Internos](#424-conectores-de-alimentación-internos)
+    - [4.2.5 Headers para panel frontal y periféricos](#425-headers-para-panel-frontal-y-periféricos)
     - [4.2.6 Otros conectores relevantes](#426-otros-conectores-relevantes)
-- [5 **Zócalo del Procesador (Socket)**](#5-zócalo-del-procesador-socket)
-  - [5.1. Tipos de Socket](#51-tipos-de-socket)
+- [5. **Zócalo del Procesador (Socket)**](#5-zócalo-del-procesador-socket)
+  - [5.1 Tipos de Socket](#51-tipos-de-socket)
   - [5.2 Principales sockets modernos (2022–2025)](#52-principales-sockets-modernos-20222025)
-- [6 **Chipset**](#6-chipset)
-- [7 **Ranuras RAM y Arquitectura Multicanal**](#7-ranuras-ram-y-arquitectura-multicanal)
-  - [7.1 Tipos de ranuras y módulos](#71-tipos-de-ranuras-y-módulos)
-  - [7.2 Número de ranuras](#72-número-de-ranuras)
-  - [7.3 Arquitectura de canales (Channel Architecture)](#73-arquitectura-de-canales-channel-architecture)
-  - [7.4 Cómo aprovechar la arquitectura multicanal](#74-cómo-aprovechar-la-arquitectura-multicanal)
-  - [7.5 Ejemplo de configuración óptima para gaming 2025](#75-ejemplo-de-configuración-óptima-para-gaming-2025)
-  - [7.6 Consejos prácticos](#76-consejos-prácticos)
-- [7.6 Consejos prácticos](#76-consejos-prácticos)
+- [6. **Chipset**](#7-chipset)
+[7. **Ranuras RAM y Arquitectura Multicanal**](#8-ranuras-ram-y-arquitectura-multicanal)
+  - [7.1 Tipos de ranuras y módulos](#81-tipos-de-ranuras-y-módulos)
+  - [7.2 Número de ranuras](#82-número-de-ranuras)
+  - [7.3 Arquitectura de canales (Channel Architecture)](#83-arquitectura-de-canales-channel-architecture)
+  - [7.4 Cómo aprovechar la arquitectura multicanal](#84-cómo-aprovechar-la-arquitectura-multicanal)
+  - [7.5 Ejemplo de configuración óptima para gaming 2025](#85-ejemplo-de-configuración-óptima-para-gaming-2025)
+  - [7.6 Consejos prácticos](#86-consejos-prácticos)
+- [8. **Comunicación Interna**](#6-comunicación-interna)
+  - [8.1 Concepto General](#61-concepto-general)
+  - [8.2 Arquitectura Moderna de Comunicación](#62-arquitectura-moderna-de-comunicación)
+  - [8.3 Buses y Enlaces Principales](#63-buses-y-enlaces-principales)
+  - [8.4 Diagrama Funcional Simplificado](#64-diagrama-funcional-simplificado)
+  - [8.5 Consideraciones Técnicas](#65-consideraciones-técnicas)
 - [9. **VRM (Voltage Regulator Module)**](#9-vrm-voltage-regulator-module)
-- [9.1. Concepto y función esencial](#91-concepto-y-función-esencial)
-  - [9.2.  Estructura de un VRM moderno](#92--estructura-de-un-vrm-moderno)
-  - [9.2. Estructura de un VRM moderno](#92-estructura-de-un-vrm-moderno)
-- [9.3. Importancia del VRM en 2025](#93-importancia-del-vrm-en-2025)
-- [9.4. Número de fases y su relevancia](#94-número-de-fases-y-su-relevancia)
-- [9.5. Consejos de usuario y técnico](#95-consejos-de-usuario-y-técnico)
-- [10. **Nuevas tecnologías**](#10-nuevas-tecnologías)
-- [11. **Instalación y mantenimiento**](#11-instalación-y-mantenimiento)
-
+  - [9.1 Concepto y función esencial](#91-concepto-y-función-esencial)
+  - [9.2 Estructura de un VRM moderno](#92-estructura-de-un-vrm-moderno)
+  - [9.3 Importancia del VRM en 2025](#93-importancia-del-vrm-en-2025)
+  - [9.4 Número de fases y su relevancia](#94-número-de-fases-y-su-relevancia)
+  - [9.5 Consejos de usuario y técnico](#95-consejos-de-usuario-y-técnico)
+- [10. **Gestión Térmica**](#10-gestión-térmica)
+  - [10.1 Introducción](#101-introducción)
+  - [10.2 Elementos Clave](#102-elementos-clave)
+  - [10.3 Tecnologías Modernas](#103-tecnologías-modernas)
+  - [10.4 Recomendaciones Prácticas](#104-recomendaciones-prácticas)
+- [11. **Instalación y Mantenimiento**](#11-instalación-y-mantenimiento)
+  - [11.1 Precauciones ESD y manipulación segura](#111-precauciones-esd-y-manipulación-segura)
+  - [11.2 Montaje y desmontaje en banco de pruebas](#112-montaje-y-desmontaje-en-banco-de-pruebas)
+  - [11.3 Limpieza y mantenimiento preventivo](#113-limpieza-y-mantenimiento-preventivo)
+- [12. **Diagnóstico y Resolución de Fallos**](#12-diagnóstico-y-resolución-de-fallos)
+  - [12.1 Códigos POST y pitidos](#121-códigos-post-y-pitidos)
+  - [12.2 LEDs y pantallas de diagnóstico](#122-leds-y-pantallas-de-diagnóstico)
+  - [12.3 Herramientas de comprobación](#123-herramientas-de-comprobación)
+  - [12.4 Fallos comunes y soluciones](#124-fallos-comunes-y-soluciones)
+- [13. **Compatibilidad y Actualizaciones**](#13-compatibilidad-y-actualizaciones)
+  - [13.1 Versiones de BIOS y soporte de CPU](#131-versiones-de-bios-y-soporte-de-cpu)
+  - [13.2 Límites de compatibilidad de memoria](#132-límites-de-compatibilidad-de-memoria)
+  - [13.3 Actualización de chipset y controladores](#133-actualización-de-chipset-y-controladores)
 
 ---
 
 # 0. Definición y Función General (Placa base)
 
-La **placa base** es la plataforma esencial donde se interconectan todos los componentes del ordenador: CPU, RAM, almacenamiento, tarjetas de expansión y periféricos. Determina compatibilidad, escalabilidad, rendimiento y posibilidades de actualización.
+La **placa base** (también conocida como **tarjeta madre** o **motherboard**) es el **componente principal** de cualquier ordenador.  
+Actúa como el **núcleo de interconexión** entre todos los dispositivos del sistema: procesador, memoria RAM, almacenamiento, tarjeta gráfica, periféricos y alimentación eléctrica.
 
 ---
 
-# 1 Vocabulario Fundamental
+La placa base es un **circuito impreso multicapa (PCB)** sobre el que se integran **zocalos, ranuras, puertos y chips** que permiten la comunicación entre los diferentes elementos del sistema informático.
 
+Su diseño y arquitectura determinan:
+- Qué **procesadores** y **memorias** son compatibles.  
+- Qué tipo y número de **conexiones de expansión** (PCIe, M.2, SATA) soporta.  
+- Qué **funciones integradas** (red, audio, gráficos, USB) incorpora.  
+- Cómo se distribuye la **alimentación eléctrica** a cada componente.
 
-| **Término** | **Definición** |
-|---------------------|----------------------------------|
-| **Cuello de botella** | Limitación de rendimiento causada porque un componente (CPU, GPU, RAM, SSD) es más rápido que el resto de la cadena y la transmisión de datos se ve frenada; hoy afecta sobre todo a buses y almacenamiento en gaming de alta gama. |
-| **Coma flotante**    | Notación para representar números reales con mucha precisión, clave en procesadores y sobre todo en IA moderna y tarjetas gráficas, que ahora realizan trillones de cálculos de coma flotante por segundo. |
-| **Factor de forma**  | Estándar físico de placas base y chasis: ATX, MicroATX, MiniITX, y el nuevo BTF (Back To Front) en cableado oculto; las RAM CAMM2 empiezan a desplazar a SO-DIMM en portátiles. |
-| **Coma flotante** | Notación para representar números reales con mucha precisión, clave en procesadores y sobre todo en IA moderna y tarjetas gráficas, que ahora realizan trillones de cálculos de coma flotante por segundo. |
-| **Factor de forma** | Estándar físico de placas base y chasis: ATX, MicroATX, MiniITX, y el nuevo BTF (Back To Front) en cableado oculto; las RAM CAMM2 empiezan a desplazar a SO-DIMM en portátiles. |
-| **Fan (ventilador)** | Elemento crítico de refrigeración. Ahora mayoría incluyen control digital (PWM), sensores de temperatura y efecto RGB sincronizable. |
-| **FSB**              | Bus frontal ya obsoleto, sustituido hoy por buses PCIe, DMI (Intel) o Infinity Fabric (AMD). |
-| **FSB** | Bus frontal ya obsoleto, sustituido hoy por buses PCIe, DMI (Intel) o Infinity Fabric (AMD). |
-| **Gigahercio (GHz)** | Unidad de frecuencia. CPUs actuales alcanzan más de 5.5 GHz. RAM DDR5 para gaming puede correr a 8000+ MHz. |
-| **Memoria flash**    | Base de SSDs NVMe y UltraRAM, que superan en velocidad a discos SATA convencionales. |
-| **Nanosegundo**      | Tiempo mínimo de acceso en chips RAM y SSD. Hoy se dan valores de 7–12 ns en memorias premium. |
-| **Nanómetro**        | Milmillonésima parte de un metro; hace referencia al proceso de fabricación de chips: 3nm y 4nm dominan en CPUs y GPUs actuales. |
-| **Memoria flash** | Base de SSDs NVMe y UltraRAM, que superan en velocidad a discos SATA convencionales. |
-| **Nanosegundo** | Tiempo mínimo de acceso en chips RAM y SSD. Hoy se dan valores de 7–12 ns en memorias premium. |
-| **Nanómetro** | Milmillonésima parte de un metro; hace referencia al proceso de fabricación de chips: 3nm y 4nm dominan en CPUs y GPUs actuales. |
+En términos técnicos, la placa base actúa como una **plataforma de control y comunicación** entre el hardware y el firmware del equipo.
+
+---
+
+El objetivo de la placa base es **coordinar y conectar** todos los componentes para que funcionen de forma conjunta, gestionando:
+
+| Función | Descripción | Componentes implicados |
+|----------|-------------|------------------------|
+| **Interconexión de datos** | Transmisión de información entre CPU, RAM, almacenamiento y periféricos. | Chipset, buses, controladores. |
+| **Distribución eléctrica** | Reparte la energía del suministro (PSU) a cada componente. | VRM, conectores ATX/EPS. |
+| **Comunicación y control** | Gestiona señales, interrupciones y prioridades. | Chipset, BIOS/UEFI. |
+| **Expansión y conectividad** | Permite agregar dispositivos adicionales. | Ranuras PCIe, M.2, USB. |
+| **Sincronización del sistema** | Control de reloj y temporización. | Chipset, generador de reloj. |
+
+---
+# 0.1 Principales Fabricantes de Placas Base (2025)
+
+## 0.1.1 Panorama Actual
+
+El mercado de placas base está dominado por **cuatro grandes fabricantes** que concentran la mayoría de modelos disponibles tanto para procesadores **Intel** como **AMD**:
+
+| Fabricante | País de origen | Gamas destacadas | Características |
+|-------------|----------------|------------------|-----------------|
+| **ASUS** | Taiwán | ROG, TUF, PRIME, PROART | Innovación, calidad y BIOS muy completas |
+| **MSI** | Taiwán | MPG, MAG, MEG | Excelente refrigeración y estabilidad eléctrica |
+| **Gigabyte** | Taiwán | AORUS, ULTRA DURABLE | Relación calidad/precio, durabilidad |
+| **ASRock** | Taiwán | Phantom Gaming, Steel Legend | Buenas opciones en gama media y mini-ITX |
+
+---
+
+## 0.1.2 Fabricantes Secundarios o OEM
+
+Además de los principales, existen marcas **OEM** (Original Equipment Manufacturer) que producen placas para fabricantes de equipos completos:
+
+| Fabricante | Clientes principales | Observaciones |
+|-------------|----------------------|----------------|
+| **Foxconn** | HP, Dell, Apple | Producción a gran escala |
+| **Pegatron** | ASUS, Lenovo | OEM de bajo coste |
+| **Biostar** | Mercado doméstico | Alternativa económica |
+
+---
+
+## 0.1.3 Innovaciones Recientes (2024–2025)
+
+- Soporte **PCIe 5.0 y DDR5** en gamas medias.
+- Placas **con Wi-Fi 7** integrado.
+- **VRM digitales** de 20 fases o más.
+- Implementación de **M.2 25110** (formatos extendidos).
+- Integración de **conectores 12VHPWR (PCIe 5.0)**.
+- Mayor soporte para **BIOS actualizable vía red (Flashback / EZ Flash)**.
+
+---
+
+## 0.1.4 Criterios de Selección para Técnicos
+
+- Compatibilidad con CPU y formato de memoria.
+- Calidad de VRM y refrigeración.
+- Conectividad: número de M.2, USB, PCIe.
+- Facilidad de mantenimiento y actualización de firmware.
+- Disponibilidad de soporte técnico y garantía.
 
 ---
 
@@ -104,7 +173,6 @@ El **factor de forma** define las dimensiones físicas, el diseño de los conect
 
 ## 2.2 Factores de forma más utilizados (2025)
 
-
 | Factor de forma   | Dimensiones (mm) | Puestos de expansión | Uso principal                | Compatibilidad chasis      |
 |-------------------|------------------|----------------------|------------------------------|----------------------------|
 | ATX               | 305 x 244        | 7 PCIe + 4–8 RAM     | Gaming, workstation, desktop | Universal                  |
@@ -116,32 +184,31 @@ El **factor de forma** define las dimensiones físicas, el diseño de los conect
 | BTF/Back Connect  | Variable         | Mismas que ATX/ITX   | PC moderno cableado limpio   | Chasis BTF homologados     |
 | CAMM2             | N/A (RAM modular)| —                    | Portátiles premium, SFF      | Cajas y disipadores específicos |
 
-
 ---
 
 ## 2.3 Detalle de factores actuales
-**ATX:**  
+**ATX:**
 El estándar dominante: admite sistemas exigentes de gaming y trabajo, multiGPU, muchas unidades M.2/SATA y RAM. Excelente ventilación.
 
-**MicroATX:**  
+**MicroATX:**
 Más compacto, ideal para equipos medios y oficinas; se puede instalar en cajas ATX. Permite menos expansión pero suficiente para la mayoría de usuarios.
 
-**MiniITX:**  
+**MiniITX:**
 El más pequeño en desktop. Ideal en builds minimalistas, HTPC y setups compactos. Limitación clara de expansión y refrigeración.
 
-**E-ATX / XL-ATX:**  
+**E-ATX / XL-ATX:**
 Formato grande: más ranuras y espacio para refrigeración extrema, ideal para workstations, creadores, servidores domésticos.
 
-**DTX / MiniDTX / NanoITX / PicoITX:**  
+**DTX / MiniDTX / NanoITX / PicoITX:**
 Formatos industriales y embebidos. Usados en IoT, robótica, aplicaciones custom. Limitación absoluta de expansión.
 
-**BTF/Back Connect:**  
+**BTF/Back Connect:**
 Concepto moderno donde el cableado va oculto en el reverso de la placa, facilitando airflow, limpieza visual y builds “premium”.
 
-**CAMM2:**  
+**CAMM2:**
 Solo para portátiles premium y workstations compactas. Permite módulos de RAM plug&play, máxima densidad y fácil instalación.
 
-**Formato propietario:**  
+**Formato propietario:**
 Usado en OEM y all-in-one, dificultad de actualización e intercambios.
 
 ---
@@ -164,6 +231,8 @@ Usado en OEM y all-in-one, dificultad de actualización e intercambios.
 - Para oficinas o PCs compactos: MicroATX o MiniITX.
 - Para portátiles o máquinas plug&play: verifica compatibilidad CAMM2 para upgrades futuros.
 - Evita formatos propietarios salvo equipos OEM o necesidades muy específicas.
+
+---
 
 ---
 
@@ -197,6 +266,8 @@ Usado en OEM y all-in-one, dificultad de actualización e intercambios.
 - **Airflow** primero: elige chasis con múltiples entradas/salidas de aire y zonas amplias para radiadores.
 - **Compatibilidad**: Antes de comprar/montar, comprueba soportes de GPU largas, PSU potentes, y placas con headers modernizados.
 - **RGB y monitoreo**: Aprovecha headers y software de placas/cajas modernas para crear un PC funcional y visualmente atractivo, además de seguro.
+
+---
 
 ---
 
@@ -252,7 +323,7 @@ Los conectores internos conectan la placa base con todos los componentes crític
 - **Usos**: SSD ultrarrápidos, Wi-Fi 7, Bluetooth 5.3, aceleradoras compactas.
 
   ---
-  
+
 <div style="text-align: center;">
   <img src="../imagen/componentes/8.png" alt="Descripción de la imagen" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
 </div>
@@ -268,7 +339,7 @@ Los conectores internos conectan la placa base con todos los componentes crític
 - **Usos actuales**: Gráficas RTX/RADEON, NVMe para IA, redes 10GbE+, tarjetas streaming.
 
   ---
-  
+
 <div style="text-align: center;">
   <img src="../imagen/componentes/17.png" alt="Descripción de la imagen" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
 </div>
@@ -277,12 +348,9 @@ Los conectores internos conectan la placa base con todos los componentes crític
 
 ### 4.2.4  Conectores de Alimentación internos
 
-
 - **ATX 24 pines**: Alimenta la placa base completa.
 - **EPS 4+4/8+8 pines**: Alimentación adicional directa para CPU multinúcleo/alto consumo.
 
-
-  
 - **PCIe 6/8/12 pines (12VHPWR)**: Power para GPUs PCIe 5.0 y superiores (soportan hasta 600W).
 - **SATA Power**: Discos, ventiladores especiales, accesorios modernos.
 - **Molex**: Ya solo para relés y algunos ventiladores más antiguos o retroiluminación LED clásica.
@@ -300,10 +368,9 @@ Los conectores internos conectan la placa base con todos los componentes crític
 - **TPM header**: Seguridad por hardware profesional.
 - **Clear CMOS/BIOS Flashback**: Reajuste rápido del firmware de la placa (útil en overclocking o recuperaciones extremas).
 
-
-
 ---
 
+---
 
 # 5 **Zócalo del Procesador (Socket)**
 **El socket es el tipo de conector eléctrico y mecánico donde se instala el procesador. Existen diferentes tecnologías y formatos:**
@@ -342,12 +409,15 @@ Los conectores internos conectan la placa base con todos los componentes crític
 |                    | sWRX8      | LGA  | Threadripper Pro 3000WX/5000WX    | 2020-24  | Workstation extremo             |
 | **Otros**          | BGA        | BGA  | CPUs soldadas portátiles/tablets   | Variable | No actualizable ni reparable    |
 
+---
 
 ---
 
 # 6 **Chipset**
 - Controla buses, puertos y funciones base.
 - Ejemplos: Intel Z890 (gaming/altas prestaciones), AMD X870/B650 (gaming/creator), ambos con Wi-Fi 7 y USB4 nativos.
+
+---
 
 # 7 Ranuras RAM y Arquitectura Multicanal
 La **memoria RAM** (Random Access Memory) se instala en ranuras específicas de la placa base y juega un papel decisivo en el rendimiento, la capacidad multitarea y la velocidad general del sistema. En 2025, los tipos y arquitectura de memoria han experimentado avances notables para responder a las crecientes exigencias de software, gaming, IA y servicios profesionales.
@@ -402,7 +472,7 @@ La **arquitectura de canales** define cuántos caminos paralelos existen entre l
 ---
 
 ## 7.5 Ejemplo de configuración óptima para gaming 2025
-- **Placa ATX DDR5 con 4 ranuras:**  
+- **Placa ATX DDR5 con 4 ranuras:**
   - Instala 2x16GB DDR5-7200 (Dual Channel) para gaming de alto nivel.
   - Para edición/creación: 4x16GB o 4x32GB (Quad Channel) si la placa soporta.
 
@@ -412,6 +482,72 @@ La **arquitectura de canales** define cuántos caminos paralelos existen entre l
 - DDR5 ahora soporta perfiles **XMP 3.0** (Intel) y **EXPO** (AMD) para configurar automáticamente la máxima frecuencia compatible.
 - Workstations usan memoria **ECC Registered** para evitar errores y dar máxima fiabilidad.
 - Las nuevas placas base pueden mostrar gráficamente en BIOS la arquitectura de canal activa y sugerir la mejor configuración.
+
+---
+
+---
+
+# 8. Comunicación Interna
+
+## 8.1 Concepto General
+
+La **comunicación interna** de una placa base se refiere al conjunto de **buses, interfaces y enlaces** que permiten la **transferencia de datos, direcciones y señales de control** entre los distintos componentes: CPU, memoria, chipset, GPU, almacenamiento y periféricos.
+
+Su eficiencia determina directamente el **rendimiento global del sistema**.
+
+---
+
+## 8.2 Arquitectura Moderna de Comunicación
+
+En las placas base actuales, especialmente desde las arquitecturas **Intel Core** y **AMD Ryzen**, la comunicación interna se estructura en torno a:
+
+- **CPU (Unidad Central de Procesamiento)**
+  Es el centro del sistema; integra el controlador de memoria y la mayoría de las líneas **PCI Express**.
+
+- **Chipset (PCH / Southbridge moderno)**
+  Gestiona la comunicación con periféricos de menor velocidad: USB, SATA, LAN, Audio, etc.
+  En la actualidad se conecta con la CPU mediante un **enlace DMI** (Intel) o **Infinity Fabric** (AMD).
+
+---
+
+## 8.3 Buses y Enlaces Principales
+
+| Bus / Enlace | Fabricante / Arquitectura | Función Principal | Ancho de Banda Aprox. |
+|---------------|---------------------------|-------------------|------------------------|
+| **FSB (Front Side Bus)** | Intel (antiguo) | Comunicación CPU ↔ Northbridge | 1–6 GB/s |
+| **QPI (Quick Path Interconnect)** | Intel (Xeon, i7 antiguos) | Sustituto del FSB | 25.6 GB/s |
+| **DMI 3.0 / 4.0** | Intel moderno | CPU ↔ Chipset (PCH) | 3.93–7.86 GB/s |
+| **Infinity Fabric** | AMD Ryzen / EPYC | CPU ↔ Chipset / CCX | Escalable, 18–64 GB/s |
+| **PCI Express (PCIe 4.0 / 5.0 / 6.0)** | Estándar PCI-SIG | GPU, SSD NVMe, expansión | 16–128 GB/s |
+| **DDR4 / DDR5 Bus** | JEDEC | CPU ↔ Memoria RAM | 25–60 GB/s por canal |
+
+---
+
+## 8.4 Diagrama Funcional Simplificado
+
+```plaintext
++--------------------+       +----------------------+
+|       CPU          |<----->|     Chipset (PCH)    |
+| (PCIe + Memory Ctrl)| DMI  | (USB, SATA, LAN...)  |
++---------^----------+       +----------^-----------+
+          |                             |
+          | DDR4/DDR5 Channels          | Periféricos
+          |                             v
+     +----+----+                   +----------+
+     |  RAM    |                   |  USB/LAN |
+     +---------+                   +----------+
+```
+
+---
+
+## 8.5 Consideraciones Técnicas
+
+- La **latencia** del bus de memoria influye en el rendimiento global.
+- El número de **líneas PCIe (lanes)** disponibles depende del procesador.
+- En equipos de gama alta, la comunicación interna se optimiza mediante **buses dedicados** (por ejemplo, PCIe 5.0 exclusivo para GPU y NVMe).
+- La eficiencia térmica y eléctrica del bus afecta la **estabilidad del sistema**.
+
+---
 
 ---
 
@@ -463,22 +599,53 @@ El **VRM (Voltage Regulator Module, Módulo Regulador de Voltaje)** es un circui
 
 ---
 
-
-
 ## 9.5. Consejos de usuario y técnico
 - Prioriza placas con VRMs de calidad si planeas usar CPUs de gama alta o hacer overclocking.
 - Monta disipadores sobre el VRM y verifica airflow en chasis gaming/workstation.
 - Consulta la monitorización en todo momento, especialmente en equipos exigentes o de larga duración en cargas.
 
-
-
+---
 
 ---
 
-# 10. Nuevas tecnologías
-- Wi-Fi 7/Bluetooth 5.3 integrados.
-- USB4, PCIe 5.0/6.0 y M.2 Gen5 extendidos.
-- AI dashboads, opciones overclock y refrigeración avanzadas automatizadas.
+# 10. Gestión Térmica
+
+## 10.1 Introducción
+
+La **gestión térmica** en una placa base consiste en el conjunto de **tecnologías, sensores y componentes** diseñados para mantener las **temperaturas óptimas** de trabajo de la CPU, VRM, chipset y unidades M.2.
+
+Un control térmico adecuado prolonga la vida útil y evita reducciones automáticas de rendimiento (**thermal throttling**).
+
+---
+
+## 10.2 Elementos Clave
+
+| Elemento | Función | Observaciones |
+|-----------|----------|---------------|
+| **Disipadores pasivos (heatsinks)** | Absorben y disipan calor del VRM, chipset o M.2 | Usan aluminio o cobre |
+| **Ventiladores (fans)** | Generan flujo de aire sobre zonas críticas | Controlados por PWM |
+| **Sensores térmicos (TMPIN, VRM, CPU, MOS)** | Miden temperatura en tiempo real | Integrados en el PCB |
+| **Control por BIOS / UEFI** | Define curvas de ventilador y límites | Smart Fan, Q-Fan, etc. |
+
+---
+
+## 10.3 Tecnologías Modernas
+
+- **Fan Curve Control**: permite definir curvas de velocidad del ventilador en función de la temperatura.
+- **Zero RPM Mode**: los ventiladores se detienen completamente cuando el sistema está en reposo.
+- **Thermal Armor / Shields**: cubiertas metálicas sobre VRM o M.2 que disipan y protegen del polvo.
+- **Heatpipes y cámaras de vapor**: presentes en placas de gama alta para distribuir el calor uniformemente.
+
+---
+
+## 10.4 Recomendaciones Prácticas
+
+- Evitar obstrucciones de flujo de aire en el interior del chasis.
+- Comprobar que el disipador esté correctamente asentado sobre el chipset o el VRM.
+- Usar **pasta térmica de calidad** y renovar cada 2–3 años.
+- Supervisar temperaturas con herramientas como **HWMonitor**, **AIDA64** o desde la **UEFI**.
+
+---
 
 ---
 
@@ -486,40 +653,3 @@ El **VRM (Voltage Regulator Module, Módulo Regulador de Voltaje)** es un circui
 - Revisa compatibilidades: socket, chipset, RAM, disipación, VRMs.
 - Consulta el manual para instalación correcta según socket (alineación pines/marcas, presión justa, configurar BIOS/UEFI tras montaje).
 - Mantén BIOS actualizado para máximo soporte.
-
-
-
-
-
----
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
