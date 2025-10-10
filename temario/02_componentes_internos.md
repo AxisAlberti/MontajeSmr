@@ -373,7 +373,7 @@ Los conectores internos conectan la placa base con todos los componentes crític
 
 <div style="display: flex; justify-content: center; gap: 10px;">
   <img src="../imagen/componentes/18.png" alt="Imagen 1" width="45%">
-  <img src="../imagen/componentes/20.png" alt="Imagen 2" width="45%">
+  <img src="../imagen/componentes/20.png" alt="Imagen 2" width="45%; height: auto;">
 </div>
 
 ---
@@ -815,6 +815,7 @@ Una buena práctica de instalación y mantenimiento garantiza:
 El técnico debe aplicar siempre **protocolos ESD**, realizar **pruebas en banco** antes de ensamblar y establecer un **plan de mantenimiento periódico** adaptado al entorno.
 
 ---
+
 
 
 
