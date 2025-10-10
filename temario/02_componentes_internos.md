@@ -369,6 +369,14 @@ Los conectores internos conectan la placa base con todos los componentes crític
 - **ATX 24 pines**: Alimenta la placa base completa.
 - **EPS 4+4/8+8 pines**: Alimentación adicional directa para CPU multinúcleo/alto consumo.
 
+---
+<div style="display: flex; justify-content: center; gap: 10px;">
+  <img src="../imagen/componentes/18.png" alt="Imagen 1" width="45%">
+  <img src="../imagen/componentes/19.png" alt="Imagen 2" width="45%">
+</div>
+---
+
+
 - **PCIe 6/8/12 pines (12VHPWR)**: Power para GPUs PCIe 5.0 y superiores (soportan hasta 600W).
 - **SATA Power**: Discos, ventiladores especiales, accesorios modernos.
 - **Molex**: Ya solo para relés y algunos ventiladores más antiguos o retroiluminación LED clásica.
@@ -800,5 +808,6 @@ Una buena práctica de instalación y mantenimiento garantiza:
 El técnico debe aplicar siempre **protocolos ESD**, realizar **pruebas en banco** antes de ensamblar y establecer un **plan de mantenimiento periódico** adaptado al entorno.
 
 ---
+
 
 
