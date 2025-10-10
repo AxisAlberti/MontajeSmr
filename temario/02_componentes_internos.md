@@ -429,76 +429,6 @@ La **arquitectura de canales** define cuántos caminos paralelos existen entre l
 
 ---
 
-
-# 8. Slots de expansión
-Los **slots de expansión** permiten añadir tarjetas que amplían o mejoran las capacidades del PC, como potencia gráfica, almacenamiento ultrarrápido, redes profesionales, sonido, IA y mucho más. En 2025, existen dos estándares fundamentales: **PCI Express (PCIe)** y **M.2**.
-
----
-
-## 8.1 El Bus PCI Express (PCIe): Funcionamiento y Estructura
-El **PCI Express (PCIe)** es el bus de expansión predominante en informática moderna. Es una evolución del bus PCI tradicional, diseñada para ofrecer **mayor velocidad, flexibilidad y modularidad**. A diferencia de los antiguos buses paralelos, **PCIe es un bus serie punto a punto**: cada dispositivo conectado dispone de una conexión dedicada con el chipset/plataforma, lo que elimina cuellos de botella por compartir el bus entre varios dispositivos.
-
-### 8.1.1 **Estructura y concepto de “líneas” (lanes):**
-
-- Una “línea” o **lane** PCIe está compuesta por dos pares de cables: uno para transmitir datos y otro para recibirlos (**full duplex**).
-- Cada lane transmite datos de forma serie y bidireccional simultáneamente.
-- Los slots PCIe pueden tener 1, 2, 4, 8, 16 o hasta 32 líneas físicas (x1, x2, x4, x8, x16, x32).
-- El **ancho del slot** (x1, x4, x8, x16) indica cuántos pares de líneas utiliza y, por tanto, su **ancho de banda**.
-
-### 8.1.2 **Ventajas técnicas de PCIe:**
-- Cada dispositivo tiene su propio canal y no comparte carriles con otros (sin arbitraje).
-- El protocolo negocia dinámicamente la velocidad máxima soportada entre el dispositivo y la placa base, permitiendo backward y forward compatibility.
-- Muy baja latencia y alta escalabilidad: el mismo bus soporta desde tarjetas sencillas hasta aceleradoras IA complejas.
-
-### 8.1.3 **Versiones PCIe y ancho de banda por línea:**
-
-| Versión PCIe | Ancho de banda por lane | Capacidad x16 (máx)      |
-|--------------|------------------------|--------------------------|
-| PCIe 3.0     | 1 GB/s                  | 16 GB/s                  |
-| PCIe 4.0     | 2 GB/s                  | 32 GB/s                  |
-| PCIe 5.0     | 4 GB/s                  | 64 GB/s                  |
-| PCIe 6.0     | 8 GB/s                  | 128 GB/s                 |
-
-### 8.1.4 **Cómo afecta al usuario:**
-- Una GPU moderna instalada en un slot PCIe 5.0 x16 puede acceder hasta 64 GB/s, lo que garantiza fluidez en render 4K/8K, juegos extremos y cargas IA.
-- Un SSD NVMe instalado en M.2 PCIe 5.0 x4 tiene acceso dedicado a 16 GB/s, decenas de veces más que un SSD SATA tradicional.
-
----
-
-### 8.1.5 Tipos físicos de slots y ejemplos de uso
-- **x1:** Tarjetas de red, sonido, puertos USB extra.
-- **x4:** SSD NVMe tipo adaptador, capturadoras, tarjetas streaming.
-- **x8:** GPU secundarias, tarjetas RAID, doble ancho de banda para profesionales.
-- **x16:** GPU principal, aceleradoras IA, tarjetas de renderizado profesional.
-
----
-
-## 8.2 M.2
-El estándar **M.2** evoluciona el concepto de expansión compacta para almacenamiento, comunicaciones y nuevas tecnologías:
-
-- Ranuras directas sobre la placa base.
-- Protocolos PCIe (x4/x5, hasta 16 GB/s en Gen5), NVMe, SATA.
-- Versiones Key M (almacenamiento), Key E (Wi-Fi/Bluetooth), Key B (4G/5G).
-- Físicamente más cortas/mínimas que PCIe convencionales: ideales en portátiles y desktop premium.
-
----
-
-### 8.2.1 Ejemplo de configuración
-En un equipo avanzado (gaming/workstation):
-- **PCIe x16 Gen5:** GPU dedicada última generación.
-- **M.2 Gen5:** SSD NVMe ultrarrápido.
-- **PCIe x4/x1:** Red 10G o Wi-Fi 7, tarjetas de sonido, capturadoras 4K/8K.
-
----
-
-### 8.2.2 Consejos técnicos y consideraciones
-- Prioriza instalar dispositivos exigentes (GPU, SSD Gen5) en slots con mayor cantidad de líneas y versión más alta.
-- Revisa el manual de la placa: algunos slots comparten líneas eléctricas (por ejemplo, usar un M.2 puede deshabilitar un PCIe x4 según la arquitectura interna).
-- En sistemas BTF o back connect, la orientación de los slots facilita mejor flujo de aire y cableado invisible, aprovechando al máximo el potencial del bus PCIe.
-
----
-
-
 # 9. VRM (Voltage Regulator Module)
 El **VRM (Voltage Regulator Module, Módulo Regulador de Voltaje)** es un circuito fundamental en todas las placas base y tarjetas gráficas modernas. Su función principal es convertir y estabilizar la tensión de entrada (proveniente de la fuente de alimentación) a los valores precisos que requieren el procesador (CPU), la memoria (RAM) y otros chips sensibles del sistema.
 
@@ -576,6 +506,7 @@ El **VRM (Voltage Regulator Module, Módulo Regulador de Voltaje)** es un circui
 
 
 ---
+
 
 
 
