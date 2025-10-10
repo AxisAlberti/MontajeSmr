@@ -228,8 +228,6 @@ Usado en OEM y all-in-one, dificultad de actualización e intercambios.
 | **TOSLINK**     | Audio óptico           | Multicanal sin ruido         | Cine en casa, audio digital puro                          |
 | **Thunderbolt 4**| Datos/vídeo/energía   | 40 Gbps, hasta 240W de carga | Docking, monitores, red ultra rápida                      |
 
-*Nota*: Los conectores BTF (Back To Front) ahora se sitúan tras la placa base para mejor gestión de cables y refrigeración.
-
 ---
 
 <div style="text-align: center;">
@@ -237,7 +235,6 @@ Usado en OEM y all-in-one, dificultad de actualización e intercambios.
 </div>
 
 ---
-
 
 ## 4.2 Conectores Internos (Desarrollado y Ampliado)
 Los conectores internos conectan la placa base con todos los componentes críticos: almacenamiento, gráficos, alimentación y paneles del chasis. Son clave tanto en rendimiento como en facilidad de mantenimiento y actualización.
@@ -578,6 +575,7 @@ El **VRM (Voltage Regulator Module, Módulo Regulador de Voltaje)** es un circui
 
 
 ---
+
 
 
 
