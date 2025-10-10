@@ -535,6 +535,7 @@ El **VRM (Voltage Regulator Module, Módulo Regulador de Voltaje)** es un circui
 ---
 
 ## 9.4. Número de fases y su relevancia
+
 | Uso y demanda         | Fases VRM recom. | Ejemplo real             |
 |---------------------- |------------------|--------------------------|
 | Ofimática/Básico      | 6–8              | Placa ATX económica      |
@@ -575,6 +576,7 @@ El **VRM (Voltage Regulator Module, Módulo Regulador de Voltaje)** es un circui
 
 
 ---
+
 
 
 
