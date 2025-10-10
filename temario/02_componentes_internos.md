@@ -168,8 +168,6 @@ Además de los principales, existen marcas **OEM** (Original Equipment Manufactu
 
 ---
 
-*Actualizado — Octubre 2025*
-
 
 # 2. Factor de forma
 
@@ -672,4 +670,5 @@ Un control térmico adecuado prolonga la vida útil y evita reducciones automát
 - Revisa compatibilidades: socket, chipset, RAM, disipación, VRMs.
 - Consulta el manual para instalación correcta según socket (alineación pines/marcas, presión justa, configurar BIOS/UEFI tras montaje).
 - Mantén BIOS actualizado para máximo soporte.
+
 
