@@ -62,15 +62,6 @@ title: 📚 Mantenimiento y Montaje de Equipos Informáticos
   - [11.1 Precauciones ESD y manipulación segura](#111-precauciones-esd-y-manipulación-segura)
   - [11.2 Montaje y desmontaje en banco de pruebas](#112-montaje-y-desmontaje-en-banco-de-pruebas)
   - [11.3 Limpieza y mantenimiento preventivo](#113-limpieza-y-mantenimiento-preventivo)
-- [12. **Diagnóstico y Resolución de Fallos**](#12-diagnóstico-y-resolución-de-fallos)
-  - [12.1 Códigos POST y pitidos](#121-códigos-post-y-pitidos)
-  - [12.2 LEDs y pantallas de diagnóstico](#122-leds-y-pantallas-de-diagnóstico)
-  - [12.3 Herramientas de comprobación](#123-herramientas-de-comprobación)
-  - [12.4 Fallos comunes y soluciones](#124-fallos-comunes-y-soluciones)
-- [13. **Compatibilidad y Actualizaciones**](#13-compatibilidad-y-actualizaciones)
-  - [13.1 Versiones de BIOS y soporte de CPU](#131-versiones-de-bios-y-soporte-de-cpu)
-  - [13.2 Límites de compatibilidad de memoria](#132-límites-de-compatibilidad-de-memoria)
-  - [13.3 Actualización de chipset y controladores](#133-actualización-de-chipset-y-controladores)
 
 ---
 
@@ -684,8 +675,130 @@ Un control térmico adecuado prolonga la vida útil y evita reducciones automát
 
 ---
 
-# 11. Instalación y mantenimiento
+# 11. Instalación y Mantenimiento
+
+El proceso de **instalación y mantenimiento** de una placa base y sus componentes asociados es una de las fases más importantes en la vida útil de un equipo informático.  
+Un montaje correcto garantiza **rendimiento, estabilidad y durabilidad**, mientras que una manipulación inadecuada puede causar **averías irreparables** por descarga electrostática, sobrecalentamiento o mala conexión.
 
 - Revisa compatibilidades: socket, chipset, RAM, disipación, VRMs.
 - Consulta el manual para instalación correcta según socket (alineación pines/marcas, presión justa, configurar BIOS/UEFI tras montaje).
 - Mantén BIOS actualizado para máximo soporte.
+  
+---
+
+## 11.1 Precauciones ESD y manipulación segura
+
+Las **ESD (Electrostatic Discharge)** o **descargas electrostáticas** son corrientes eléctricas de baja intensidad pero alto voltaje que se producen por la acumulación de carga en el cuerpo humano o en los objetos.  
+Estas descargas pueden **dañar instantáneamente los chips electrónicos**, incluso sin ser perceptibles al tacto.
+
+### Recomendaciones generales:
+
+- **Usar pulsera antiestática** conectada a una superficie metálica o a tierra.  
+- **Evitar alfombras, ropa sintética o zapatos aislantes** durante el montaje.  
+- **Descargar la electricidad corporal** tocando una superficie metálica antes de manipular los componentes.  
+- **Manipular la placa base y los módulos por los bordes**, nunca por las zonas de contacto o chips.  
+- **Trabajar sobre una superficie limpia, seca y no conductora** (tapete antiestático o mesa de madera).  
+- Mantener **las bolsas ESD originales** de los componentes hasta el momento de instalarlos.
+
+### Causas comunes de daño ESD:
+
+- Rozar tejidos sintéticos mientras se montan componentes.  
+- Conectar cables con el equipo encendido.  
+- Dejar módulos de RAM o CPU sin su protección conductora.  
+
+**Recuerda:** una sola descarga estática de unos 100 V (imperceptible al tacto) puede destruir un microchip que opera a 1,2 V.
+
+---
+
+## 11.2 Montaje y desmontaje en banco de pruebas
+
+El **banco de pruebas** (o “test bench”) es un entorno seguro que permite **ensamblar y verificar componentes fuera del chasis** antes del montaje final.  
+Es la forma más eficiente de comprobar la compatibilidad y el correcto funcionamiento del hardware.
+
+### Fases del montaje:
+
+1. **Preparación del banco**
+   - Coloca la placa base sobre una superficie aislante o sobre su caja (nunca directamente sobre metal).
+   - Ten a mano: CPU, disipador, RAM, fuente ATX y cable HDMI o DisplayPort.
+
+2. **Instalación del procesador**
+   - Levanta el pestillo del socket y **alinea el triángulo de la CPU** con el del zócalo.
+   - Coloca la CPU sin aplicar fuerza y baja el mecanismo de retención.
+
+3. **Colocación del disipador**
+   - Aplica una pequeña cantidad de **pasta térmica (del tamaño de un grano de arroz)**.
+   - Asegura el disipador firmemente sin exceder el par de apriete.
+
+4. **Instalación de la RAM**
+   - Inserta los módulos **en los bancos alternos** si la placa soporta doble canal.
+   - Asegúrate de que las pestañas laterales encajen correctamente.
+
+5. **Conexión de alimentación**
+   - Conecta el cable **ATX 24 pines** y el conector **EPS 8 pines** (CPU Power).
+   - Añade temporalmente un botón de encendido o **puentea los pines POWER_SW**.
+
+6. **Verificación inicial**
+   - Conecta monitor y teclado.
+   - Enciende y comprueba el **POST** (Power-On Self Test).
+   - Si hay error, revisa: RAM, CPU o cableado del panel frontal.
+
+### Desmontaje seguro:
+
+- Desconecta la fuente de alimentación y **espera 30 segundos** antes de retirar cables.
+- Retira primero GPU y RAM, luego CPU y disipador.
+- Limpia y guarda los componentes en sus bolsas o cajas originales.
+
+**Objetivo del banco de pruebas:** garantizar que **todos los componentes funcionan antes de montarlos dentro del chasis**.
+
+---
+
+## 11.3 Limpieza y mantenimiento preventivo
+
+El mantenimiento periódico evita fallos prematuros y mejora la eficiencia térmica y eléctrica del sistema.  
+Una placa base limpia y bien refrigerada mantiene su rendimiento óptimo durante más años.
+
+### Tipos de mantenimiento:
+
+#### 1. Limpieza física
+
+- **Frecuencia:** cada 6 a 12 meses, según el entorno (más frecuente en zonas con polvo o humedad).  
+- **Materiales recomendados:**
+  - Aire comprimido o soplador antiestático.
+  - Brochas suaves antiestáticas.
+  - Alcohol isopropílico (≥90%) para contactos o restos de pasta térmica.  
+- **Procedimiento:**
+  - Desconecta la corriente y extrae los componentes.
+  - Sopla el polvo de ventiladores, ranuras y disipadores.
+  - Limpia suavemente los contactos con alcohol isopropílico y deja secar antes de montar.
+
+#### 2. Mantenimiento térmico
+
+- Sustituye la **pasta térmica del procesador** cada 2 años o si la temperatura supera los 85 °C.  
+- Revisa el **estado de los ventiladores y sensores PWM**.  
+- Comprueba que los **disipadores M.2 y VRM** estén bien fijados.
+
+#### 3. Actualización y verificación
+
+- Revisa el estado del **chipset, condensadores y VRM** visualmente (busca hinchazones o fugas).  
+- Actualiza firmware y controladores desde fuentes oficiales.  
+- Reemplaza cables dañados o doblados (especialmente SATA o EPS).
+
+### Recomendaciones generales:
+- Mantén una **temperatura ambiente entre 20 y 25 °C** en la zona de trabajo.  
+- Evita acumular polvo con filtros antipolvo y flujo de aire positivo.  
+- Documenta las **intervenciones realizadas** (fecha, componentes y observaciones).
+
+---
+
+### Conclusión
+
+Una buena práctica de instalación y mantenimiento garantiza:
+- **Menor tasa de fallos.**  
+- **Mayor vida útil de los equipos.**  
+- **Reducción de incidencias en entornos profesionales o educativos.**
+
+El técnico debe aplicar siempre **protocolos ESD**, realizar **pruebas en banco** antes de ensamblar y establecer un **plan de mantenimiento periódico** adaptado al entorno.
+
+---
+
+
