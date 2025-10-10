@@ -392,6 +392,15 @@ Los conectores internos conectan la placa base con todos los componentes crític
 ### 4.2.5 Headers para el panel frontal y periféricos
 
 - **Front Panel Header (PWR_SW, RESET, LEDs, Speaker)**: Manejo del encendido, reseteo y diagnóstico acústico.
+
+  ---
+
+<div style="display: flex; justify-content: center; gap: 10px;">
+  <img src="../imagen/componentes/21.png" alt="Imagen 1" width="45%">
+  <img src="../imagen/componentes/22.png" alt="Imagen 2" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+</div>
+
+---
 - **USB 2.0/3.x/4 Headers**: Permiten que el frontal o parte superior del chasis tenga puertos modernos.
 - **HD Audio Header**: Conexión directa a placa para auriculares y micrófono frontal.
 - **RGB/ARGB Headers (5V/12V)**: Control de toda la iluminación inteligente y sincronizable del equipo.
@@ -815,6 +824,7 @@ Una buena práctica de instalación y mantenimiento garantiza:
 El técnico debe aplicar siempre **protocolos ESD**, realizar **pruebas en banco** antes de ensamblar y establecer un **plan de mantenimiento periódico** adaptado al entorno.
 
 ---
+
 
 
 
