@@ -104,6 +104,7 @@ El objetivo de la placa base es **coordinar y conectar** todos los componentes p
 | **Sincronización del sistema** | Control de reloj y temporización. | Chipset, generador de reloj. |
 
 ---
+
 # 0.1 Principales Fabricantes de Placas Base (2025)
 
 ## 0.1.1 Panorama Actual
@@ -251,14 +252,16 @@ Usado en OEM y all-in-one, dificultad de actualización e intercambios.
 
 ---
 
----
-
 # 3 Chasis o Caja del pc
+
 ## 3.1 Partes principales modernas
+
 - **Cubierta**: Acero galvanizado, paneles laterales de cristal templado, sistemas magnéticos y modulares.
 - **Panel frontal**: Botones táctiles, displays LCD/AMOLED (monitoreo en tiempo real), puertos USB-C, USB 4.0, salida/entrada audio, pantalla de temperatura y carga.
 - **Bahías internas**: Principalmente slots M.2 y 2.5"/3.5" (con tendencia a M.2). Las bahías externas (5,25") van desapareciendo.
 - **Fuente alimentación**: Zona separada, formato ATX 3.0/SFX-L, modulable y con soporte para GPU PCIe 5.0.
+
+---
 
 ## 3.2 Factor de Forma y Tipos
 
@@ -270,6 +273,8 @@ Usado en OEM y all-in-one, dificultad de actualización e intercambios.
 | Torre/Full Tower      | 10+ slots, 3 GPU     | Workstation/gaming top    | Muy grande/pesada, para entusiastas      |
 | Servidor/Rack         | Bayas U, redundantes | Eficiencia y redundancia  | Uso profesional, no doméstico            |
 
+---
+
 ## 3.3 Paneles y cableado moderno
 
 - **Panel trasero:** Salida múltiple para todos los periféricos.
@@ -280,15 +285,15 @@ Usado en OEM y all-in-one, dificultad de actualización e intercambios.
 ---
 
 ## 3.4 Consejos prácticos
+
 - **Airflow** primero: elige chasis con múltiples entradas/salidas de aire y zonas amplias para radiadores.
 - **Compatibilidad**: Antes de comprar/montar, comprueba soportes de GPU largas, PSU potentes, y placas con headers modernizados.
 - **RGB y monitoreo**: Aprovecha headers y software de placas/cajas modernas para crear un PC funcional y visualmente atractivo, además de seguro.
 
 ---
 
----
-
 # 4. Conectores
+
 ## 4.1 Conectores Externos
 
 | Conector        | Uso                    | Detalles técnicos        | Ejemplo de uso          |
@@ -313,7 +318,10 @@ Usado en OEM y all-in-one, dificultad de actualización e intercambios.
 ## 4.2 Conectores Internos (Desarrollado y Ampliado)
 Los conectores internos conectan la placa base con todos los componentes críticos: almacenamiento, gráficos, alimentación y paneles del chasis. Son clave tanto en rendimiento como en facilidad de mantenimiento y actualización.
 
+---
+
 ### 4.2.1   SATA III (Serial ATA Revisado)**
+
 - **Definición**: Conector para discos HDD, SSD y unidades ópticas.
 - **Características**:
   - Velocidad: **6 Gbps** máx.
@@ -330,6 +338,7 @@ Los conectores internos conectan la placa base con todos los componentes crític
 ---
 
 ### 4.2.2   M.2 (Socket sobre placa base)**
+
 - **Definición**: Ranura compacta multifunción (SSD NVMe/SATA, Wi-Fi, Bluetooth, expansión).
 - **Características**:
   - Protocolos: **NVMe PCIe x4/x5/x8** o **SATA**.
@@ -348,6 +357,7 @@ Los conectores internos conectan la placa base con todos los componentes crític
 ---
 
 ### 4.2.3  PCI Express (PCIe)
+
 - **Definición**: Bus de expansión para GPU, red, sonido, capturadoras, almacenamiento avanzado.
 - **Características**:
   - Ranuras: x1, x4, x8, x16, seleccionable según componente.
@@ -374,11 +384,14 @@ Los conectores internos conectan la placa base con todos los componentes crític
 - **Notas actuales**: Fuentes actuales (ATX 3.0 o SFX-L) son modulares: solo instalas los cables necesarios.
 
 ### 4.2.5 Headers para el panel frontal y periféricos
+
 - **Front Panel Header (PWR_SW, RESET, LEDs, Speaker)**: Manejo del encendido, reseteo y diagnóstico acústico.
 - **USB 2.0/3.x/4 Headers**: Permiten que el frontal o parte superior del chasis tenga puertos modernos.
 - **HD Audio Header**: Conexión directa a placa para auriculares y micrófono frontal.
 - **RGB/ARGB Headers (5V/12V)**: Control de toda la iluminación inteligente y sincronizable del equipo.
 - **PWM Fan/Pump Headers**: Permiten monitorizar y regular automáticamente todos los ventiladores y bombas de agua (RL).
+
+---
 
 ### 4.2.6 Otros conectores relevantes
 - **U.2**: Para SSDs empresariales de máximo rendimiento.
@@ -387,12 +400,12 @@ Los conectores internos conectan la placa base con todos los componentes crític
 
 ---
 
----
-
 # 5 **Zócalo del Procesador (Socket)**
+
 **El socket es el tipo de conector eléctrico y mecánico donde se instala el procesador. Existen diferentes tecnologías y formatos:**
 
 ## 5.1. Tipos de Socket
+
 - **LGA (Land Grid Array):**
   - *Pines en el socket, contactos planos en el procesador*.
   - **Ventajas:** Menor riesgo de dañar el procesador. Ideal para altas densidades de conexiones.
@@ -411,6 +424,8 @@ Los conectores internos conectan la placa base con todos los componentes crític
   - **Desventajas:** No reparable ni actualizable por el usuario; habitual en portátiles ultracompactos, tablets y dispositivos embebidos.
   - **Ejemplo:** CPUs de portátiles de bajo consumo, mini PC OEM.
 
+---
+
 ## 5.2 Principales sockets modernos (2022–2025)
 
 | Plataforma         | Socket     | Tipo | CPUs compatibles                  | Lanzam.  | Observaciones                   |
@@ -428,20 +443,21 @@ Los conectores internos conectan la placa base con todos los componentes crític
 
 ---
 
----
+# 6 **Chipset** (Se amplia en Tema posterior)
 
-# 6 **Chipset**
 - Controla buses, puertos y funciones base.
 - Ejemplos: Intel Z890 (gaming/altas prestaciones), AMD X870/B650 (gaming/creator), ambos con Wi-Fi 7 y USB4 nativos.
 
 ---
 
 # 7 Ranuras RAM y Arquitectura Multicanal
+
 La **memoria RAM** (Random Access Memory) se instala en ranuras específicas de la placa base y juega un papel decisivo en el rendimiento, la capacidad multitarea y la velocidad general del sistema. En 2025, los tipos y arquitectura de memoria han experimentado avances notables para responder a las crecientes exigencias de software, gaming, IA y servicios profesionales.
 
 ---
 
 ## 7.1 Tipos de ranuras y módulos
+
 - **DDR4:** Predominante hasta 2022, aún presente en equipos de gama media-baja. Capacidades comunes: 8, 16 y 32GB por módulo. Frecuencias hasta 4000 MHz.
 - **DDR5:** Estándar actual, aporta frecuencias superiores (>8000 MHz), mayor eficiencia energética y capacidades mayores (módulos de 16, 32 y 48GB, hasta 256GB en workstation).
 - **CAMM2:** Nueva tecnología sobre todo en portátiles y estaciones compactas, maximiza la densidad y la eficiencia en espacio reducido; supera a SO-DIMM en capacidad y velocidad.
@@ -457,6 +473,7 @@ La **memoria RAM** (Random Access Memory) se instala en ranuras específicas de 
 ---
 
 ## 7.2 Número de ranuras
+
 - **MiniITX:** 2 slots (limite de hasta 64GB DDR5/DDR4).
 - **MicroATX/ATX:** 4 slots como estándar (hasta 128–256GB con DDR5).
 - **Workstation/Servidor:** 8–16 slots (hasta 1TB o más, ECC Registered).
@@ -464,6 +481,7 @@ La **memoria RAM** (Random Access Memory) se instala en ranuras específicas de 
 ---
 
 ## 7.3 Arquitectura de canales (Channel Architecture)
+
 La **arquitectura de canales** define cuántos caminos paralelos existen entre la memoria y el controlador de memoria (generalmente en la CPU). Un mayor número de canales implica mayor ancho de banda y rendimiento en cargas pesadas.
 
 | Arquitectura Canal | Ranuras ocupadas (mín/máx) | Ancho de banda teórico | Ámbitos de uso     |
@@ -481,6 +499,7 @@ La **arquitectura de canales** define cuántos caminos paralelos existen entre l
 ---
 
 ## 7.4 Cómo aprovechar la arquitectura multicanal
+
 - Instala módulos en pares/grupos idénticos, siguiendo siempre la guía de colores del manual de la placa.
 - Usa módulos de capacidad/frecuencia iguales.
 - BIOS/UEFI detecta el número de canales activos y puede sugerir configuraciones óptimas.
@@ -489,6 +508,7 @@ La **arquitectura de canales** define cuántos caminos paralelos existen entre l
 ---
 
 ## 7.5 Ejemplo de configuración óptima para gaming 2025
+
 - **Placa ATX DDR5 con 4 ranuras:**
   - Instala 2x16GB DDR5-7200 (Dual Channel) para gaming de alto nivel.
   - Para edición/creación: 4x16GB o 4x32GB (Quad Channel) si la placa soporta.
@@ -496,11 +516,10 @@ La **arquitectura de canales** define cuántos caminos paralelos existen entre l
 ---
 
 ## 7.6 Consejos prácticos
+
 - DDR5 ahora soporta perfiles **XMP 3.0** (Intel) y **EXPO** (AMD) para configurar automáticamente la máxima frecuencia compatible.
 - Workstations usan memoria **ECC Registered** para evitar errores y dar máxima fiabilidad.
 - Las nuevas placas base pueden mostrar gráficamente en BIOS la arquitectura de canal activa y sugerir la mejor configuración.
-
----
 
 ---
 
@@ -566,14 +585,14 @@ En las placas base actuales, especialmente desde las arquitecturas **Intel Core*
 
 ---
 
----
-
 # 9. VRM (Voltage Regulator Module)
+
 El **VRM (Voltage Regulator Module, Módulo Regulador de Voltaje)** es un circuito fundamental en todas las placas base y tarjetas gráficas modernas. Su función principal es convertir y estabilizar la tensión de entrada (proveniente de la fuente de alimentación) a los valores precisos que requieren el procesador (CPU), la memoria (RAM) y otros chips sensibles del sistema.
 
 ---
 
 ## 9.1. Concepto y función esencial
+
 - Los microprocesadores actuales operan a voltajes muy bajos (entre 1.0V y 1.5V), mientras que la fuente ATX suministra voltajes mucho mayores (12V, 5V, 3.3V).
 - El **VRM** se encarga de modificar esa tensión y entregarla de forma completamente estable y limpia, adaptándose a las necesidades del procesador según el uso: más voltaje bajo carga, menos en reposo.
 - Cualquier fluctuación o “ruido” puede provocar inestabilidad, errores, pérdida de rendimiento o incluso averías graves.
@@ -581,6 +600,7 @@ El **VRM (Voltage Regulator Module, Módulo Regulador de Voltaje)** es un circui
 ---
 
 ## 9.2.  Estructura de un VRM moderno
+
 - **Fases de regulación:** El VRM está compuesto por varias “fases”. Cada fase incluye MOSFETs (interruptores electrónicos), bobinas (inductores) y condensadores. Cuantas más fases, más estable y eficiente la entrega de energía.
 - **Controller PWM:** Un chip controla cuándo se activa cada fase, ajustando la potencia necesaria en tiempo real según la demanda del procesador.
 - **Distribución:** Los VRM no solo alimentan la CPU, también hay circuitos específicos para RAM, chipset, GPU (en placas gráficas).
@@ -596,6 +616,7 @@ El **VRM (Voltage Regulator Module, Módulo Regulador de Voltaje)** es un circui
 ---
 
 ## 9.3. Importancia del VRM en 2025
+
 - **Procesadores multinúcleo** (12, 16 o más núcleos, CPUs y GPUs para IA) requieren VRMs robustos, capaces de entregar altas intensidades de corriente sin fluctuar.
 - **Overclocking seguro:** Los VRM de alta calidad permiten aumentar la frecuencia y el voltaje de la CPU sin riesgo de fallo ni sobrecalentamiento.
 - **Eficiencia energética:** Un VRM diseñado con componentes premium (bobinas planas, condensadores sólidos japoneses, MOSFETs de baja resistencia) mejora la vida útil y el consumo.
@@ -617,11 +638,10 @@ El **VRM (Voltage Regulator Module, Módulo Regulador de Voltaje)** es un circui
 ---
 
 ## 9.5. Consejos de usuario y técnico
+
 - Prioriza placas con VRMs de calidad si planeas usar CPUs de gama alta o hacer overclocking.
 - Monta disipadores sobre el VRM y verifica airflow en chasis gaming/workstation.
 - Consulta la monitorización en todo momento, especialmente en equipos exigentes o de larga duración en cargas.
-
----
 
 ---
 
@@ -664,11 +684,8 @@ Un control térmico adecuado prolonga la vida útil y evita reducciones automát
 
 ---
 
----
-
 # 11. Instalación y mantenimiento
+
 - Revisa compatibilidades: socket, chipset, RAM, disipación, VRMs.
 - Consulta el manual para instalación correcta según socket (alineación pines/marcas, presión justa, configurar BIOS/UEFI tras montaje).
 - Mantén BIOS actualizado para máximo soporte.
-
-
