@@ -41,20 +41,6 @@ title: 📚 Mantenimiento y Montaje de Equipos Informáticos
   - [7.5 Ejemplo de configuración óptima para gaming 2025](#75-ejemplo-de-configuración-óptima-para-gaming-2025)
   - [7.6 Consejos prácticos](#76-consejos-prácticos)
 - [7.6 Consejos prácticos](#76-consejos-prácticos)
-- [8. **Slots de expansión**](#8-slots-de-expansión)
-- [8.1 El Bus PCI Express (PCIe): Funcionamiento y Estructura](#81-el-bus-pci-express-pcie-funcionamiento-y-estructura)
-    - [8.1.1 Estructura y concepto de “líneas” (lanes):](#811-estructura-y-concepto-de-líneas-lanes)
-    - [8.1.2 Ventajas técnicas de PCIe:](#812-ventajas-técnicas-de-pcie)
-    - [8.1.3 Versiones PCIe y ancho de banda por línea:](#813-versiones-pcie-y-ancho-de-banda-por-línea)
-    - [8.1.4 Cómo afecta al usuario:](#814-cómo-afecta-al-usuario)
-    - [8.1.1 Estructura y concepto de "líneas" (lanes)](#811-estructura-y-concepto-de-líneas-lanes)
-    - [8.1.2 Ventajas técnicas de PCIe](#812-ventajas-técnicas-de-pcie)
-    - [8.1.3 Versiones PCIe y ancho de banda por línea](#813-versiones-pcie-y-ancho-de-banda-por-línea)
-    - [8.1.4 Cómo afecta al usuario](#814-cómo-afecta-al-usuario)
-- [8.1.5 Tipos físicos de slots y ejemplos de uso](#815-tipos-físicos-de-slots-y-ejemplos-de-uso)
-- [8.2 M.2](#82-m2)
-- [8.2.1 Ejemplo de configuración](#821-ejemplo-de-configuración)
-- [8.2.2 Consejos técnicos y consideraciones](#822-consejos-técnicos-y-consideraciones)
 - [9. **VRM (Voltage Regulator Module)**](#9-vrm-voltage-regulator-module)
 - [9.1. Concepto y función esencial](#91-concepto-y-función-esencial)
   - [9.2.  Estructura de un VRM moderno](#92--estructura-de-un-vrm-moderno)
@@ -506,6 +492,7 @@ El **VRM (Voltage Regulator Module, Módulo Regulador de Voltaje)** es un circui
 
 
 ---
+
 
 
 
