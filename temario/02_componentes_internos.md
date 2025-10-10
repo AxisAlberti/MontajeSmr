@@ -378,6 +378,11 @@ Los conectores internos conectan la placa base con todos los componentes crític
 
 ---
 
+<div style="text-align: center;">
+  <img src="../imagen/componentes/19.png" alt="Descripción de la imagen" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+</div>
+
+---
 
 - **PCIe 6/8/12 pines (12VHPWR)**: Power para GPUs PCIe 5.0 y superiores (soportan hasta 600W).
 - **SATA Power**: Discos, ventiladores especiales, accesorios modernos.
@@ -810,6 +815,7 @@ Una buena práctica de instalación y mantenimiento garantiza:
 El técnico debe aplicar siempre **protocolos ESD**, realizar **pruebas en banco** antes de ensamblar y establecer un **plan de mantenimiento periódico** adaptado al entorno.
 
 ---
+
 
 
 
