@@ -3,6 +3,16 @@ layout: default
 title: 📚 Chipset — Mantenimiento y Montaje de Equipos Informáticos
 ---
 
+- [1. El Chipset](#1-el-chipset)  
+  - [1.1 Concepto General](#11-concepto-general)  
+  - [1.2 Funciones Principales](#12-funciones-principales)  
+  - [1.3 Comunicación CPU–Chipset](#13-comunicación-cpu–chipset)  
+  - [1.4 Chipsets Intel (Actualizados a 2025)](#14-chipsets-intel-actualizados-a-2025)  
+  - [1.5 Chipsets AMD (Actualizados a 2025)](#15-chipsets-amd-actualizados-a-2025)  
+  - [1.6 Elección del Chipset](#16-elección-del-chipset)  
+  - [1.7 Importancia actual del Chipset](#17-importancia-actual-del-chipset)  
+  - [1.8 Resumen Técnico](#18-resumen-técnico)
+
 # 1. El Chipset
 
 El **chipset** es el **centro de control de la placa base**, responsable de coordinar la comunicación entre el **procesador, la memoria RAM, los dispositivos de almacenamiento y los periféricos**.  
