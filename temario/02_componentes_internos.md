@@ -231,11 +231,10 @@ Usado en OEM y all-in-one, dificultad de actualización e intercambios.
 *Nota*: Los conectores BTF (Back To Front) ahora se sitúan tras la placa base para mejor gestión de cables y refrigeración.
 
 ---
-</br>
+
 <div style="text-align: center;">
   <img src="../imagen/componentes/6.png" alt="Descripción de la imagen" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
 </div>
-</br>
 
 ---
 
@@ -252,11 +251,10 @@ Los conectores internos conectan la placa base con todos los componentes crític
 - **Usos actuales**: HDD de almacenamiento barato, SSD económicos.
 
 ---
-</br>
+
 <div style="text-align: center;">
   <img src="../imagen/componentes/7.png" alt="Descripción de la imagen" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
 </div>
-</br>
 
 ---
 
@@ -271,11 +269,10 @@ Los conectores internos conectan la placa base con todos los componentes crític
 - **Usos**: SSD ultrarrápidos, Wi-Fi 7, Bluetooth 5.3, aceleradoras compactas.
 
   ---
-</br>
+  
 <div style="text-align: center;">
   <img src="../imagen/componentes/8.png" alt="Descripción de la imagen" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
 </div>
-</br>
 
 ---
 
@@ -288,17 +285,21 @@ Los conectores internos conectan la placa base con todos los componentes crític
 - **Usos actuales**: Gráficas RTX/RADEON, NVMe para IA, redes 10GbE+, tarjetas streaming.
 
   ---
-</br>
+  
 <div style="text-align: center;">
   <img src="../imagen/componentes/17.png" alt="Descripción de la imagen" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
 </div>
-</br>
 
 ---
 
 ### 4.2.4  Conectores de Alimentación internos
+
+
 - **ATX 24 pines**: Alimenta la placa base completa.
 - **EPS 4+4/8+8 pines**: Alimentación adicional directa para CPU multinúcleo/alto consumo.
+
+
+  
 - **PCIe 6/8/12 pines (12VHPWR)**: Power para GPUs PCIe 5.0 y superiores (soportan hasta 600W).
 - **SATA Power**: Discos, ventiladores especiales, accesorios modernos.
 - **Molex**: Ya solo para relés y algunos ventiladores más antiguos o retroiluminación LED clásica.
@@ -577,6 +578,7 @@ El **VRM (Voltage Regulator Module, Módulo Regulador de Voltaje)** es un circui
 
 
 ---
+
 
 
 
