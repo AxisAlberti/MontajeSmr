@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: HOLA
 title: 📚 Mantenimiento y Montaje de Equipos Informáticos
 ---
 
