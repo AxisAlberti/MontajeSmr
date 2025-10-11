@@ -3,7 +3,7 @@ layout: default
 title: 📚 Mantenimiento y Montaje de Equipos Informáticos
 ---
 
-## TEMA 2. Componentes internos
+## TEMA 2. COMPONENTES INTERNOS
 
 - [0. **Definición y Función General (Placa base)**](#0-definición-y-función-general-placa-base)
   - [0.1 **Principales Fabricantes de Placas Base (2025)**](#01-principales-fabricantes-de-placas-base-2025)
@@ -826,6 +826,7 @@ Una buena práctica de instalación y mantenimiento garantiza:
 El técnico debe aplicar siempre **protocolos ESD**, realizar **pruebas en banco** antes de ensamblar y establecer un **plan de mantenimiento periódico** adaptado al entorno.
 
 ---
+
 
 
 
