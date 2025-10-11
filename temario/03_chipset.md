@@ -237,8 +237,6 @@ Las opciones dependen de **CPU + chipset + UEFI**. En Intel serie Z es donde hay
 
 # Chipsets actuales (Intel & AMD) — Tabla comparativa
 
-> Documento listo para copiar/usar en tus apuntes.  
-> Nota: la conectividad exacta (puertos USB/PCIe, número de M.2, etc.) **depende de cada placa**; el chipset marca las capacidades máximas y la CPU aporta las líneas PCIe principales.
 
 ## Intel (desktop, serie 800 – LGA1851)
 
