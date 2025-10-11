@@ -68,6 +68,7 @@ A lo largo del curso aprenderás a:
      - Overclock/Undervolt y límites de plataforma  
      - Familias de chipsets (visión comparativa)  
    
+4. [Tema 4: Conectores externos](temario/04_conectores_externos.md)  
 
        
 <!--
