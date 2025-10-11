@@ -104,9 +104,11 @@ A lo largo del curso aprenderás a:
 10. [Tema 9: Actividad final](temario/09_actividad_final.md)  
    - Enunciado  
 
----
+
 
 -->
+---
+
 ## Recursos adicionales
 
 - Enlaces externos relacionados con BIOS, hardware, utilidades, documentación de Ubuntu.  
