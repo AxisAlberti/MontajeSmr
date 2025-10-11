@@ -5,7 +5,6 @@ title: 📚 Mantenimiento y Montaje de Equipos Informáticos
 
 ## TEMA 1. INTRODUCCIÓN
 
-## Índice
 
 - [1. Vocabulario](#1-vocabulario)
 - [2. Introducción a los sistemas informáticos](#2-introduccion-a-los-sistemas-informaticos)
@@ -173,6 +172,7 @@ Estos tres tipos de buses trabajan de forma coordinada:
 Además, los buses permiten la expansión y actualización de sistemas mediante la incorporación de periféricos, tarjetas de expansión, y otros componentes.
 
 ---
+
 
 
 
