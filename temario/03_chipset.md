@@ -235,7 +235,30 @@ Las opciones dependen de **CPU + chipset + UEFI**. En Intel serie Z es donde hay
 
 ---
 
+# Chipsets actuales (Intel & AMD) — Tabla comparativa
 
+> Documento listo para copiar/usar en tus apuntes.  
+> Nota: la conectividad exacta (puertos USB/PCIe, número de M.2, etc.) **depende de cada placa**; el chipset marca las capacidades máximas y la CPU aporta las líneas PCIe principales.
 
+## Intel (desktop, serie 800 – LGA1851)
+
+| Chipset | Socket | CPU objetivo | Memoria | PCIe clave (desde CPU / desde chipset) | USB / Thunderbolt | Almacenamiento | Overclock |
+|---|---|---|---|---|---|---|---|
+| **Z890** | LGA1851 | Core Ultra (Series 2, “Arrow Lake‑S”) | **DDR5** | **CPU:** PCIe 5.0 (config. típicas 1×16+1×4 o 2×8+1×4); **PCH:** varias líneas PCIe 4.0 (según placa) | USB 3.2 abundante; **USB4/TB** según placa (no estándar del PCH) | NVMe **PCIe 5** directo a CPU (≥1×4); **SATA** según placa | **CPU+BCLK+memoria** (chipset Z) |
+| **B860** | LGA1851 | Core Ultra (Series 2) | **DDR5** | **CPU:** igual que arriba; **PCH:** PCIe 4.0 para E/S (según placa) | USB 3.2; **USB4/TB** opcional (según placa) | NVMe PCIe 5 (CPU) + puertos desde chipset; SATA según placa | **Memoria** (sin OC de CPU) |
+| **H810** | LGA1851 | Core Ultra (Series 2) | **DDR5** | **CPU:** PCIe 5.0 1×16 (GPU); **PCH:** menos líneas/puertos | USB 3.2 básico + USB 2.0; funciones recortadas | NVMe por CPU y/o PCH (según placa); SATA limitado | **Limitado** (sin OC) |
+
+---
+
+## AMD (desktop, AM5 serie 800)
+
+| Chipset | Socket | CPU objetivo | Memoria | PCIe clave (GPU / SSD) | USB4 | Almacenamiento | Overclock |
+|---|---|---|---|---|---|---|---|
+| **X870E** | AM5 | Ryzen 9000 / 7000 | **DDR5 (EXPO)** | **PCIe 5.0 GPU** + **PCIe 5.0 NVMe** directos a CPU; más líneas totales que X870 | **Sí** (estándar en X870/X870E) | NVMe PCIe 5 (CPU) + adicionales por chipset; SATA según placa | **CPU+memoria** |
+| **X870** | AM5 | Ryzen 9000 / 7000 | **DDR5 (EXPO)** | **PCIe 5.0 GPU** + **PCIe 5.0 NVMe** directos a CPU | **Sí** (estándar) | NVMe PCIe 5 + SATA según placa | **CPU+memoria** |
+| **B850** | AM5 | Ryzen 9000 / 7000 | **DDR5 (EXPO)** | **PCIe 5.0 NVMe obligatorio**; **PCIe 5 x16 GPU** **opcional** según placa | **Opcional** (según placa) | NVMe PCIe 5 (mín. 1×4 por norma B850) + SATA | **CPU+memoria** (menos opciones que X870) |
+| **B840** | AM5 | Ryzen 9000 / 7000 (recorte) | **DDR5** | Enfoque **PCIe 4.0** para GPU/E/S desde chipset; menos líneas totales | **Opcional** | NVMe PCIe 4 (habitual desde PCH) + SATA | **Limitado** (gama de entrada) |
+
+---
 
 
