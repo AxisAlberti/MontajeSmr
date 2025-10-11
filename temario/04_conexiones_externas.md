@@ -219,7 +219,9 @@ Entornos industriales/legado: impresoras antiguas, instrumentación, PLC. Se sac
 
 ## 8. **Thunderbolt/USB4 headers** para tarjetas AIC
 
+
 ### 8.1 Para qué sirven
+Thunderbolt es una interfaz de alta velocidad para la conexión de periféricos. Permite transferir datos, enviar señal de vídeo y suministrar energía a través de un único cable y conector, combinando los protocolos PCI Express y DisplayPort sobre USB‑C (desde Thunderbolt 3).
 Sincronizar/controlar una **AIC Thunderbolt/USB4**. El header (**TB_HEADER/USB4_HEADER**) **no** lleva datos USB: expone **GPIO/sideband** (p. ej., **FORCE_PWR**, **WAKE#**, señales de seguridad/permiso).
 
 ### 8.2 Cómo funcionan (no son USB de datos)
@@ -227,11 +229,28 @@ Sincronizar/controlar una **AIC Thunderbolt/USB4**. El header (**TB_HEADER/USB4_
 - El header establece **presencia**, **alimentación forzada**, **wake** y estados S3/S4; sin AIC, el header **no habilita** USB4 por sí solo.
 
 ### 8.3 USB4 v2.0 y requisitos prácticos
+USB4 es el estándar más moderno de USB, basado en Thunderbolt 3 para lograr hasta 40 Gbps de velocidad con conector USB‑C. Ofrece transmisión simultánea de datos y vídeo, además de carga eléctrica avanzada y compatibilidad con dispositivos Thunderbolt 3/4.
 - Hasta **80 Gb/s** (simétrico) o **120/40** (asimétrico, PAM3).  
 - Requiere **cables** y **retimers** de alta calidad; longitudes internas **mínimas**.
 
 ---
+## Tabla comparativa de versiones Thunderbolt y USB4
 
+| Tecnología       | Año     | Velocidad máxima | Conector                   | Características principales                               |
+|------------------|---------|------------------|----------------------------|-----------------------------------------------------------|
+| Thunderbolt 1    | 2011    | 10 Gbps          | Mini DisplayPort           | Datos + vídeo, cadena de dispositivos, cable óptico/cobre |
+| Thunderbolt 2    | 2013    | 20 Gbps          | Mini DisplayPort           | Doble canal de datos, mejora de protocolos                |
+| Thunderbolt 3    | 2015    | 40 Gbps          | USB‑C                      | Compatibilidad USB‑C, vídeo 4K, carga (100W), PCIe        |
+| Thunderbolt 4    | 2020    | 40 Gbps          | USB‑C                      | Núm. mínimo de requisitos, 2 pantallas 4K, 100W garantizado, cadena 6 dispositivos |
+| Thunderbolt 5    | 2023    | 80–120 Gbps      | USB‑C                      | Banda ultra-ancha, vídeo 8K/16K, prestaciones superiores  |
+| USB4             | 2019    | 40 Gbps (máx.)   | USB‑C                      | Basado en Thunderbolt 3, velocidad variable según el equipo, transmisión simultánea de vídeo/datos, compatible Thunderbolt |
+
+---
+
+**Notas:**
+- Thunderbolt 3, Thunderbolt 4 y USB4 usan conector USB‑C; Thunderbolt 1/2 usan Mini DisplayPort.
+- Thunderbolt 4 y USB4 (máx.) permiten 40 Gbps, pero TB4 garantiza esa velocidad y criterios mínimos de alimentación (hasta 100W).
+- Thunderbolt permite conectar (en cadena) hasta 6 dispositivos sobre el mismo cable.
 ## 9. Otros headers que exponen funciones al exterior
 
 ### 9.1 **UART debug** (TTL) y *service headers*
