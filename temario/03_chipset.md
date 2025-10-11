@@ -5,8 +5,6 @@ title: 📚 Chipset — Mantenimiento y Montaje de Equipos Informáticos
 
 
 
-# Índice (TOC)
-
 1. [Introducción](#introduccion)  
 2. [¿Qué es un chipset?](#que-es-un-chipset)  
 3. [Evolución histórica: Northbridge/Southbridge → PCH](#evolucion-historica)  
