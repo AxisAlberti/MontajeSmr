@@ -72,22 +72,22 @@ Un **header** es un conjunto de **pines** en la placa base que permite llevar **
 ## 3. USB en placa: headers y funcionamiento
 
 ### 3.1 Recordatorio rápido: cómo funciona USB
+- **USB** (Universal Serial Bus) es un estándar de conexión para la transmisión de datos y energía entre computadoras y periféricos. Su propósito es simplificar la conectividad y sustituir diversos puertos antiguos por uno universal, facilitando el intercambio y alimentación de dispositivos.
 - **Topología**: **host** (PC) → **hubs** → **dispositivos** (árbol). El host **planifica** el bus.
-- **Enumeración** (paso a paso):
-  1) Detección física (VBUS y líneas D+/D− o *lane* SuperSpeed).  
-  2) Reset del puerto y asignación de **dirección**.  
-  3) Lectura de **descriptores** (device/config/interface/endpoint).  
-  4) Carga de **controlador de clase** (HID, Mass Storage, Audio, CDC‑ACM…).  
-  5) Apertura de **endpoints** según **tipo de transferencia**: Control, **Bulk** (almacenamiento), **Interrupt** (latencia baja), **Isochronous** (tiempo real).  
-- **Ahorro de energía**: estados U0/U1/U2/U3 en SuperSpeed (suspensión selectiva por dispositivo/puerto).
 
-**Velocidades actuales (resumen)**
-- **USB 2.0**: 480 Mb/s (NRZI).  
-- **USB 3.2 Gen 1**: 5 Gb/s (8b/10b).  
-- **USB 3.2 Gen 2**: 10 Gb/s (128b/132b).  
-- **USB 3.2 Gen 2×2**: 20 Gb/s (dos carriles).  
-- **USB4**: hasta 40 Gb/s.  
-- **USB4 v2.0**: hasta **80 Gb/s** simétricos o **120/40 Gb/s** asimétricos (PAM3).
+## Tabla comparativa de versiones USB
+
+| Versión USB      | Año de lanzamiento | Velocidad máxima teórica | Nombre comercial      | Retrocompatible | Características principales                 |
+|------------------|-------------------|-------------------------|----------------------|-----------------|---------------------------------------------|
+| USB 1.0/1.1      | 1996 / 1998       | 12 Mbps (Full Speed)    | USB Full Speed       | Sí              | Simplifica conexiones, reemplaza legacy     |
+| USB 2.0          | 2000              | 480 Mbps (High Speed)   | USB High Speed       | Sí              | Muy extendida, mejora energía y velocidad   |
+| USB 3.0          | 2008              | 5 Gbps (SuperSpeed)     | USB 3.1 Gen 1        | Sí              | Más potencia eléctrica, cable azul          |
+| USB 3.1 Gen 2    | 2013              | 10 Gbps (SuperSpeed+)   | USB SuperSpeed+      | Sí              | Doble velocidad, mejor gestión de energía   |
+| USB 3.2          | 2017              | 20 Gbps (SuperSpeed+)   | USB 3.2 Gen 2x2      | Sí              | Multiplica líneas en USB‑C, todavía cable azul/turquesa |
+| USB4             | 2019              | 40 Gbps                 | USB4                 | Parcialmente    | Basado en Thunderbolt 3, requiere USB‑C     |
+
+> Las velocidades son máximas teóricas y dependen del cable y dispositivo.
+> USB4 solo funciona con conector USB‑C y permite multitarea y mejor gestión de energía.
 
 ### 3.2 Header **USB 2.0 (9 pines, 2×5 con guía)**
 **Para qué sirve**: hasta **2 puertos USB 2.0** (dos USB‑A frontales o un USB interno + lector).  
