@@ -2,7 +2,7 @@
 layout: default
 title: 📚 Mantenimiento y Montaje de Equipos Informáticos
 ---
-## TEMA 4. CONECTORES EXTERNOS.
+## TEMA 4. CONEXIONES EXTERNAS
 
 - [1. Vocabulario](#1-vocabulario)
 - [2. Conceptos básicos: qué es un *header* y qué aporta](#2-conceptos-básicos-qué-es-un-header-y-qué-aporta)
