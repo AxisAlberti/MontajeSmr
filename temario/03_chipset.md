@@ -1,8 +1,9 @@
 ---
 layout: default
-title: 📚 Chipset — Mantenimiento y Montaje de Equipos Informáticos
+title: 📚 Mantenimiento y Montaje de Equipos Informáticos
 ---
 
+## TEMA 3. CHIPSET
 
 0. [Vocabulario](#vocabulario)  
 1. [Introducción](#introduccion)  
