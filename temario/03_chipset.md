@@ -99,7 +99,6 @@ RAM <——> CPU  <== enlace de plataforma (DMI/IF) ==>  PCH (chipset)
 - **Escalabilidad:** enlaces punto‑a‑punto y asignación flexible de **PCIe**.
 - **Simplificación de plataforma** y mayor **fiabilidad**.
 
-> **Actividad de aula:** pide al alumnado que identifique, en fotos de placas antiguas, el NB (suele llevar disipador junto al zócalo y AGP) y el SB (cerca de conectores SATA/PCI). Luego comparar con una placa AM5/Intel reciente donde el “chipset” es un único PCH.
 
 <a id="arquitectura-general"></a>
 ## 4. Arquitectura general del chipset
@@ -238,13 +237,7 @@ Las opciones dependen de **CPU + chipset + UEFI**. En Intel serie Z es donde hay
 
 ---
 
-### Apéndice A — Actividades y evaluación sugeridas
-1. **Identifica** NB y SB en una foto de placa (Pentium 4/Athlon XP).  
-2. **Dibuja** el flujo de datos CPU↔NB↔SB vs. CPU↔PCH y **compara latencias** teóricas.  
-3. **Mapa PCIe real**: elabora el diagrama de una placa AM5 reciente, indicando qué M.2 cuelga de CPU y de chipset.  
-4. **Caso práctico**: ¿qué ocurre si saturas USB4 + 2×NVMe del chipset? Comenta el **cuello** en el enlace CPU↔PCH.
 
----
 
-> **Nota**: La oferta exacta (USB4, nº de M.2, LAN 2.5/5/10 Gb) **depende de cada placa**. Revisa siempre el diagrama de bloques del fabricante.
+
 
