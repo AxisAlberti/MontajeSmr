@@ -53,20 +53,20 @@ A lo largo del curso aprenderás a:
   
 3. [Tema 3: Chipset](temario/03_chipset.md)  
 
-1. Introducción  
-2. ¿Qué es un chipset? (rol y funciones clave)  
-3. Evolución histórica: de Northbridge/Southbridge a PCH  
-4. Arquitectura general de la plataforma  
-5. Compatibilidad de sockets y generaciones de CPU   
-6. PCI Express    
-7. Almacenamiento    
-8. Conectividad USB   
-9. Redes integradas     
-10. Audio y códecs integrados  
-11. E/S y controladoras adicionales    
-12. Gestión de energía y térmicas     
-13. Overclock/Undervolt y límites de plataforma  
-14. Familias de chipsets (visión comparativa)  
+     - Introducción  
+     - ¿Qué es un chipset? (rol y funciones clave)  
+     - Evolución histórica: de Northbridge/Southbridge a PCH  
+     - Arquitectura general de la plataforma  
+     - Compatibilidad de sockets y generaciones de CPU   
+     - PCI Express    
+     - Almacenamiento    
+     - Conectividad USB   
+     - Redes integradas     
+     - Audio y códecs integrados  
+     - E/S y controladoras adicionales    
+     - Gestión de energía y térmicas     
+     - Overclock/Undervolt y límites de plataforma  
+     - Familias de chipsets (visión comparativa)  
    
 
        
