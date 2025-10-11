@@ -49,8 +49,11 @@ A lo largo del curso aprenderás a:
      - Comunicación interna  
      - VRM (Voltage Regulator Module)  
      - Gestión térmica  
-     - Instalación y mantenimiento   
+     - Instalación y mantenimiento
+  
 
+       
+<!--
 4. [Tema 3: Dispositivos de almacenamiento](temario/03_dispositivos_almacenamiento.md)  
    - Vocabulario  
    - Almacenamiento magnético  
@@ -103,6 +106,7 @@ A lo largo del curso aprenderás a:
 
 ---
 
+-->
 ## Recursos adicionales
 
 - Enlaces externos relacionados con BIOS, hardware, utilidades, documentación de Ubuntu.  
