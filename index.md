@@ -70,6 +70,18 @@ A lo largo del curso aprenderás a:
    
 4. [Tema 4: Conexiones externas](/temario/04_conexiones_externas.md)  
 
+     - Vocabulario
+     - Conceptos básicos: qué es un header y qué aporta
+     - USB en placa: headers y funcionamiento
+     - Audio frontal: header HD Audio/AAFP
+     - Front Panel (F_PANEL/SYS_PANEL): botones y LEDs del chasis
+     - COM (serial RS‑232) en header interno
+     - LPT/Parallel (legado) en header 26 pines
+     - Thunderbolt/USB4 headers para tarjetas AIC
+     - Otros headers que exponen funciones al exterior
+     - Procedimiento de montaje y verificación
+     - Diagnóstico de fallos frecuentes
+  
        
 <!--
 4. [Tema 3: Dispositivos de almacenamiento](temario/03_dispositivos_almacenamiento.md)  
