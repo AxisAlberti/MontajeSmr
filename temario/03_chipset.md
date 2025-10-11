@@ -4,7 +4,7 @@ title: 📚 Chipset — Mantenimiento y Montaje de Equipos Informáticos
 ---
 
 
-
+0. [Vocabulario](#vocabulario)  
 1. [Introducción](#introduccion)  
 2. [¿Qué es un chipset?](#que-es-un-chipset)  
 3. [Evolución histórica: Northbridge/Southbridge → PCH](#evolucion-historica)  
@@ -42,6 +42,51 @@ title: 📚 Chipset — Mantenimiento y Montaje de Equipos Informáticos
     - [AMD (AM4 y AM5: X670/B650 → X870/B850/B840)](#amd-familias)
 
 ---
+
+## 0. Vocabulario
+
+<a id="vocabulario"></a>
+
+| Término | Qué es | Para qué sirve / Impacto | Ejemplo / Notas |
+|---|---|---|---|
+| **Chipset / PCH** | Conjunto de controladores de la placa (en Intel, *Platform Controller Hub*). | Aporta PCIe secundarios, USB, SATA, audio, LAN, sensores, firmware; enlaza con la CPU. | Determina puertos y expansión posibles. |
+| **Northbridge (NB)** | Chip “norte” de arquitecturas antiguas. | Gestionaba **memoria** y **gráfica**; conectado a CPU por FSB. | Desapareció al integrarse memoria/PCIe en la CPU. |
+| **Southbridge (SB)** | Chip “sur” de arquitecturas antiguas. | E/S “lenta”: SATA/IDE, USB, PCI, audio, LAN, puertos legacy. | Sustituido por PCH único. |
+| **FSB** | *Front Side Bus* (bus frontal). | Bus compartido CPU↔NB en PCs antiguos. | Reemplazado por enlaces punto‑a‑punto. |
+| **QPI / DMI** | Enlaces Intel (punto‑a‑punto). | Conectan CPU↔CPU (QPI, servidores antiguos) o CPU↔PCH (DMI). | Más ancho = menos cuello de botella al PCH. |
+| **HyperTransport (HT)** | Enlace punto‑a‑punto (AMD clásico). | Comunicación de alta velocidad en plataformas anteriores. | Precursor de **Infinity Fabric**. |
+| **Infinity Fabric (IF)** | Red interna de AMD. | Une CCDs, I/O Die y el chipset; coordina relojes/memoria. | IF ≈ “autopista” interna de AMD. |
+| **IMC (Controlador de memoria integrado)** | Lógica de RAM dentro de la CPU. | Reduce latencia de memoria frente a NB externo. | Presente en CPUs modernas (Intel/AMD). |
+| **PCI Express (PCIe)** | Interfaz serie para expansión. | Conecta GPU, NVMe, NICs, capturadoras, etc. | Versiones 3/4/5… con retrocompatibilidad. |
+| **Líneas PCIe (x1/x4/x8/x16)** | Número de “hilos” del enlace. | Más líneas = más ancho de banda. | x16 típico para GPU, x4 para NVMe. |
+| **Bifurcación PCIe** | División de un enlace en varios. | Permite x8/x8 o x8/x4/x4 desde x16. | Útil para **GPU + 2×M.2**. |
+| **M.2** | Factor de forma de módulos. | Soporta NVMe (PCIe) o SATA, y Wi‑Fi (Key E). | Conector clave para SSDs modernos. |
+| **NVMe** | Protocolo sobre PCIe para SSD. | Latencia muy baja y alto rendimiento. | Mejor en ranuras conectadas a **CPU**. |
+| **SATA / AHCI** | Interfaz y modo de almacenamiento. | Conecta HDD/SSD 2,5"; limitado a 6 Gb/s. | Útil para capacidad, no para máximas velocidades. |
+| **RAID / VMD / RAIDXpert** | Tecnologías de agrupación/gestión. | Rendimiento, redundancia o gestión NVMe (Intel VMD / AMD RAIDXpert). | Requieren drivers/UEFI compatibles. |
+| **USB 2.0 / 3.x / USB4** | Estándares USB. | Conectividad universal; USB4 permite hasta 40 Gb/s y DisplayPort Alt Mode. | USB4 depende de controladora/placa. |
+| **USB Type‑C / PD / Alt Mode** | Conector y funciones avanzadas. | Carga (Power Delivery) y vídeo por el mismo puerto. | Necesita cableado y controladoras adecuados. |
+| **Thunderbolt (TB)** | Protocolo de alta velocidad (Intel). | Datos + vídeo + daisy‑chain; compatible con USB4. | TB4/TB5 en placas de gama alta. |
+| **Ethernet 1/2.5/5/10 GbE** | Redes cableadas. | Velocidad de LAN integrada en placa. | 2.5 GbE es común en placas actuales. |
+| **CNVi / Wi‑Fi** | Integración Wi‑Fi (Intel) o módulos M.2. | Conectividad inalámbrica integrada. | Depende de módulo y antenas de la placa. |
+| **UEFI/BIOS** | Firmware de la placa. | Arranque, opciones de CPU/memoria/PCIe, seguridad. | Actualizaciones añaden soporte de CPU y estabilidad. |
+| **Microcódigo** | Parches de CPU cargados por UEFI/OS. | Corrigen/optimizan instrucciones y compatibilidad. | Requieren UEFI actualizado. |
+| **TPM / fTPM** | Módulo (físico o firmware) de seguridad. | Cifrado y arranque medido (BitLocker, Secure Boot). | fTPM suele venir en chipsets modernos. |
+| **Secure Boot** | Verificación de arranque. | Evita ejecutar firmware/bootloaders no firmados. | Configurable en UEFI. |
+| **ASPM / Estados C‑P‑D** | Políticas de ahorro de energía. | Bajada de consumo en enlaces y dispositivos. | Puede aumentar latencia ligeramente. |
+| **VRM** | Regulación de voltaje de la placa. | Estabilidad y margen de OC/CPU de alto TDP. | La calidad del VRM importa más que el chipset en OC. |
+| **TDP / PL1‑PL2 / PPT** | Límites de potencia (Intel/AMD). | Definen consumo térmico y rendimiento sostenido. | Ajustables en UEFI (según chipset/placa). |
+| **Overclock / Undervolt** | Subir frecuencia / bajar voltaje. | Mejora rendimiento/eficiencia si la plataforma lo permite. | Intel “Z”; AMD X‑/B‑series con distintas limitaciones. |
+| **XMP / EXPO** | Perfiles de memoria (Intel/AMD). | Carga automática de frecuencias/timings de DDR5. | Requiere módulos y placa compatibles. |
+| **IOMMU / VT‑d / SR‑IOV** | Virtualización de E/S. | Asignación directa de dispositivos a VMs, mejor rendimiento. | Útil en servidores/labs. |
+| **Retimer / Redriver** | Circuitos para señales de alta velocidad. | Mantienen integridad en USB4/TB/PCIe largos. | Su presencia explica diferencias entre placas. |
+| **PHY** | Capa física de una interfaz. | Convierte datos lógicos en señales eléctricas. | Cada estándar (PCIe/USB/Eth) tiene su PHY. |
+| **Enlace CPU↔PCH (uplink)** | Conexión principal con el chipset. | Límite agregado del tráfico de dispositivos del PCH. | Si saturas USB/NVMe del PCH, este enlace puede ser el cuello. |
+
+
+
+---
+
 
 <a id="introduccion"></a>
 ## 1. Introducción
