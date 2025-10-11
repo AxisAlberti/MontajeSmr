@@ -4,7 +4,7 @@ title: 📚 Mantenimiento y Montaje de Equipos Informáticos
 ---
 
 
-## Teorema Fundamental de la Numeración, Sistemas de Numeración y Conversiones
+## TEMA 0. Teorema Fundamental de la Numeración, Sistemas de Numeración y Conversiones
 
 ## Índice
 1. [Introducción](#1-introducción)  
