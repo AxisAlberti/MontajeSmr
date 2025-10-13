@@ -1,7 +1,10 @@
 ---
 layout: default
-title: 📚 Mantenimiento y Montaje de Equipos Informáticos
+title: "TEMA 3. CHIPSET"
+parent: Temario
+nav_order: 4
 ---
+
 
 ## TEMA 3. CHIPSET
 
