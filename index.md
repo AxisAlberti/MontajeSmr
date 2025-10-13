@@ -4,6 +4,16 @@ title: Inicio
 nav_order: 1
 ---
 
+---
+layout: default
+title: Inicio
+nav_order: 1
+---
+
+# MontajeSmr — Inicio
+Si ves este layout, **Just the Docs** está activo.
+
+- Ir al [Temario]({{ '/temario/' | relative_url }})
 
 Esta asignatura introduce a los estudiantes en el **mundo del hardware y la infraestructura informática**, enseñando desde la identificación de componentes hasta las técnicas de montaje, mantenimiento y resolución de averías.
 
