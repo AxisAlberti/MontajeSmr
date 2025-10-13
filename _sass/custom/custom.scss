@@ -1,0 +1,38 @@
+/* --- Just the Docs minimal tweaks for MontajeSmr --- */
+
+/* Header con leve gradiente y logo algo mayor */
+$brand: #2563eb;
+$brand-600: #1d4ed8;
+
+.site-header {
+  background: linear-gradient(90deg, $brand 0%, $brand-600 100%);
+  color: #fff;
+  padding-top: .4rem;
+  padding-bottom: .4rem;
+}
+.site-header a, .site-title a { color: #fff !important; text-decoration: none; }
+.site-title { display: flex; align-items: center; gap: .5rem; }
+.site-logo, .site-title img { height: 56px; width: auto; max-height: none; }
+
+/* Sidebar un poco más estrecha (desktop) */
+@media (min-width: 768px) {
+  .side-bar { width: 220px; }
+  .main     { margin-left: 220px; }
+}
+
+/* Enlaces en contenido */
+.main a {
+  color: $brand-600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 2px;
+}
+.main a:hover { color: #1e40af; }
+
+/* Código con leve resaltado */
+pre, pre.highlight {
+  background: rgba($brand, .06);
+  border-left: 4px solid $brand;
+  padding: .8rem 1rem;
+}
+code { background: rgba(15,23,42,.06); padding: .08rem .3rem; border-radius: .25rem; }
