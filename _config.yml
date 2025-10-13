@@ -1,25 +1,23 @@
-otitle: Apuntes de Grado Medio
-description: Material docente para Grado Medio
-
-
-# Forzar uso del tema Cayman compatible con GitHub Pages
-remote_theme: pages-themes/cayman@v0.2.0
-
+# --- GitHub Pages (Just the Docs) ---
+title: "Montaje y Mantenimiento de Equipos Informáticos — Apuntes y recursos"
+description: "Documentación del módulo Montaje y Mantenimiento"
+remote_theme: just-the-docs/just-the-docs
 plugins:
   - jekyll-remote-theme
-  - jekyll-relative-links
-  - jekyll-readme-index
-  - jekyll-optional-front-matter
-# Oculta los botones de descarga por defecto del tema
-show_downloads: false
 
-# Motor de renderizado de Markdown
-markdown: kramdown
-kramdown:
-  input: GFM
-  hard_wrap: false
+# Project site (URL: https://TU_USUARIO.github.io/MontajeSmr/)
+baseurl: "/MontajeSmr"
 
+# Logo (coloca tu propio logo en assets/logo.png si quieres)
+logo: "/assets/logo.png"
 
+# Opcionales de navegación/buscador
+search_enabled: true
+# aux_links:
+#   "Ver en GitHub":
+#     - "https://github.com/TU_USUARIO/MontajeSmr"
+
+ 
 
 
 
