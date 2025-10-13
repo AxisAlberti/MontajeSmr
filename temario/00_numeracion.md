@@ -1,7 +1,11 @@
 ---
 layout: default
-title: 📚 Mantenimiento y Montaje de Equipos Informáticos
+title: "TEMA 0. SISTEMAS DE NUMERACIÓN"
+parent: Temario
+nav_order: 1
+
 ---
+
 
 
 ## TEMA 0. SISTEMAS DE NUMERACIÓN
