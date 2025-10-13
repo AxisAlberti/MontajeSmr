@@ -1,7 +1,11 @@
 ---
 layout: default
-title: 📚 Mantenimiento y Montaje de Equipos Informáticos
+title: "TEMA 1. INTRODUCCIÓN"
+parent: Temario
+nav_order: 2
+
 ---
+
 
 ## TEMA 1. INTRODUCCIÓN
 
@@ -172,6 +176,7 @@ Estos tres tipos de buses trabajan de forma coordinada:
 Además, los buses permiten la expansión y actualización de sistemas mediante la incorporación de periféricos, tarjetas de expansión, y otros componentes.
 
 ---
+
 
 
 
