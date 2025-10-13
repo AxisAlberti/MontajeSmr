@@ -1,7 +1,13 @@
 ---
 layout: default
-title: 📚 Mantenimiento y Montaje de Equipos Informáticos
+title: "TEMA 4. CONEXIONES EXTERNAS"
+parent: Temario
+nav_order: 5
+
 ---
+
+
+
 ## TEMA 4. CONEXIONES EXTERNAS
 
 - [1. Vocabulario](#1-vocabulario)
