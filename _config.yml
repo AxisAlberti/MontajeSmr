@@ -1,0 +1,16 @@
+# --- GitHub Pages (Just the Docs) ---
+title: "Mi sitio — Just the Docs"
+description: "Documentación"
+remote_theme: just-the-docs/just-the-docs
+plugins:
+  - jekyll-remote-theme
+
+# Si NO es 'usuario.github.io', esto es un Project site:
+# Cambia REPO_NAME por el nombre EXACTO de tu repositorio (respetando mayúsculas/guiones).
+baseurl: "/REPO_NAME"
+
+# (Opcional) Activa si subes un logo a /assets/logo.png
+# logo: "/assets/logo.png"
+
+# Buscador
+search_enabled: true
