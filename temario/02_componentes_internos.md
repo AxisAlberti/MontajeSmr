@@ -1,6 +1,9 @@
 ---
 layout: default
-title: 📚 Mantenimiento y Montaje de Equipos Informáticos
+title: "TEMA 2. COMPONENTES INTERNOS"
+parent: Temario
+nav_order: 3
+
 ---
 
 ## TEMA 2. COMPONENTES INTERNOS
@@ -826,6 +829,7 @@ Una buena práctica de instalación y mantenimiento garantiza:
 El técnico debe aplicar siempre **protocolos ESD**, realizar **pruebas en banco** antes de ensamblar y establecer un **plan de mantenimiento periódico** adaptado al entorno.
 
 ---
+
 
 
 
