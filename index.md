@@ -1,6 +1,7 @@
 ---
 layout: default
-title: 📚 Mantenimiento y Montaje de Equipos Informáticos
+title: Inicio
+nav_order: 1
 ---
 
 
