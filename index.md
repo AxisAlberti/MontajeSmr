@@ -9,7 +9,6 @@ nav_order: 1
 # Montaje y Mantenimiento de Equipos Informáticos — 1.º Grado Medio
 Bienvenido/a al repositorio oficial de la asignatura. Aquí encontrarás apuntes, guías de montaje, prácticas de taller y material de apoyo. **Este sitio es vivo**: el contenido **irá mutando** a lo largo del curso según avancemos, incorporemos mejoras y recojamos dudas frecuentes.
 
-> Usa el buscador (arriba) para localizar conceptos rápidamente y visita el **[Temario]({{ '/temario/' | relative_url }})** para navegar por las unidades.
 
 ---
 
@@ -63,3 +62,6 @@ Bienvenido/a al repositorio oficial de la asignatura. Aquí encontrarás apuntes
 Este repositorio **evoluciona** durante el curso: se corrigen erratas, se reordenan apartados y se añaden ejemplos reales de taller. Guarda la URL y revisa **novedades** con frecuencia.
 
 ¿Listo/a? Entra en el **[Temario]({{ '/temario/' | relative_url }})** y arrancamos. 
+
+> Usa el buscador (arriba) para localizar conceptos rápidamente.
+
