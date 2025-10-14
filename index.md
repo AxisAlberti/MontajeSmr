@@ -5,6 +5,9 @@ title: Inicio
 nav_order: 1
 ---
 
+# Índice
+
+
 # Montaje y Mantenimiento de Equipos Informáticos — 1.º Grado Medio
 Bienvenido/a al repositorio oficial de la asignatura. Aquí encontrarás apuntes, guías de montaje, prácticas de taller y material de apoyo. **Este sitio es vivo**: el contenido **irá mutando** a lo largo del curso según avancemos, incorporemos mejoras y recojamos dudas frecuentes.
 
