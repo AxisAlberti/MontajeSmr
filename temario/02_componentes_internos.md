@@ -461,8 +461,7 @@ Los conectores internos conectan la placa base con todos los componentes crític
 
 ---
 
-# 6 Chipset (Se amplia en Tema posterior)
-
+# 6 **Chipset**
 - Controla buses, puertos y funciones base.
 - Ejemplos: Intel Z890 (gaming/altas prestaciones), AMD X870/B650 (gaming/creator), ambos con Wi-Fi 7 y USB4 nativos.
 
@@ -827,6 +826,7 @@ Una buena práctica de instalación y mantenimiento garantiza:
 El técnico debe aplicar siempre **protocolos ESD**, realizar **pruebas en banco** antes de ensamblar y establecer un **plan de mantenimiento periódico** adaptado al entorno.
 
 ---
+
 
 
 
