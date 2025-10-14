@@ -429,12 +429,30 @@ Los conectores internos conectan la placa base con todos los componentes crític
   - **Ventajas:** Menor riesgo de dañar el procesador. Ideal para altas densidades de conexiones.
   - **Uso:** Todos los procesadores Intel de sobremesa y servidores actuales (desde hace varias generaciones), y la mayoría de AMD de gama alta actuales.
   - **Ejemplo 2025:** Intel LGA 1700 (Alder Lake/Raptor Lake), LGA 1851 (Arrow Lake), AMD AM5 (Ryzen 7000–9000).
+    
+---
+<div style="text-align: center;">
+  <img src="../imagen/componentes/25.jpg" alt="Descripción de la imagen" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+</div>
+---
+
 
 - **PGA (Pin Grid Array):**
   - *Pines en el procesador, agujeros en el socket*.
   - **Ventajas:** Reparabilidad relativa de pines doblados. Históricamente muy usado por AMD.
   - **Uso:** AMD AM4 en desktop y algunos modelos profesionales hasta 2022.
   - **Ejemplo:** AMD AM4 (Ryzen 1000–5000).
+
+---
+<div style="text-align: center;">
+  <img src="../imagen/componentes/23.png" alt="Descripción de la imagen" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+</div>
+---
+---
+<div style="text-align: center;">
+  <img src="../imagen/componentes/24.jpg" alt="Descripción de la imagen" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+</div>
+---
 
 - **BGA (Ball Grid Array):**
   - *Procesador soldado directamente a la placa* (no intercambiable).
@@ -826,6 +844,7 @@ Una buena práctica de instalación y mantenimiento garantiza:
 El técnico debe aplicar siempre **protocolos ESD**, realizar **pruebas en banco** antes de ensamblar y establecer un **plan de mantenimiento periódico** adaptado al entorno.
 
 ---
+
 
 
 
