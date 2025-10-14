@@ -36,20 +36,20 @@ nav_order: 4
 - [5. **Zócalo del Procesador (Socket)**](#5-zócalo-del-procesador-socket)
   - [5.1 Tipos de Socket](#51-tipos-de-socket)
   - [5.2 Principales sockets modernos (2022–2025)](#52-principales-sockets-modernos-20222025)
-- [6. **Chipset**](#7-chipset)
-- [7. **Ranuras RAM y Arquitectura Multicanal**](#8-ranuras-ram-y-arquitectura-multicanal)
+- [6. **Chipset**](#6-chipset)
+- [7. **Ranuras RAM y Arquitectura Multicanal**](#7-ranuras-ram-y-arquitectura-multicanal)
   - [7.1 Tipos de ranuras y módulos](#81-tipos-de-ranuras-y-módulos)
   - [7.2 Número de ranuras](#82-número-de-ranuras)
   - [7.3 Arquitectura de canales (Channel Architecture)](#83-arquitectura-de-canales-channel-architecture)
   - [7.4 Cómo aprovechar la arquitectura multicanal](#84-cómo-aprovechar-la-arquitectura-multicanal)
   - [7.5 Ejemplo de configuración óptima para gaming 2025](#85-ejemplo-de-configuración-óptima-para-gaming-2025)
   - [7.6 Consejos prácticos](#86-consejos-prácticos)
-- [8. **Comunicación Interna**](#6-comunicación-interna)
-  - [8.1 Concepto General](#61-concepto-general)
-  - [8.2 Arquitectura Moderna de Comunicación](#62-arquitectura-moderna-de-comunicación)
-  - [8.3 Buses y Enlaces Principales](#63-buses-y-enlaces-principales)
-  - [8.4 Diagrama Funcional Simplificado](#64-diagrama-funcional-simplificado)
-  - [8.5 Consideraciones Técnicas](#65-consideraciones-técnicas)
+- [8. **Comunicación Interna**](#8-comunicación-interna)
+  - [8.1 Concepto General](#81-concepto-general)
+  - [8.2 Arquitectura Moderna de Comunicación](#82-arquitectura-moderna-de-comunicación)
+  - [8.3 Buses y Enlaces Principales](#83-buses-y-enlaces-principales)
+  - [8.4 Diagrama Funcional Simplificado](#84-diagrama-funcional-simplificado)
+  - [8.5 Consideraciones Técnicas](#85-consideraciones-técnicas)
 - [9. **VRM (Voltage Regulator Module)**](#9-vrm-voltage-regulator-module)
   - [9.1 Concepto y función esencial](#91-concepto-y-función-esencial)
   - [9.2 Estructura de un VRM moderno](#92-estructura-de-un-vrm-moderno)
@@ -827,6 +827,7 @@ Una buena práctica de instalación y mantenimiento garantiza:
 El técnico debe aplicar siempre **protocolos ESD**, realizar **pruebas en banco** antes de ensamblar y establecer un **plan de mantenimiento periódico** adaptado al entorno.
 
 ---
+
 
 
 
