@@ -1,9 +1,7 @@
 ---
 layout: default
 title: "TEMA 2. COMPONENTES INTERNOS"
-parent: Temario
 nav_order: 4
-
 ---
 
 ## TEMA 2. COMPONENTES INTERNOS
@@ -829,6 +827,7 @@ Una buena práctica de instalación y mantenimiento garantiza:
 El técnico debe aplicar siempre **protocolos ESD**, realizar **pruebas en banco** antes de ensamblar y establecer un **plan de mantenimiento periódico** adaptado al entorno.
 
 ---
+
 
 
 
