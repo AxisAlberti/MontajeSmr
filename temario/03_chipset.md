@@ -1,7 +1,6 @@
 ---
 layout: default
 title: "TEMA 3. CHIPSET"
-parent: Temario
 nav_order: 5
 ---
 
