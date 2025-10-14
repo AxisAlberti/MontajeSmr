@@ -36,14 +36,7 @@ Bienvenido/a al repositorio oficial de la asignatura. Aquí encontrarás apuntes
 - **Mantenimiento**: limpieza, sustitución de componentes, reciclaje y RAEE.
 - **Proyecto/prácticas**: montajes guiados y libres, bitácora técnica y presentación final.
 
-> El detalle de cada bloque está en el **[Temario]({{ '/temario/' | relative_url }})**. Algunos apartados se ampliarán con esquemas, fotos y vídeos de taller.
 
----
-
-## Cómo se usa este repositorio
-- Cada página del temario comienza con un **resumen**, material de **referencia** y, cuando proceda, **rutinas paso a paso** y **checklists** descargables.  
-- Verás etiquetas como “⚠️ Seguridad”, “🛠️ Procedimiento” o “❓Diagnóstico rápido” para ubicarte al instante.  
-- Si detectas un error o falta algo, abre un **issue** o coméntalo en clase: lo iremos puliendo.
 
 ---
 
@@ -60,7 +53,6 @@ Bienvenido/a al repositorio oficial de la asignatura. Aquí encontrarás apuntes
 ## Estado del proyecto
 Este repositorio **evoluciona** durante el curso: se corrigen erratas, se reordenan apartados y se añaden ejemplos reales de taller. Guarda la URL y revisa **novedades** con frecuencia.
 
-¿Listo/a? Entra en el **[Temario]({{ '/temario/' | relative_url }})** y arrancamos. 
 
 > Usa el buscador (arriba) para localizar conceptos rápidamente.
 
