@@ -1,0 +1,8 @@
+/* --- Just the Docs: ajustes mínimos --- */
+.site-title { display:flex; align-items:center; gap:.5rem; }
+.site-logo, .site-title img { height: 56px; width:auto; max-height:none; }
+
+@media (min-width: 768px) {
+  .side-bar { width: 220px; }
+  .main     { margin-left: 220px; }
+}
