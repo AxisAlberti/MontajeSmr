@@ -1,0 +1,15 @@
+# --- GitHub Pages (Just the Docs) ---
+title: "Montaje y Mantenimiento de Equipos Informáticos — 1º Grado Medio"
+description: "Apuntes y recursos del módulo (GM) — MontajeSmr"
+remote_theme: just-the-docs/just-the-docs
+plugins:
+  - jekyll-remote-theme
+
+# Project site (URL: https://AxisAlberti.github.io/MontajeSmr/)
+baseurl: "/MontajeSmr"
+
+# Logo (hay un placeholder en /assets/logo.png; cambia por el tuyo cuando quieras)
+logo: "/assets/logo.png"
+
+# Buscador
+search_enabled: true
