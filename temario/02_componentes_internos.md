@@ -431,9 +431,11 @@ Los conectores internos conectan la placa base con todos los componentes crític
   - **Ejemplo 2025:** Intel LGA 1700 (Alder Lake/Raptor Lake), LGA 1851 (Arrow Lake), AMD AM5 (Ryzen 7000–9000).
     
 ---
+
 <div style="text-align: center;">
   <img src="../imagen/componentes/25.jpg" alt="Descripción de la imagen" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
 </div>
+
 ---
 
 
@@ -444,14 +446,17 @@ Los conectores internos conectan la placa base con todos los componentes crític
   - **Ejemplo:** AMD AM4 (Ryzen 1000–5000).
 
 ---
+
 <div style="text-align: center;">
   <img src="../imagen/componentes/23.png" alt="Descripción de la imagen" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
 </div>
+
 ---
----
+
 <div style="text-align: center;">
   <img src="../imagen/componentes/24.jpg" alt="Descripción de la imagen" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
 </div>
+
 ---
 
 - **BGA (Ball Grid Array):**
@@ -844,6 +849,7 @@ Una buena práctica de instalación y mantenimiento garantiza:
 El técnico debe aplicar siempre **protocolos ESD**, realizar **pruebas en banco** antes de ensamblar y establecer un **plan de mantenimiento periódico** adaptado al entorno.
 
 ---
+
 
 
 
