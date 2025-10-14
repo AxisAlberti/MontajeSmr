@@ -467,6 +467,13 @@ Los conectores internos conectan la placa base con todos los componentes crític
 
 ---
 
+<div style="text-align: center;">
+  <img src="../imagen/componentes/26.jpg" alt="Descripción de la imagen" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+</div>
+
+---
+
+
 ## 5.2 Principales sockets modernos (2022–2025)
 
 | Plataforma         | Socket     | Tipo | CPUs compatibles                  | Lanzam.  | Observaciones                   |
@@ -849,6 +856,7 @@ Una buena práctica de instalación y mantenimiento garantiza:
 El técnico debe aplicar siempre **protocolos ESD**, realizar **pruebas en banco** antes de ensamblar y establecer un **plan de mantenimiento periódico** adaptado al entorno.
 
 ---
+
 
 
 
