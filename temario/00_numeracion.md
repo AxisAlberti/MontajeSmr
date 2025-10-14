@@ -2,7 +2,7 @@
 layout: default
 title: "TEMA 0. SISTEMAS DE NUMERACIÓN"
 parent: Temario
-nav_order: 1
+nav_order: 2
 
 ---
 
