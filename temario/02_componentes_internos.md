@@ -37,7 +37,7 @@ nav_order: 4
   - [5.1 Tipos de Socket](#51-tipos-de-socket)
   - [5.2 Principales sockets modernos (2022–2025)](#52-principales-sockets-modernos-20222025)
 - [6. **Chipset**](#7-chipset)
-[7. **Ranuras RAM y Arquitectura Multicanal**](#8-ranuras-ram-y-arquitectura-multicanal)
+- [7. **Ranuras RAM y Arquitectura Multicanal**](#8-ranuras-ram-y-arquitectura-multicanal)
   - [7.1 Tipos de ranuras y módulos](#81-tipos-de-ranuras-y-módulos)
   - [7.2 Número de ranuras](#82-número-de-ranuras)
   - [7.3 Arquitectura de canales (Channel Architecture)](#83-arquitectura-de-canales-channel-architecture)
@@ -827,6 +827,7 @@ Una buena práctica de instalación y mantenimiento garantiza:
 El técnico debe aplicar siempre **protocolos ESD**, realizar **pruebas en banco** antes de ensamblar y establecer un **plan de mantenimiento periódico** adaptado al entorno.
 
 ---
+
 
 
 
