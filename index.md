@@ -2,10 +2,10 @@
 ---
 layout: default
 title: Inicio
-nav_order: 1
+nav_order: 0
 ---
 
-# Índice
+# Inicio
 
 
 # Montaje y Mantenimiento de Equipos Informáticos — 1.º Grado Medio
