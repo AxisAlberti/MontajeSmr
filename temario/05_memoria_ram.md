@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "TEMA 4. CONEXIONES EXTERNAS"
+title: "TEMA 5. MEMORIA DDR"
 nav_order: 7
 ---
 
