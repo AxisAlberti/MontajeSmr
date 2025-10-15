@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Memoria DDR
+title: "TEMA 5. Memoria DDR"
 nav_order: 7
 ---
 
