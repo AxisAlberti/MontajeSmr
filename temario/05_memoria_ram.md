@@ -100,17 +100,19 @@ Selección banco → activación de fila → selección columna → prefetch →
 # 2. Generaciones DDR (de DDR a DDR5)
 Cada generación aumenta la eficiencia con prefetch mayor, voltajes menores y mejoras de señalización/topología. Las generaciones **no son físicamente compatibles** (muesca, pines, voltajes).
 
-- **DDR (1.x)**: 2n prefetch, 2.5 V, hasta ~400 MT/s. Punto de partida histórico.  
-- **DDR2**: 4n, 1.8 V, *On-Die Termination* (ODT); ~400–800 MT/s (hasta 1066).  
-- **DDR3**: 8n, 1.5 V (1.35 V DDR3L), topología *fly-by*; 800–1600 MT/s (hasta 2133 JEDEC).  
-- **DDR4**: 8n, 1.2 V, **bank groups**, mejoras de entrenamiento y DBI; 1600–3200 MT/s.  
-- **DDR5**: 16n, **1.1 V**, **PMIC** en el módulo, **2×32-bit subcanales por DIMM**, **on-die ECC**; 3200–6400 MT/s JEDEC (y superiores en kits comerciales).
+| Generación | Prefetch | Voltaje nominal | Características clave | Data rate JEDEC (MT/s) | Notas |
+|---|:---:|:---:|---|---:|---|
+| **DDR (1.x)** | 2n | 2.5 V | Primera generación DDR | hasta ~400 | Punto de partida histórico |
+| **DDR2** | 4n | 1.8 V | On-Die Termination (ODT) | ~400–800 (hasta 1066) | — |
+| **DDR3** | 8n | 1.5 V *(1.35 V DDR3L)* | Topología *fly-by* | 800–1600 (hasta 2133) | — |
+| **DDR4** | 8n | 1.2 V | Bank groups, mejoras de entrenamiento, DBI | 1600–3200 | — |
+| **DDR5** | 16n | 1.1 V | PMIC en el módulo, **2×32-bit subcanales por DIMM**, on-die ECC | 3200–6400 | Kits comerciales pueden superar JEDEC |
 
 
 ---
 
 # 3. Formatos físicos (DIMM, SO-DIMM), pines y muescas
-**En qué consiste:** los módulos se presentan en **DIMM** (escritorio/servidor) y **SO-DIMM** (portátil/SFF). El **número de pines** y la **posición de la muesca** evitan combinaciones incompatibles.
+Los módulos se presentan en **DIMM** (escritorio/servidor) y **SO-DIMM** (portátil/SFF). El **número de pines** y la **posición de la muesca** evitan combinaciones incompatibles.
 
 - **DIMM**: 240 pines (DDR3) → **288 pines (DDR4/DDR5)**.  
 - **SO-DIMM**: 204 pines (DDR3) → **260 (DDR4)** → **262 (DDR5)**.  
@@ -119,21 +121,40 @@ Cada generación aumenta la eficiencia con prefetch mayor, voltajes menores y me
 ---
 
 # 4. Rendimiento: MT/s, timings y latencia absoluta (con ejemplos)
-**En qué consiste:** el rendimiento práctico depende de **dos ejes**: *tasa de transferencia* (MT/s → ancho de banda) y *latencias internas* (timings → tiempo de respuesta inicial).
+El rendimiento práctico depende de **dos conceptos**: *tasa de transferencia* (MT/s → ancho de banda) y *latencias internas* (timings → tiempo de respuesta inicial).
 
-### 4.1 Ancho de banda (por canal)
+La **tasa de transferencia** en DDR expresa cuántas **transferencias de datos por segundo** realiza la memoria. En DDR se mide en **MT/s** (*MegaTransfers per second*) porque la tecnología “double data rate” envía datos **dos veces por ciclo de reloj** (en los flancos de subida y de bajada).  
+Por eso, si el reloj interno va a *f* MHz, la tasa efectiva es aproximadamente **MT/s = 2 × f**.
+
+**Relación con el ancho de banda.** Cada canal de memoria mueve **64 bits = 8 bytes** por transferencia. El **ancho de banda teórico** de un canal puede aproximarse así:
+
+## Ancho de banda (por canal)
 Fórmula (base 10):  
-`BW (GB/s) ≈ MT/s × 8 ÷ 1000`  
-Ejemplos:
-- **DDR4-3200** → `3200 × 8 ÷ 1000 ≈ 25,6 GB/s` por canal → **≈ 51,2 GB/s** en **dual channel**.  
-- **DDR5-5600** → `5600 × 8 ÷ 1000 ≈ 44,8 GB/s` por canal → **≈ 89,6 GB/s** en **dual channel**.
+`BW (GB/s) ≈ MT/s × 8 ÷ 1000` 
 
-### 4.2 Latencia absoluta
+>Ejemplos:
+> **DDR4-3200** → `3200 × 8 ÷ 1000 ≈ 25,6 GB/s` por canal → **≈ 51,2 GB/s** en **dual channel**.  
+> **DDR5-5600** → `5600 × 8 ÷ 1000 ≈ 44,8 GB/s` por canal → **≈ 89,6 GB/s** en **dual channel**.
+
+## Latencia absoluta
+
+Las **latencias** indican los **tiempos de espera internos** que necesita la DRAM para preparar y servir datos. Se publican en **ciclos** de reloj y suelen mostrarse como un conjunto:  
+
+> **CL–tRCD–tRP–tRAS** (por ejemplo, *16-18-18-38*).
+
+- **Cómo trabaja la DRAM.** Los datos están en una matriz de **filas** y **columnas** dentro de **bancos**. Para leer:
+
+1) se **activa** una fila (tRCD),  
+2) se **lee** una columna (CL),  
+3) y al cambiar de fila se **pre-carga/cierra** la anterior (tRP).
+El tiempo mínimo que una fila debe permanecer abierta es **tRAS**.
+
 Aproximación:  
 `tCL (ns) ≈ (CL × 2000) ÷ MT/s`  
-Ejemplos:
-- **DDR4-3200 CL16** → `(16×2000)/3200 ≈ 10,0 ns`.  
-- **DDR5-5600 CL36** → `(36×2000)/5600 ≈ 12,9 ns`.
+
+> Ejemplos:
+> - **DDR4-3200 CL16** → `(16×2000)/3200 ≈ 10,0 ns`.  
+> - **DDR5-5600 CL36** → `(36×2000)/5600 ≈ 12,9 ns`.
 
 **Interpretación:** más **MT/s** acelera transferencias largas; **timings** más ajustados reducen el tiempo hasta el **primer dato**. En la práctica, **capacidad suficiente** y **doble canal** tienen impacto mayor que micro-ajustes de timings.
 
