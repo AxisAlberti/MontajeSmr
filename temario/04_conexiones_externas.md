@@ -147,7 +147,8 @@ Lleva **micrófono** y **auriculares** al frontal con **detección de jack** y *
 - Señales de audio salen **AC‑acopladas** (condensadores) y con cuidado de **masas** para reducir **hum**.  
 - Algunos códecs detectan **impedancia** de auriculares y ajustan **ganancia**.
 
-### 4.3 Pinout típico 10‑1 y recomendaciones de montaje
+### 4.3 Pinout típico 10‑1 y recomendaciones de montaje  
+
 
 | Pin | Señal | Función |
 |---|---|---|
