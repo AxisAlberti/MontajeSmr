@@ -49,28 +49,6 @@ La **memoria DDR** es la tecnología dominante de **DRAM** que se usa como **mem
 
 ---
 
-## Índice
-- [0. **Definición y Visión General (Memoria DDR)**](#0-definición-y-visión-general-memoria-ddr)
-- [1. **Estructura y Funcionamiento (bancos, filas/columnas, prefetch, bursts)**](#1-estructura-y-funcionamiento-bancos-filascolumnas-prefetch-bursts)
-- [2. **Generaciones DDR (de DDR a DDR5)**](#2-generaciones-ddr-de-ddr-a-ddr5)
-- [3. **Formatos físicos (DIMM, SO-DIMM), pines y muescas**](#3-formatos-físicos-dimm-so-dimm-pines-y-muescas)
-- [4. **Rendimiento: MT/s, timings y latencia absoluta (con ejemplos)**](#4-rendimiento-mts-timings-y-latencia-absoluta-con-ejemplos)
-- [5. **Canales, Ranks, Bank Groups y Subcanales (DDR5)**](#5-canales-ranks-bank-groups-y-subcanales-ddr5)
-- [6. **ECC, RDIMM/LRDIMM y fiabilidad**](#6-ecc-rdimmlrdimm-y-fiabilidad)
-- [7. **Tabla comparativa de generaciones DDR**](#7-tabla-comparativa-de-generaciones-ddr)
-- [8. **Pirámide jerárquica de memorias**](#8-pirámide-jerárquica-de-memorias)
-- [9. **Compatibilidad, instalación y UEFI (checklist)**](#9-compatibilidad-instalación-y-uefi-checklist)
-- [10. **Diagnóstico, pruebas y sintomatología típica**](#10-diagnóstico-pruebas-y-sintomatología-típica)
-- [11. **Recomendaciones de compra y casos de uso**](#11-recomendaciones-de-compra-y-casos-de-uso)
-
----
-
-# 0. Definición y Visión General (Memoria DDR)
-**En qué consiste:** DDR es la tecnología con la que se fabrican los módulos de **memoria principal** (RAM) que usa el sistema para mantener **código** y **datos activos**. A diferencia del almacenamiento masivo (no volátil), la DDR es **volátil**: al cortar la energía, su contenido se pierde.  
-**Por qué importa:** porque su **latencia baja** y **gran ancho de banda** permiten que CPU y GPU integrada trabajen sin cuellos de botella. La cantidad, organización (canales) y calidad (frecuencia/timings) de la DDR condicionan la **fluidez** y el rendimiento real.
-
----
-
 # 1. Estructura y Funcionamiento (bancos, filas/columnas, prefetch, bursts)
 **En qué consiste:** internamente, un chip DRAM es una **matriz** de celdas agrupadas en **bancos**; cada acceso abre una **fila** completa (tRCD), lee/escribe **columnas** (CL/tCWL) y, al terminar, **pre-carga** (tRP) para cerrar la fila.
 
