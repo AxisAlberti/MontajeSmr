@@ -2,8 +2,9 @@
 .site-title { display:flex; align-items:center; gap:.5rem; }
 .site-logo, .site-title img { height: 56px; width:auto; max-height:none; }
 
-
-
+.main-content {
+  max-width: 1300px;   /* o 90ch, o incluso none para ocupar todo */
+}
 @media (min-width: 768px) {
   .side-bar { width: 220px; }
   .main     { margin-left: 220px; }
