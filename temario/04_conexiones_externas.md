@@ -145,6 +145,7 @@ Lleva **micrófono** y **auriculares** al frontal con **detección de jack** y *
 - Algunos códecs detectan **impedancia** de auriculares y ajustan **ganancia**.
 
 ### 4.3 Pinout típico 10‑1 y recomendaciones de montaje
+
 | Pin | Señal | Función |
 |---|---|---|
 | 1 | MIC_L / PORT1L | Micrófono L (o mono) |
@@ -189,6 +190,7 @@ Exponer **DB‑9** en un **bracket** para equipos industriales, consolas serie, 
 - Señales de ***handshake*** (RTS/CTS, DTR/DSR) permiten control de flujo por hardware.
 
 ### 6.3 Pinout común (2×5, 9 pines activos) y correspondencia DB‑9
+
 | Pin header | Señal RS‑232 | DB‑9 | Descripción |
 |---:|---|---:|---|
 | 1 | DCD | 1 | Carrier Detect |
