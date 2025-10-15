@@ -149,12 +149,35 @@ Las **latencias** indican los **tiempos de espera internos** que necesita la DRA
 3) y al cambiar de fila se **pre-carga/cierra** la anterior (tRP).
 El tiempo mínimo que una fila debe permanecer abierta es **tRAS**.
 
-Aproximación:  
+Formula:  
 `tCL (ns) ≈ (CL × 2000) ÷ MT/s`  
 
-> Ejemplos:
-> - **DDR4-3200 CL16** → `(16×2000)/3200 ≈ 10,0 ns`.  
-> - **DDR5-5600 CL36** → `(36×2000)/5600 ≈ 12,9 ns`.
+> **Nota aclaratoria — ¿De dónde sale el “2000” en** `tCL(ns) ≈ (CL × 2000) / MT/s`?
+>
+> 1) **DDR duplica el reloj**  
+>    En DDR la tasa se anuncia en **MT/s** porque hay transferencia en **ambos flancos** del reloj.  
+>    `MT/s = 2 × f(MHz)`  ⇒  `f(MHz) = MT/s ÷ 2`
+>
+> 2) **De MHz a nanosegundos**  
+>    El periodo de un ciclo es `T = 1/f`. Si `f` está en MHz:  
+>    `T(ns) = 1000 / f(MHz)`  
+>    Sustituyendo `f(MHz) = MT/s ÷ 2`:  
+>    `T(ns) = 1000 / (MT/s ÷ 2) = 2000 / MT/s`
+>
+> 3) **Latencia CAS en ns**  
+>    La latencia publicada **CL** está en **ciclos**. En tiempo real:  
+>    `tCL(ns) = CL × T(ns) = CL × (2000 / MT/s)`
+>
+> **Ejemplos**
+>
+> | Memoria | CL | MT/s | `T(ns) = 2000/MT/s` | `tCL(ns) ≈ CL × T` |
+> |---|---:|---:|---:|---:|
+> | DDR4-3200 | 16 | 3200 | 0.625 | 10.0 |
+> | DDR5-5600 | 36 | 5600 | 0.357 | 12.9 |
+>
+> **Importante:** esta fórmula estima la **latencia inicial de lectura** en la DRAM.  
+> La latencia “de punta a punta” puede ser mayor por colas del **controlador de memoria**, modos de reloj (p. ej., **Gear modes** / **FCLK:MCLK:UCLK**), y otros factores de la plataforma.
+
 
 **Interpretación:** más **MT/s** acelera transferencias largas; **timings** más ajustados reducen el tiempo hasta el **primer dato**. En la práctica, **capacidad suficiente** y **doble canal** tienen impacto mayor que micro-ajustes de timings.
 
