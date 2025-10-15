@@ -4,7 +4,11 @@ description: "Apuntes y recursos del módulo (GM) — MontajeSmr"
 remote_theme: just-the-docs/just-the-docs
 plugins:
   - jekyll-remote-theme
-
+  
+markdown: kramdown
+kramdown:
+  input: GFM
+  
 # Project site (URL: https://AxisAlberti.github.io/MontajeSmr/)
 baseurl: "/MontajeSmr"
 
