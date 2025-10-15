@@ -52,6 +52,7 @@ Los **sistemas de numeración** son fundamentales para representar y manipular d
 ---
 
 ## 2. Teorema Fundamental de la Numeración (TFN)
+{: .text-red-300}
 
 ### 2.1 Enunciado
 Para cualquier entero N ≥ 0 y base entera b > 1, existen dígitos aₖ, …, a₀ con 0 ≤ aᵢ < b y aₖ ≠ 0 tales que:  
