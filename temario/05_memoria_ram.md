@@ -135,6 +135,7 @@ Fórmula (base 10):
 `BW (GB/s) ≈ MT/s × 8 ÷ 1000` 
 
 > Ejemplos:
+> 
 > **DDR4-3200** → `3200 × 8 ÷ 1000 ≈ 25,6 GB/s` por canal → **≈ 51,2 GB/s** en **dual channel**.  
 > **DDR5-5600** → `5600 × 8 ÷ 1000 ≈ 44,8 GB/s` por canal → **≈ 89,6 GB/s** en **dual channel**.
 
