@@ -50,19 +50,55 @@ La **memoria DDR** es la tecnología dominante de **DRAM** que se usa como **mem
 ---
 
 # 1. Estructura y Funcionamiento (bancos, filas/columnas, prefetch, bursts)
-**En qué consiste:** internamente, un chip DRAM es una **matriz** de celdas agrupadas en **bancos**; cada acceso abre una **fila** completa (tRCD), lee/escribe **columnas** (CL/tCWL) y, al terminar, **pre-carga** (tRP) para cerrar la fila.
 
-- **Prefetch**: el chip extrae en bloque (2n/4n/8n/16n) y lo entrega en **ráfagas (bursts)** por el bus; así se aprovecha mejor cada activación de fila.  
-- **Burst Length (BL)**: cuántos datos viajan por operación; BL8 típico en DDR3/DDR4, **BL16 en DDR5** (con *burst chop* para granularidad).  
-- **Bank Groups**: particiones que permiten **atender en paralelo** bancos diferentes reduciendo conflictos.  
-- **Controladora (IMC)**: vive en la CPU moderna; **programa timings**, **intercala** accesos y equilibra peticiones de núcleos/PCIe/iGPU.
+La memoria DDR (Double Data Rate) tiene una arquitectura interna diseñada para maximizar la velocidad de acceso, la eficiencia y la capacidad. Comprender cómo se organiza y opera la RAM DDR es clave para entender su rendimiento y limitaciones.
 
-> **Idea práctica:** los patrones de acceso del software importan. Lecturas **secuenciales** explotan mejor el prefetch; accesos muy **aleatorios** sufren más los costes de abrir/cerrar filas.
+## Bancos, Filas y Columnas
+
+- **Banco:**  
+  La memoria DDR está dividida internamente en varios bancos (habitualmente 4, 8 o más según generación y capacidad). Cada banco puede ser accedido y gestionado de forma independiente, permitiendo operaciones simultáneas o en paralelo para mejorar el rendimiento.
+
+- **Filas y columnas:**  
+  Dentro de cada banco, la información se organiza en una matriz bidimensional de **filas** y **columnas**. Cada celda de esta matriz guarda 1 bit de información. Para acceder a un dato concreto, el controlador de memoria debe seleccionar primero la fila y luego la columna.
+
+- **Activación de fila:**  
+  Cuando se requiere un acceso, se activa una fila completa en un banco y se lee/escribe una columna (dato puntual o múltiple). Activar una nueva fila implica “cerrar” una (precharge) antes de “abrir” la siguiente (activation).
+
+## Prefetch y Bursts
+
+- **Prefetch:**  
+  Para aumentar la eficiencia, la DDR utiliza la técnica de “prefetch”, que consiste en anticipar la lectura de varios bits de la fila seleccionada antes de que sean requeridos por el sistema. Así, puede cargar más información en menos ciclos y alimentar ráfagas de datos rápidas.
+
+  - DDR: prefetch de 2 bits
+  - DDR2: prefetch de 4 bits
+  - DDR3/DDR4: prefetch de 8 bits
+
+- **Burst:**  
+  Cuando el controlador pide datos, la memoria envía en una “ráfaga” (**burst**) varios bits seguidos en una sola operación de acceso. El tamaño de esta ráfaga depende del tipo de DDR y la configuración del sistema, y es clave para aprovechar la velocidad real de la memoria.
+
+## Resumen gráfico
+
++----------------------+
+| Banco |
+| +---------------+ |
+| | Fila/Columna | |
+| | (matriz) | |
+| +---------------+ |
++----------------------+
+
+Acceso:
+Selección banco → activación de fila → selección columna → prefetch → burst de datos
+
+## Implicaciones en el rendimiento
+
+- Los bancos múltiples permiten acceder a distintas partes de la memoria en paralelo, reduciendo esperas y mejorando el throughput.
+- Las ráfagas (bursts) ayudan a mover grandes bloques de datos (por ejemplo, gráficos, vídeo, bases de datos) en menos ciclos, optimizando la eficiencia.
+- El prefetch mayor en DDR más modernas es clave: cuanto más bits se anticipan, mayor es la velocidad efectiva.
 
 ---
 
 # 2. Generaciones DDR (de DDR a DDR5)
-**En qué consiste:** cada generación aumenta la eficiencia con prefetch mayor, voltajes menores y mejoras de señalización/topología. Las generaciones **no son físicamente compatibles** (muesca, pines, voltajes).
+Cada generación aumenta la eficiencia con prefetch mayor, voltajes menores y mejoras de señalización/topología. Las generaciones **no son físicamente compatibles** (muesca, pines, voltajes).
 
 - **DDR (1.x)**: 2n prefetch, 2.5 V, hasta ~400 MT/s. Punto de partida histórico.  
 - **DDR2**: 4n, 1.8 V, *On-Die Termination* (ODT); ~400–800 MT/s (hasta 1066).  
@@ -70,7 +106,6 @@ La **memoria DDR** es la tecnología dominante de **DRAM** que se usa como **mem
 - **DDR4**: 8n, 1.2 V, **bank groups**, mejoras de entrenamiento y DBI; 1600–3200 MT/s.  
 - **DDR5**: 16n, **1.1 V**, **PMIC** en el módulo, **2×32-bit subcanales por DIMM**, **on-die ECC**; 3200–6400 MT/s JEDEC (y superiores en kits comerciales).
 
-> **Lectura del nombre**: *DDR5-5600* significa **5600 MT/s** (≈ 2800 MHz de reloj base en equivalencia DDR).
 
 ---
 
