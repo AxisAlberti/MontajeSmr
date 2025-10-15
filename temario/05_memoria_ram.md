@@ -155,7 +155,7 @@ Formula:
 > **Nota aclaratoria — ¿De dónde sale el “2000” en** `tCL(ns) ≈ (CL × 2000) / MT/s`?
 >
 > 1) **DDR duplica el reloj**  
->    En DDR la tasa se anuncia en **MT/s** porque hay transferencia en **ambos flancos** del reloj.  
+>    En DDR la tasa se anuncia en **MT/s** (mega transfer por segundo) porque hay transferencia en **ambos flancos** del reloj.  
 >    `MT/s = 2 × f(MHz)`  ⇒  `f(MHz) = MT/s ÷ 2`
 >
 > 2) **De MHz a nanosegundos**  
@@ -184,7 +184,7 @@ Formula:
 ---
 
 # 5. Canales, Ranks, Bank Groups y Subcanales (DDR5)
-**En qué consiste:** son “trucos de organización” para **aumentar el paralelismo** y aprovechar mejor el bus.
+Son “trucos de organización” para **aumentar el paralelismo** y aprovechar mejor el bus.
 
 - **Canales**: 1×64-bit por canal. Con **dual channel** (2 módulos) doblas el caudal.  
 - **Ranks** (SR/DR/QR): agrupaciones lógicas; más ranks pueden facilitar **interleaving** y mejorar ocupación del bus (dentro de los límites de la IMC).  
@@ -194,7 +194,7 @@ Formula:
 ---
 
 # 6. ECC, RDIMM/LRDIMM y fiabilidad
-**En qué consiste:** mecanismos para **detectar/corregir errores** y estabilizar señales cuando crecen densidades/capacidades.
+Son mecanismos para **detectar/corregir errores** y estabilizar señales cuando crecen densidades/capacidades.
 
 - **ECC de sistema**: añade bits extra por palabra (72-bit por canal en ECC típico) y corrige errores de 1 bit (SECDED). Necesita **CPU + placa + módulos ECC** compatibles.  
 - **On-die ECC (DDR5)**: corrige fallos **internos** del chip, transparente al sistema; **no** reemplaza al ECC de sistema.  
@@ -203,7 +203,7 @@ Formula:
 ---
 
 # 7. Tabla comparativa de generaciones DDR
-**En qué consiste:** resumen de parámetros oficiales (JEDEC) para entender **límites de diseño** y evolución de la tecnología.
+
 
 | Generación | Prefetch | Voltaje nominal | Data rate JEDEC (MT/s) | Pines **DIMM / SO-DIMM** | Organización de bus | PMIC | On-die ECC | Rasgos distintivos |
 |---|:--:|:--:|:--:|:--:|---|:--:|:--:|---|
@@ -213,10 +213,22 @@ Formula:
 | **DDR4** | 8n  | 1.2 V | 1600–3200 | 288 / 260 | 64-bit por DIMM | No | No | **Bank groups**, DBI, entrenamiento. |
 | **DDR5** | 16n | 1.1 V | 3200–6400 | 288 / 262 | **2×32-bit por DIMM** | **Sí** | **Sí** | **PMIC**, subcanales, más densidad. |
 
-> *Nota:* Los kits comerciales pueden anunciar velocidades **superiores** a JEDEC usando **XMP/EXPO**. La estabilidad depende de la plataforma (CPU/placa/UEFI).
 
 ---
 
 # 8. Pirámide jerárquica de memorias
 **En qué consiste:** una jerarquía por **latencia, ancho de banda, capacidad, coste/GB**. Cuanto más arriba, **más rápido y caro**; cuanto más abajo, **más grande y lento**.
 
+┌───────────────────────────────────────────────┐ Latencia: MÍNIMA → MÁXIMA
+│ REGISTROS de CPU │ Ancho banda: MÁXIMO → MÍNIMO
+├───────────────────────────────────────────────┤ Capacidad: MÍNIMA → MÁXIMA
+│ CACHÉ L1 / L2 / L3 (SRAM on-chip) │ Volatilidad: volátil → no volátil
+├───────────────────────────────────────────────┤
+│ MEMORIA PRINCIPAL (DRAM: DDR3/4/5) │
+├───────────────────────────────────────────────┤
+│ ALMACENAMIENTO MASIVO LOCAL (SSD/HDD) │
+│ • NVMe (PCIe) • SATA SSD • HDD │
+├───────────────────────────────────────────────┤
+│ ALMACENAMIENTO REMOTO / CLOUD │
+│ • NAS/LAN • Object storage / Backup │
+└───────────────────────────────────────────────┘
