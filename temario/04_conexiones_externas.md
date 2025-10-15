@@ -149,6 +149,7 @@ Lleva **micrófono** y **auriculares** al frontal con **detección de jack** y *
 
 ### 4.3 Pinout típico 10‑1 y recomendaciones de montaje  
 
+  
 
 | Pin | Señal | Función |
 |---|---|---|
