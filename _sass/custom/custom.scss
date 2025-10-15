@@ -2,9 +2,6 @@
 .site-title { display:flex; align-items:center; gap:.5rem; }
 .site-logo, .site-title img { height: 56px; width:auto; max-height:none; }
 
-markdown: kramdown
-kramdown:
-  input: GFM
 
 .main-content {
   max-width: 1800px;   /* o 90ch, o incluso none para ocupar todo */
