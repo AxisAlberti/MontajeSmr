@@ -217,18 +217,80 @@ Son mecanismos para **detectar/corregir errores** y estabilizar señales cuando 
 ---
 
 # 8. Pirámide jerárquica de memorias
-**En qué consiste:** una jerarquía por **latencia, ancho de banda, capacidad, coste/GB**. Cuanto más arriba, **más rápido y caro**; cuanto más abajo, **más grande y lento**.
+Jerarquía por **latencia, ancho de banda, capacidad, coste/GB**. Cuanto más arriba, **más rápido y caro**; cuanto más abajo, **más grande y lento**.
 
-┌───────────────────────────────────────────────┐ Latencia: MÍNIMA → MÁXIMA
-│ REGISTROS de CPU │ Ancho banda: MÁXIMO → MÍNIMO
-├───────────────────────────────────────────────┤ Capacidad: MÍNIMA → MÁXIMA
-│ CACHÉ L1 / L2 / L3 (SRAM on-chip) │ Volatilidad: volátil → no volátil
-├───────────────────────────────────────────────┤
-│ MEMORIA PRINCIPAL (DRAM: DDR3/4/5) │
-├───────────────────────────────────────────────┤
-│ ALMACENAMIENTO MASIVO LOCAL (SSD/HDD) │
-│ • NVMe (PCIe) • SATA SSD • HDD │
-├───────────────────────────────────────────────┤
-│ ALMACENAMIENTO REMOTO / CLOUD │
-│ • NAS/LAN • Object storage / Backup │
-└───────────────────────────────────────────────┘
+┌───────────────────────────────────────────────────────────────┐
+│                         REGISTROS (CPU)                       │  ↑ Más rápidos / más caros / muy poca capacidad
+├───────────────────────────────────────────────────────────────┤
+│                 CACHÉS L1  •  L2  •  L3 (SRAM on-chip)        │
+├───────────────────────────────────────────────────────────────┤
+│                    MEMORIA PRINCIPAL (DRAM: DDR)              │
+├───────────────────────────────────────────────────────────────┤
+│            ALMACENAMIENTO MASIVO LOCAL (No volátil)           │
+│            • SSD NVMe (PCIe)  • SSD SATA  • HDD               │
+├───────────────────────────────────────────────────────────────┤
+│             ALMACENAMIENTO REMOTO / EN RED / CLOUD            │
+│             • NAS/Servidor de ficheros • Object storage       │  ↓ Más lentos / más baratos / muchísima capacidad
+└───────────────────────────────────────────────────────────────┘
+
+# 9. Compatibilidad, instalación y UEFI (checklist)
+
+Una correcta instalación y configuración de la memoria DDR es clave para el funcionamiento y el rendimiento del sistema. Aquí tienes una lista para asegurar la compatibilidad y éxito en el proceso:
+
+**Checklist práctico:**
+- Verifica la **generación DDR** compatible con tu placa base (DDR3/DDR4/DDR5…).
+- Comprueba el **voltaje** soportado.
+- Consulta la **capacidad máxima** soportada (por módulo y total) en el manual de la placa.
+- Confirma el **formato físico** (DIMM para escritorio, SO-DIMM para portátil).
+- Instala los módulos en los **slots indicados** para aprovechar el canal dual/quad.
+- Activa el perfil **XMP/DOCP** en UEFI/BIOS si tu memoria lo soporta.
+- Prioriza módulos **certificados en la QVL** del fabricante.
+- Actualiza la **UEFI/BIOS** antes de instalar RAM de alta frecuencia o capacidad.
+- Coloca los módulos correctamente; ambos clips deben hacer “clic”.
+
+---
+
+# 10. Diagnóstico, pruebas y sintomatología típica
+
+Los módulos de memoria defectuosos o mal instalados se manifiestan con síntomas concretos. Así puedes detectar y probar problemas:
+
+**Síntomas habituales:**
+- El PC no arranca o emite pitidos continuos (beeps POST).
+- Reinicios inesperados, pantallas azules (BSOD), bloqueos de programas.
+- Menos memoria reconocida de la instalada.
+- Artefactos gráficos o errores aleatorios.
+
+**Herramientas y acciones de diagnóstico:**
+- **MemTest86+ / MemTest86:** testea la RAM fuera del sistema operativo.
+- **Diagnóstico de memoria de Windows:** disponible en el menú de inicio.
+- **CPU-Z / HWiNFO:** monitoriza frecuencias, latencias y canales activos.
+- **Registro de eventos del SO:** busca errores relacionados con la RAM.
+- **Pasos prácticos:**
+   1. Apaga y desconecta el PC.
+   2. Extrae y recoloca los módulos, prueba diferentes slots y módulos individualmente.
+   3. Limpia contactos de RAM/ránuras.
+   4. Actualiza la BIOS/UEFI.
+   5. Ejecuta pruebas de memoria prolongadas.
+
+---
+
+# 11. Recomendaciones de compra y casos de uso
+
+La selección de memoria DDR depende de tu equipo y necesidades. Aquí tienes ideas y consejos por perfil:
+
+**Recomendaciones generales:**
+- Escoge la **generación DDR** exacta según tu placa base.
+- Preferiblemente compra módulos **de fabricantes reconocidos** y consultando la QVL.
+- Mejor dos módulos iguales en **dual channel** excepto en sistemas muy limitados.
+- Frecuencia y latencia: busca el equilibrio entre rendimiento y precio.
+- **ECC** solo si es una exigencia de servidor o entorno crítico.
+
+**Casos recomendados:**
+- **Ofimática/básico:** 8-16GB DDR4/DDR5, dual channel, frecuencias estándar.
+- **Gaming y edición:** 16-32GB DDR4/DDR5, mínimo 3000MT/s, latencia baja y perfil XMP.
+- **Trabajo profesional:** 32-64GB+ DDR4/DDR5, quad channel si es posible, latencia mínima.
+- **Servidor/virtualización:** RAM ECC, alto volumen (64GB~512GB), siempre verificar compatibilidad QVL.
+
+> **Consejo:** Consulta siempre compatibilidad, lee los manuales y aprovecha ofertas en kits/módulos dobles.
+
+
