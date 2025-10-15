@@ -44,9 +44,10 @@ nav_order: 6
 - [11. Diagnóstico de fallos frecuentes](#11-diagnóstico-de-fallos-frecuentes)
 
 ---
-{: .text-red-300}
-## 1. Vocabulario{: .text-red-300}
 
+## 1. Vocabulario
+
+  
 | Término                | Definición                                                                                         |
 |------------------------|----------------------------------------------------------------------------------------------------|
 | Header                 | Bloque de pines en placa que expone señales a un módulo externo (frontal o bracket).              |
@@ -63,7 +64,8 @@ nav_order: 6
 
 ---
 
-## 2. Conceptos básicos: qué es un *header* y qué aporta
+## 2. Conceptos básicos: qué es un *header* y qué aporta  
+
 Un **header** es un conjunto de **pines** en la placa base que permite llevar **señales y alimentación** hacia el **frontal del chasis** o a **brackets** que salen al exterior (sin usar el panel trasero). Suelen estar:
 - **Claveados** (pin ausente o carcasa con muesca) para evitar inversión.
 - **Serigrafiados** con nombres como *F_USB1*, *AAFP*, *F_PANEL*, *COM1*, *TB_HEADER*…
@@ -75,7 +77,8 @@ Un **header** es un conjunto de **pines** en la placa base que permite llevar **
 
 ## 3. USB en placa: headers y funcionamiento
 
-### 3.1 Recordatorio rápido: cómo funciona USB
+### 3.1 Recordatorio rápido: cómo funciona USB  
+
 - **USB** (Universal Serial Bus) es un estándar de conexión para la transmisión de datos y energía entre computadoras y periféricos. Su propósito es simplificar la conectividad y sustituir diversos puertos antiguos por uno universal, facilitando el intercambio y alimentación de dispositivos.
 - **Topología**: **host** (PC) → **hubs** → **dispositivos** (árbol). El host **planifica** el bus.
 
