@@ -4,11 +4,28 @@ title: Memoria DDR
 nav_order: 7
 ---
 
-# Memoria DDR
+- [0. **Definición y Visión General (Memoria DDR)**](#0-definición-y-visión-general-memoria-ddr)
+- [1. **Estructura y Funcionamiento (bancos, filas/columnas, prefetch, bursts)**](#1-estructura-y-funcionamiento-bancos-filascolumnas-prefetch-bursts)
+- [2. **Generaciones DDR (de DDR a DDR5)**](#2-generaciones-ddr-de-ddr-a-ddr5)
+- [3. **Formatos físicos (DIMM, SO-DIMM), pines y muescas**](#3-formatos-físicos-dimm-so-dimm-pines-y-muescas)
+- [4. **Rendimiento: MT/s, timings y latencia absoluta (con ejemplos)**](#4-rendimiento-mts-timings-y-latencia-absoluta-con-ejemplos)
+- [5. **Canales, Ranks, Bank Groups y Subcanales (DDR5)**](#5-canales-ranks-bank-groups-y-subcanales-ddr5)
+- [6. **ECC, RDIMM/LRDIMM y fiabilidad**](#6-ecc-rdimmlrdimm-y-fiabilidad)
+- [7. **Tabla comparativa de generaciones DDR**](#7-tabla-comparativa-de-generaciones-ddr)
+- [8. **Pirámide jerárquica de memorias**](#8-pirámide-jerárquica-de-memorias)
+- [9. **Compatibilidad, instalación y UEFI (checklist)**](#9-compatibilidad-instalación-y-uefi-checklist)
+- [10. **Diagnóstico, pruebas y sintomatología típica**](#10-diagnóstico-pruebas-y-sintomatología-típica)
+- [11. **Recomendaciones de compra y casos de uso**](#11-recomendaciones-de-compra-y-casos-de-uso)
+
+## 0. **Definición y Vocabulario Fundamental (Memoria DDR)**
 
 La **memoria DDR** es la tecnología dominante de **DRAM** que se usa como **memoria principal** en PC y servidores. Se llama *Double Data Rate* porque **transfiere datos en los dos flancos del reloj** (subida y bajada), duplicando la tasa efectiva. Su misión es ofrecer un **espacio de trabajo** de baja latencia y alto ancho de banda entre la CPU (y su jerarquía de cachés) y el almacenamiento masivo (SSD/HDD).
 
-> **Tabla — Vocabulario Fundamental**
+ > - DDR transmite datos en los flancos de subida y bajada del reloj, duplicando rendimiento por ciclo.
+ > - Cada nueva generación de DDR mejora velocidad, disminuye consumo y maximiza la densidad.
+ > - La RAM es volátil: al apagar el equipo, se borra la información.
+
+## Vocabulario Fundamental
 
 | Término | Definición |
 |---|---|
