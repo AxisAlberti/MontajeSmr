@@ -44,7 +44,7 @@ nav_order: 6
 - [11. Diagnóstico de fallos frecuentes](#11-diagnóstico-de-fallos-frecuentes)
 
 ---
-
+{: .text-red-300}
 ## 1. Vocabulario{: .text-red-300}
 
 | Término                | Definición                                                                                         |
