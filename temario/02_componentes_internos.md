@@ -518,6 +518,20 @@ La **memoria RAM** (Random Access Memory) se instala en ranuras específicas de 
 | SO-DIMM      | 8/16/32GB (DDR4/5)     | 64GB (ultracompacto)  | Laptop, MiniPC        |
 
 ---
+<div style="text-align: center;">
+  <img src="../imagen/componentes/28.jpg" alt="Descripción de la imagen" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+</div>
+
+---
+<div style="text-align: center;">
+  <img src="../imagen/componentes/29.avif" alt="Descripción de la imagen" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+</div>
+---
+<div style="text-align: center;">
+  <img src="../imagen/componentes/30.jpg" alt="Descripción de la imagen" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+</div>
+
+---
 
 ## 7.2 Número de ranuras
 
@@ -856,6 +870,7 @@ Una buena práctica de instalación y mantenimiento garantiza:
 El técnico debe aplicar siempre **protocolos ESD**, realizar **pruebas en banco** antes de ensamblar y establecer un **plan de mantenimiento periódico** adaptado al entorno.
 
 ---
+
 
 
 
