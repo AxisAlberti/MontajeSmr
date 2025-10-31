@@ -1,4 +1,8 @@
-
+---
+layout: default
+title: "PREVENCIÓN DE RIESGOS LABORALES EN EL SECTOR INFORMÁTICO"
+nav_order: 2
+---
 
 
 # Tema de Prevención de Riesgos Laborales en Montaje y Mantenimiento de Equipos Informáticos
