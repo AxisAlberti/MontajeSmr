@@ -102,3 +102,36 @@ Mantener esta batería en buen estado es crucial para evitar problemas de config
 ---
 
 
+## 4. Uso de la memoria CMOS en un PC
+
+### Almacenamiento de la configuración del sistema
+
+La memoria CMOS almacena de forma temporal pero persistente, mediante alimentación por batería, la configuración esencial del sistema que el BIOS utiliza para la puesta en marcha del PC. Estos datos definen cómo el hardware y el firmware interactúan, preservando ajustes específicos establecidos por el usuario o el fabricante. Al apagar el PC, la CMOS mantiene esta información intacta gracias a la batería interna, evitando que se pierdan los parámetros que permiten un arranque correcto y personalizado.
+
+### Parámetros guardados: fecha, hora, configuración de hardware
+
+Entre los parámetros que se almacenan en la memoria CMOS se encuentran la fecha y hora del sistema, que permiten que el reloj del sistema operativo mantenga la sincronía correcta. Además, se guardan configuraciones relevantes de hardware, como la secuencia de arranque (orden en que se reconocen los dispositivos), perfiles de overclocking, opciones de activación o desactivación de componentes, y contraseñas de seguridad para el acceso a la BIOS o al sistema. Esto facilita la personalización y control del funcionamiento del PC.
+
+---
+
+| Parámetro                  | Descripción                                                                                   |
+|---------------------------|-----------------------------------------------------------------------------------------------|
+| Fecha y Hora              | Mantiene la fecha y hora del sistema para el reloj interno                                    |
+| Secuencia de Arranque    | Define el orden de los dispositivos desde donde se carga el sistema operativo                 |
+| Frecuencia y Voltaje CPU | Configuraciones relacionadas con el reloj y voltajes del procesador, esenciales para overclock|
+| Configuración de Memoria | Velocidades, timings y perfiles XMP/DOCP para la RAM                                         |
+| Control de Energía       | Ajustes de gestión energética, estados C y modos turbo                                       |
+| Control de Ventiladores  | Velocidad y perfiles de los ventiladores del sistema                                         |
+| Opciones de Seguridad    | Contraseñas BIOS, bloqueo de arranque y control de puertos                                   |
+| Periféricos Integrados   | Estado y configuración de audio, red, gráficos y otros dispositivos integrados                |
+| Opciones de Virtualización| Habilitación o deshabilitación de tecnologías de virtualización como Intel VT-x              |
+| Configuraciones PCIe     | Velocidad y modo de las ranuras PCIe                                                         |
+| Control de Dispositivos  | Habilitación o deshabilitación de puertos USB, puertos SATA, redes, etc.                     |
+| Estado de la batería CMOS| Almacenamiento del estado o alertas sobre la batería que alimenta la CMOS                     |
+
+---
+
+### Interacción con el BIOS al arranque
+
+Durante el encendido del PC, el BIOS lee los datos almacenados en la memoria CMOS para aplicar los ajustes establecidos antes del arranque del sistema operativo. Esto incluye inicializar dispositivos, configurar buses y velocidades, cargar configuraciones específicas y verificar la integridad del hardware. Si la CMOS está desconfigurada o la batería agotada, el BIOS detecta esta situación y puede mostrar mensajes de error o solicitar al usuario que ingrese a la configuración para corregir los parámetros antes de continuar. Esta interacción es crucial para el correcto funcionamiento y estabilidad del PC desde el primer momento.
+
