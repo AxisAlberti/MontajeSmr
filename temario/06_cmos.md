@@ -73,6 +73,15 @@ La memoria CMOS está contenida en un chip específico dentro de la placa base d
 
 La batería más común es el modelo de pila de botón tipo CR2032 de 3V, ubicada generalmente en un soporte visible en la placa base, frecuentemente cerca de las ranuras de expansión o en la parte inferior de la placa. La vida útil típica de esta batería oscila entre 3 y 10 años, dependiendo del uso del PC y la calidad de la batería. Cuando esta pila se agota, la memoria CMOS pierde alimentación y con ella la configuración guardada, lo que provoca que el PC pueda perder la fecha, hora y los ajustes del BIOS, además de dificultar o impedir el arranque correcto del sistema.
 
+---
+
+<div style="text-align: center;">
+  <img src="../imagen/cmos/cmos.webp" alt="Descripción de la imagen" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+</div>
+
+---
+
+
 ### Papel de la batería CR2032
 
 Esta pila CR2032 es fundamental para el funcionamiento continuo de la memoria CMOS, pues suministra la energía necesaria para que la configuración del sistema se mantenga activa y no se borre al apagar el PC. Es una batería de litio con capacidad suficiente para alimentar la memoria durante años en condiciones normales. Cuando la batería comienza a fallar, es habitual notar mensajes de error al encender el PC, como advertencias relacionadas con la fecha y hora, o la imposibilidad de almacenar los parámetros de configuración.
@@ -81,6 +90,12 @@ El reemplazo de la batería CR2032 es sencillo, generalmente solo es necesario l
 
 Mantener esta batería en buen estado es crucial para evitar problemas de configuración y garantizar un arranque estable y confiable del PC.
 
-[web:1][web:2][web:9][web:30][web:35]
+---
+
+<div style="text-align: center;">
+  <img src="../imagen/cmos/cmos.webp" alt="Descripción de la imagen" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+</div>
+
+---
 
 
