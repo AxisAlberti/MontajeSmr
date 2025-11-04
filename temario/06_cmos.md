@@ -93,7 +93,7 @@ Mantener esta batería en buen estado es crucial para evitar problemas de config
 ---
 
 <div style="text-align: center;">
-  <img src="../imagen/cmos/cmos.webp" alt="Descripción de la imagen" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+  <img src="../imagen/cmos/pila.avif" alt="Descripción de la imagen" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
 </div>
 
 ---
