@@ -6,7 +6,7 @@ nav_order: 7
 
 ## TEMA 5. MEMORIA DDR
 
-- [0. Definición y Vocabulario Fundamental (Memoria DDR)](#-definición-y-vocabulario-fundamental-memoria-ddr)
+- [0. Definición y Vocabulario Fundamental (Memoria DDR)](#0-definición-y-vocabulario-fundamental-memoria-ddr)
 - [1. Estructura y Funcionamiento (bancos, filas/columnas, prefetch, bursts)](#1-estructura-y-funcionamiento-bancos-filascolumnas-prefetch-bursts)
 - [2. Generaciones DDR (de DDR a DDR5)](#2-generaciones-ddr-de-ddr-a-ddr5)
 - [3. Formatos físicos (DIMM, SO-DIMM), pines y muescas](#3-formatos-físicos-dimm-so-dimm-pines-y-muescas)
