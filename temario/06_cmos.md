@@ -76,10 +76,13 @@ La batería más común es el modelo de pila de botón tipo CR2032 de 3V, ubicad
 ---
 
 <div style="text-align: center;">
-  <img src="../imagen/cmos/cmos.webp" alt="Descripción de la imagen" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+  <img src="../imagen/cmos/placa.webp" alt="Descripción de la imagen" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
 </div>
 
 ---
+
+En placas Z790 la “CMOS” no es un chip aparte: el RTC/CMOS está integrado en el PCH (chipset Intel Z790) y los ajustes de UEFI se guardan en la flash SPI. En la foto (Gigabyte Z790 AERO G, con el disipador quitado) la CMOS/RTC reside en el PCH —el chip cuadrado verde cerca del M.2—; en la mayoría de fotos comerciales va tapado por un disipador.
+
 
 
 ### Papel de la batería CR2032
