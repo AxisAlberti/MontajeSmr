@@ -28,3 +28,5 @@ nav_order: 8
 | Reseteo CMOS     | Proceso de borrar la configuración guardada en CMOS para restaurar valores por defecto, mediante botón, puente de pines o extracción de pila. |
 | Configuración BIOS| Ajustes almacenados en la memoria CMOS que controlan hardware, secuencia de arranque, contraseñas y otras opciones de sistema.            |
 
+
+
