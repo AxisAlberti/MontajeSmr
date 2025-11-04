@@ -38,6 +38,13 @@ La tecnología CMOS se comenzó a usar ampliamente en PCs desde finales de los a
 
 Este equilibrio entre persistencia de configuraciones y eficiencia energética hace que la memoria CMOS siga siendo un elemento clave en el diseño y mantenimiento de PCs modernos.  
 
+---
+
+<div style="text-align: center;">
+  <img src="../imagen/cmos/cmos.webp" alt="Descripción de la imagen" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+</div>
+
+---
 
 ## 2. Tecnología CMOS
 
