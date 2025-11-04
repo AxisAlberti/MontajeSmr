@@ -1,12 +1,12 @@
 ---
 layout: default
-title: "TEMA 1. CMOS"
+title: "TEMA 6. CMOS"
 nav_order: 8
 ---
 
 
 
-## TEMA 0. SISTEMAS DE NUMERACIÓN
+## TEMA 6. CMOS
   
 1. [Introducción a la memoria CMOS](#introducción-a-la-memoria-cmos)
 2. [Tecnología CMOS](#tecnología-cmos)
