@@ -15,8 +15,7 @@ nav_order: 8
 5. [Reseteo y restauración de la CMOS](#reseteo-y-restauración-de-la-cmos)
 6. [Problemas y mantenimiento de la CMOS](#problemas-y-mantenimiento-de-la-cmos) 
 
-## 1. [Introducción a la memoria CMOS](#introducción-a-la-memoria-cmos)
-
+## 1. Introducción a la memoria CMOS
 #  Vocabulario
 
 | Término          | Definición                                                                                     |
