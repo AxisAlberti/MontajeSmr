@@ -154,6 +154,47 @@ El reseteo y la restauración de la memoria CMOS son procedimientos habituales p
 
 ---
 
+## 6. Problemas y mantenimiento de la CMOS
+
+La memoria CMOS, aunque pequeña y resistente, puede presentar ciertos problemas que afectan el correcto funcionamiento del PC. Diagnosticar y mantener la CMOS ayuda a evitar fallos relacionados con la configuración del sistema.
+
+### Problemas frecuentes relacionados con la CMOS
+
+- **Fallo de la pila:**  
+  Si la pila de la placa base está agotada o presenta fallo, el PC puede mostrar mensajes de error como “CMOS Checksum Error” al encender. También pueden perderse la fecha/hora y la configuración BIOS cada vez que se apaga el equipo.
+
+- **Configuraciones corruptas:**  
+  Cambios incorrectos en la BIOS/UEFI, cortes eléctricos o incompatibilidades pueden corromper la información almacenada en la CMOS. Esto provoca errores de arranque o inestabilidad.
+
+- **Mensaje de error al iniciar:**  
+  Aparecen avisos del tipo “CMOS Battery Failure”, “CMOS Settings Wrong” o similares. Suelen indicar problemas de hardware o configuraciones erróneas.
+
+- **Imposibilidad de guardar cambios:**  
+  Si no se guardan los ajustes realizados en la BIOS, puede ser señal de que la pila está descargada o la CMOS dañada.
+
+### Mantenimiento de la CMOS
+
+- **Sustitución periódica de la pila:**  
+  Cambiar la pila CR2032 cada 2-4 años —o cuando se perciban síntomas de fallo— garantiza la conservación de la configuración.
+
+- **Revisar y actualizar configuraciones:**  
+  Es recomendable comprobar y actualizar los parámetros de BIOS/UEFI después de cambios de hardware o actualizaciones importantes.
+
+- **Limpiar contactos y evitar la acumulación de polvo:**  
+  Mantener la zona de la placa base limpia ayuda a prevenir problemas de conexión eléctrica que podrían afectar la memoria CMOS.
+
+- **Actualizar la BIOS/UEFI de forma segura:**  
+  Las actualizaciones solventan errores de funcionamiento, pero deben hacerse siguiendo instrucciones del fabricante y comprobando compatibilidad con el modelo de la placa base.
+
+### Recomendaciones adicionales
+
+- Realiza comprobaciones periódicas de la fecha y hora del sistema; desajustes pueden indicar fallo en la pila.
+- Guarda una copia de la configuración óptima de la BIOS/UEFI para poder restaurarla en caso de problemas.
+- Consulta el manual técnico de la placa base ante cualquier duda o anomalía detectada.
+
+---
+
+
 - **Retirando la pila de la placa base:**  
   1. Apaga el PC y desconéctalo de la corriente.
   2. Abre la caja y localiza la pila (tipo CR2032) en la placa base.
