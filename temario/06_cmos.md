@@ -162,10 +162,9 @@ El reseteo y la restauración de la memoria CMOS son procedimientos habituales p
   Esto borra cualquier configuración almacenada en la CMOS.
 
 - **Utilizando el jumper de reseteo:**  
-  1. Apaga el PC y localiza el jumper “CLR_CMOS”, “CLEAR” o similar en la placa base (consulta el manual).
-  2. Cambia de posición el jumper durante unos segundos.
-  3. Regrésalo a su posición original.
-  4. Arranca el sistema.
+  1. Apaga el PC y localiza lo pines “CLR_CMOS”, “CLEAR” o similar en la placa base (consulta el manual).
+  2. Usando un jumper, conecta los dos pines. (tambien se realiza con un destornillador, pero es un proceso que entraña ciertos riesgos para el equipo)
+  3. Arranca el sistema. 
 
 ---
 
@@ -189,3 +188,4 @@ El reseteo y la restauración de la memoria CMOS son procedimientos habituales p
 - Restablecimiento durante el mantenimiento preventivo.
 
 ---
+
