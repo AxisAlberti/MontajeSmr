@@ -135,3 +135,57 @@ Entre los parámetros que se almacenan en la memoria CMOS se encuentran la fecha
 
 Durante el encendido del PC, el BIOS lee los datos almacenados en la memoria CMOS para aplicar los ajustes establecidos antes del arranque del sistema operativo. Esto incluye inicializar dispositivos, configurar buses y velocidades, cargar configuraciones específicas y verificar la integridad del hardware. Si la CMOS está desconfigurada o la batería agotada, el BIOS detecta esta situación y puede mostrar mensajes de error o solicitar al usuario que ingrese a la configuración para corregir los parámetros antes de continuar. Esta interacción es crucial para el correcto funcionamiento y estabilidad del PC desde el primer momento.
 
+## 5. Reseteo y restauración de la CMOS
+
+El reseteo y la restauración de la memoria CMOS son procedimientos habituales para solucionar problemas de configuración, recuperar el acceso si se olvida una contraseña o asegurar el funcionamiento correcto del sistema. Estos procesos devuelven la CMOS a sus valores predeterminados de fábrica.
+
+### Métodos principales para resetear la CMOS
+
+- **Mediante el menú BIOS/UEFI:**  
+  1. Accede al menú presionando la tecla correspondiente (F2, SUPR, ESC) durante el arranque.
+  2. Busca la opción `Load Setup Defaults`, `Restore Defaults` o similar.
+  3. Guarda los cambios y reinicia el PC (generalmente con F10).
+
+---
+
+<div style="text-align: center;">
+  <img src="../imagen/cmos/reset_cmos_uefi.jpg" alt="Descripción de la imagen" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+</div>
+
+---
+
+- **Retirando la pila de la placa base:**  
+  1. Apaga el PC y desconéctalo de la corriente.
+  2. Abre la caja y localiza la pila (tipo CR2032) en la placa base.
+  3. Extráela durante al menos 5 minutos (este tiempo es estimado, ya que hay CMOS que pueden necesitar más tiempo).
+  4. Vuelve a colocar la pila y enciende el PC.  
+  Esto borra cualquier configuración almacenada en la CMOS.
+
+- **Utilizando el jumper de reseteo:**  
+  1. Apaga el PC y localiza el jumper “CLR_CMOS”, “CLEAR” o similar en la placa base (consulta el manual).
+  2. Cambia de posición el jumper durante unos segundos.
+  3. Regrésalo a su posición original.
+  4. Arranca el sistema.
+
+---
+
+<div style="text-align: center;">
+  <img src="../imagen/cmos/reset_cmos_jumper.jpg" alt="Descripción de la imagen" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+</div>
+
+---
+
+### Consideraciones importantes
+
+- Después del reseteo, será necesario reconfigurar parámetros como orden de arranque, fecha/hora, contraseñas y ajustes específicos para el sistema.
+- Es recomendable consultar el manual de la placa base para identificar correctamente la ubicación del jumper y de la pila.
+- Un reseteo incorrecto puede provocar la pérdida de la configuración necesaria para arrancar el sistema operativo.
+
+### Situaciones en las que es útil el reseteo de la CMOS
+
+- Olvido o bloqueo por contraseña de BIOS.
+- Corrupción de configuración tras un fallo de hardware.
+- Problemas de incompatibilidad después de actualizar componentes.
+- Restablecimiento durante el mantenimiento preventivo.
+
+---
