@@ -187,5 +187,9 @@ El reseteo y la restauración de la memoria CMOS son procedimientos habituales p
 - Problemas de incompatibilidad después de actualizar componentes.
 - Restablecimiento durante el mantenimiento preventivo.
 
+** RECOMENDABLE DIRÍA CASI OBLIGATORIO RESETEAR CMOS CUANDO SE MANIPULE ALGÚN COMPONENTE **
+
 ---
+
+
 
