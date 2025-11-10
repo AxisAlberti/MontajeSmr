@@ -154,6 +154,26 @@ El reseteo y la restauración de la memoria CMOS son procedimientos habituales p
 
 ---
 
+- **Retirando la pila de la placa base:**  
+  1. Apaga el PC y desconéctalo de la corriente.
+  2. Abre la caja y localiza la pila (tipo CR2032) en la placa base.
+  3. Extráela durante al menos 5 minutos (este tiempo es estimado, ya que hay CMOS que pueden necesitar más tiempo).
+  4. Vuelve a colocar la pila y enciende el PC.  
+  Esto borra cualquier configuración almacenada en la CMOS.
+
+- **Utilizando el jumper de reseteo:**  
+  1. Apaga el PC y localiza lo pines “CLR_CMOS”, “CLEAR” o similar en la placa base (consulta el manual).
+  2. Usando un jumper, conecta los dos pines. (tambien se realiza con un destornillador, pero es un proceso que entraña ciertos riesgos para el equipo)
+  3. Arranca el sistema. 
+
+---
+
+<div style="text-align: center;">
+  <img src="../imagen/cmos/reset_cmos_jumper.jpg" alt="Descripción de la imagen" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+</div>
+
+---
+
 ## 6. Problemas y mantenimiento de la CMOS
 
 La memoria CMOS, aunque pequeña y resistente, puede presentar ciertos problemas que afectan el correcto funcionamiento del PC. Diagnosticar y mantener la CMOS ayuda a evitar fallos relacionados con la configuración del sistema.
@@ -194,26 +214,6 @@ La memoria CMOS, aunque pequeña y resistente, puede presentar ciertos problemas
 
 ---
 
-
-- **Retirando la pila de la placa base:**  
-  1. Apaga el PC y desconéctalo de la corriente.
-  2. Abre la caja y localiza la pila (tipo CR2032) en la placa base.
-  3. Extráela durante al menos 5 minutos (este tiempo es estimado, ya que hay CMOS que pueden necesitar más tiempo).
-  4. Vuelve a colocar la pila y enciende el PC.  
-  Esto borra cualquier configuración almacenada en la CMOS.
-
-- **Utilizando el jumper de reseteo:**  
-  1. Apaga el PC y localiza lo pines “CLR_CMOS”, “CLEAR” o similar en la placa base (consulta el manual).
-  2. Usando un jumper, conecta los dos pines. (tambien se realiza con un destornillador, pero es un proceso que entraña ciertos riesgos para el equipo)
-  3. Arranca el sistema. 
-
----
-
-<div style="text-align: center;">
-  <img src="../imagen/cmos/reset_cmos_jumper.jpg" alt="Descripción de la imagen" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
-</div>
-
----
 
 ### Consideraciones importantes
 
