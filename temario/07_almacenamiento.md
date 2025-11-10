@@ -1,9 +1,7 @@
 # Índice de Dispositivos de almacenamiento
 
 1. [Introducción a los dispositivos de almacenamiento](#1-introducción-a-los-dispositivos-de-almacenamiento)
-   
    1.1 [Definición y tipos principales](#11-definición-y-tipos-principales)
-
    1.2 [Importancia en la informática actual](#12-importancia-en-la-informática-actual)
 
 3. [Tecnologías tradicionales de almacenamiento](#2-tecnologías-tradicionales-de-almacenamiento)
