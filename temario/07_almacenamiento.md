@@ -158,19 +158,6 @@ Dispositivo capaz de **registrar**, **conservar** y **recuperar** información d
 - **Borrado seguro**: `secure erase`, destrucción física cuando procede.  
 - **SMART/monitorización**: anticipa fallos, planifica reemplazos.
 
-### 5) Elección técnica y costes
-- **Precio/GB**: HDD < SSD SATA < SSD NVMe.  
-- **Rendimiento**: NVMe >> SATA >> HDD.  
-- **Consumo/ruido/temperatura**: SSD ganan; NVMe rápidos pueden requerir **disipador**.  
-- **TCO** (coste total): no es solo comprar; cuenta energía, fallos, tiempo de espera del alumnado/equipo.
-
-### 6) Casos de uso típicos (decisiones rápidas)
-- **Sistema operativo + apps**: **SSD NVMe** si es posible; **SATA** si el presupuesto es ajustado.  
-- **Proyectos de desarrollo / BBDD / VMs**: **NVMe** (latencia/IOPS).  
-- **Juegos**: SSD (NVMe o SATA); Gen4 vs Gen3 a menudo es **margen** según el título.  
-- **Almacenamiento masivo / copias**: **HDD** o SSD **SATA** para equilibrio precio/GB.  
-- **Archivado a largo plazo**: **cinta** (LTO) o **cloud** de bajo coste.
-
 ---
 
 ## 2. Tecnologías tradicionales de almacenamiento
@@ -199,7 +186,7 @@ En este bloque vas a entender **cómo guardan los datos** los soportes “clási
 - **Fiabilidad y mantenimiento**: **SMART**, **TRIM**, copias **3-2-1**, y recordar que **RAID ≠ backup**.
 
 
-### Reglas rápidas de elección (para proyectos del aula)
+### Reglas rápidas de elección 
 - **SO + apps / desarrollo / VMs** → **SSD NVMe** si la placa lo permite.  
 - **Equipo antiguo o presupuesto ajustado** → **SSD SATA** (gran salto respecto a HDD).  
 - **Muchos TB baratos** (multimedia, copias) → **HDD**.  
