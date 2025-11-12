@@ -173,7 +173,7 @@ Dispositivo capaz de **registrar**, **conservar** y **recuperar** información d
 
 ---
 
-## 2. Tecnologías tradicionales de almacenamiento — Introducción
+## 2. Tecnologías tradicionales de almacenamiento
 
 En este bloque vas a entender **cómo guardan los datos** los soportes “clásicos” que todavía encuentras en PCs, portátiles y laboratorios: **HDD** (discos duros mecánicos), **SSD** (estado sólido), **memorias flash/USB** y **ópticos** (CD/DVD). No es solo “cuánto caben” o “cuántos MB/s dicen”; el **cómo funcionan por dentro** explica **por qué rinden** como rinden, **cuándo elegir** cada uno y **qué precauciones** tomar.
 
