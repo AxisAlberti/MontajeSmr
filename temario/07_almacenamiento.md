@@ -235,10 +235,12 @@ Un **HDD** almacena datos usando **magnetismo** sobre **platos** que **giran** a
 - **Procesado de señal**: técnicas modernas (**PRML/LDPC**, etc.) permiten recuperar datos con densidades muy altas tolerando ruido.  
 - **Servo**: la posición fina del cabezal se corrige leyendo **marcas de servo** grabadas a lo largo de los platos (mantiene el “seguimiento de pista”).
 
-> Dónde poner imagen 2 (pista/sector y servo):  
-> `![Pistas, sectores y servo wedges](/assets/img/almacenamiento/hdd_pistas_sectores_servo.jpg)`  
-> *Figura 2.2 — Pistas concéntricas, sectores y campos de servo para posicionamiento.*
+> ESTRUCTURA LOGICA HDD
 
+---
+<div style="text-align: center;">
+  <img src="../imagen/almacenamiento/hdd_pistas_sectores_servo.png" alt="Descripción de la imagen" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+</div>
 ---
 
 ### 4) Organización física y lógica de los datos
