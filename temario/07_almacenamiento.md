@@ -1,4 +1,12 @@
-Dispositivos de almacenamiento
+---
+layout: default
+title: "TEMA 7. Dispositivos de almacenamiento"
+nav_order: 7
+---
+
+
+
+## TEMA 6. Dispositivos de almacenamiento
 
 
 - [1. Introducción a los dispositivos de almacenamiento](#1-introducción-a-los-dispositivos-de-almacenamiento)
