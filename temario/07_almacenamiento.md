@@ -1,5 +1,5 @@
-# Índice de Dispositivos de almacenamiento
-# Índice de Dispositivos de almacenamiento
+Dispositivos de almacenamiento
+
 
 - [1. Introducción a los dispositivos de almacenamiento](#1-introducción-a-los-dispositivos-de-almacenamiento)
   - [1.1 Definición y tipos principales](#11-definición-y-tipos-principales)
