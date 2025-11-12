@@ -173,6 +173,42 @@ Dispositivo capaz de **registrar**, **conservar** y **recuperar** información d
 
 ---
 
+## 2. Tecnologías tradicionales de almacenamiento — Introducción
+
+En este bloque vas a entender **cómo guardan los datos** los soportes “clásicos” que todavía encuentras en PCs, portátiles y laboratorios: **HDD** (discos duros mecánicos), **SSD** (estado sólido), **memorias flash/USB** y **ópticos** (CD/DVD). No es solo “cuánto caben” o “cuántos MB/s dicen”; el **cómo funcionan por dentro** explica **por qué rinden** como rinden, **cuándo elegir** cada uno y **qué precauciones** tomar.
+
+### Qué importa de verdad (mapa mental rápido)
+- **Persistencia**: conservan los datos sin energía (a diferencia de la RAM).
+- **Patrón de acceso**:  
+  - *Secuencial* (copiar vídeos/ISOs) → importa el **ancho** (MB/s).  
+  - *Aleatorio* (abrir apps/OS, compilar, BBDD) → manda la **latencia/IOPS**.
+- **Tecnología interna**:
+  - **HDD (mecánico + magnético)** → cabezal se mueve + disco gira → **latencia alta** en aleatorio.
+  - **SSD/Flash (electrónico + NAND)** → sin partes móviles → **latencia muy baja**, gestión interna (FTL, TRIM).
+  - **Óptico (láser + pits/lands)** → lectura secuencial, **lento** pero barato para distribución/archivo puntual.
+- **Interfaz ≠ Formato**:
+  - **SATA/AHCI** vs **NVMe/PCIe** (protocolo/interfaz).  
+  - **2.5"**, **M.2**, **3.5"**, **U.2** (forma física).  
+  - Un **M.2** puede ser **SATA** *o* **NVMe**: la **placa manda** (compatibilidad).
+- **Coste/GB y resistencia**:
+  - HDD → **muy barato/GB**, muchos TB.  
+  - SSD SATA → equilibrio precio/rendimiento.  
+  - SSD NVMe → **máximo rendimiento** (sobre todo en aleatorio).  
+  - Flash/USB → portable, calidad muy variable.  
+  - Métricas SSD: **TBW/DWPD**, **temperatura** y **throttling**.
+- **Fiabilidad y mantenimiento**: **SMART**, **TRIM**, copias **3-2-1**, y recordar que **RAID ≠ backup**.
+
+
+### Reglas rápidas de elección (para proyectos del aula)
+- **SO + apps / desarrollo / VMs** → **SSD NVMe** si la placa lo permite.  
+- **Equipo antiguo o presupuesto ajustado** → **SSD SATA** (gran salto respecto a HDD).  
+- **Muchos TB baratos** (multimedia, copias) → **HDD**.  
+- **Transporte** / cámaras → **USB/SD** (elige bien por normas A1/A2, V30+ si grabas vídeo).  
+- **Distribución/archivo puntual** → **óptico** o **cloud** económico.
+
+
+
+---
 ## 2.1 HDD (Discos Duros)
 
 ### 1) Visión general
