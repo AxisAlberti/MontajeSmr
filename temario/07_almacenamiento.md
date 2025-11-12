@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "TEMA 7. Dispositivos de almacenamiento"
+title: "TEMA 7. DISPOSITIVOS ALMACENAMIENTO"
 nav_order: 9
 ---
 
