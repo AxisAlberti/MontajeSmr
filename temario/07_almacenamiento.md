@@ -173,4 +173,132 @@ Dispositivo capaz de **registrar**, **conservar** y **recuperar** información d
 
 ---
 
+## 2.1 HDD (Discos Duros)
+
+### 1) Visión general
+Un **HDD** almacena datos usando **magnetismo** sobre **platos** que **giran** a alta velocidad. Un **brazo actuador** posiciona un **cabezal** a micras de la superficie para **escribir** (magnetizar dominios) y **leer** (medir variaciones de campo). Al ser un sistema **mecánico + magnético**, su **latencia** es mucho mayor que la de un SSD, especialmente en accesos **aleatorios**.
+
+> Dónde poner imagen 1 (corte físico del HDD):  
+> `![HDD abierto: platos, brazo y cabezal](/assets/img/almacenamiento/hdd_corte_fisico.jpg)`  
+> *Figura 2.1 — Platos, eje (spindle), brazo actuador y cabezal.*
+
+---
+
+### 2) Componentes y mecánica
+- **Platos (platters)**: discos recubiertos de material magnético; cada **cara** tiene un cabezal propio.  
+- **Spindle + RPM**: motor que hace girar los platos (p. ej., **5400/7200/10.000 RPM**).  
+- **Brazo actuador (voice-coil)**: mueve todos los cabezales a la vez radialmente.  
+- **Cabezales MR/TMR**: sensores magnetorresistivos para lectura y elementos de escritura.  
+- **Preamplificador** (en el conjunto de cabezales) y **controlador** (en la PCB).  
+- **Filtros** y **carcasa sellada**: el aire interno aporta el “colchón” de vuelo del cabezal.
+
+**Tiempos fundamentales**
+- **Seek** (búsqueda): movimiento del brazo hasta la pista deseada.  
+- **Latencia rotacional**: lo que tarda en **pasar el sector** bajo el cabezal.  
+- **Transferencia**: lectura/escritura una vez alineado el sector.
+
+> **Latencia rotacional media** ≈ ½ vuelta = `0,5 × 60 / RPM` segundos  
+> En **7200 RPM** ≈ `0,5 × 60/7200 × 1000` = **~4,17 ms**.
+
+---
+
+### 3) Lectura y escritura magnética (cómo “nacen” los bits)
+- **Escritura**: una bobina en el cabezal genera un campo que **orienta dominios** magnéticos (0/1) en la capa del plato.  
+- **Lectura**: el paso por un dominio provoca una **pequeña variación** de campo que el elemento **MR/TMR** convierte en señal eléctrica.  
+- **Procesado de señal**: técnicas modernas (**PRML/LDPC**, etc.) permiten recuperar datos con densidades muy altas tolerando ruido.  
+- **Servo**: la posición fina del cabezal se corrige leyendo **marcas de servo** grabadas a lo largo de los platos (mantiene el “seguimiento de pista”).
+
+> Dónde poner imagen 2 (pista/sector y servo):  
+> `![Pistas, sectores y servo wedges](/assets/img/almacenamiento/hdd_pistas_sectores_servo.jpg)`  
+> *Figura 2.2 — Pistas concéntricas, sectores y campos de servo para posicionamiento.*
+
+---
+
+### 4) Organización física y lógica de los datos
+**4.1 De lo físico a lo lógico**
+- **Pistas**: circunferencias concéntricas en cada cara.  
+- **Sectores**: porciones dentro de la pista (típicamente **512 B** o **4096 B** de **datos útiles**).  
+- **Cilindro**: conjunto de pistas a la misma “altura” en **todas las caras** (todos los cabezales).
+
+**4.2 ZBR (Zoned Bit Recording)**
+- Las pistas **externas** son más largas (mayor perímetro) ⇒ pueden almacenar **más sectores por vuelta**.  
+- El disco se divide en **zonas**; cada zona tiene un número fijo de sectores por pista.  
+- Resultado: el **rendimiento secuencial** es **mayor** en las zonas **externas** que en las **internas**.
+
+> Dónde poner imagen 3 (ZBR: zonas externas vs internas):  
+> `![ZBR: más sectores en pistas externas](/assets/img/almacenamiento/hdd_zbr_zonas.jpg)`  
+> *Figura 2.3 — Zoned Bit Recording: más sectores por pista en la periferia.*
+
+**4.3 CHS vs LBA**
+- **CHS** (Cylinder-Head-Sector): direccionamiento antiguo (geometría “ficticia” hacia el SO).  
+- **LBA** (Logical Block Addressing): hoy se **abstrae** todo como bloques lineales numerados (**0..N**). El firmware traduce **LBA → zona/pista/sector** reales.
+
+**4.4 Advanced Format (512e / 4Kn)**
+- Físicamente muchos HDD usan **sectores de 4096 B** (**4K**).  
+- **512e** (512 emulado): presentan 512 B lógicos para compatibilidad, empaquetados en **4K físicos** → importante **alinear particiones a 4K**.  
+- **4Kn**: exponen **4096 B** lógicos y físicos.
+
+**4.5 Estructura de un sector (simplificada)**
+- **Datos de usuario** (512 B o 4096 B) + **metadatos** (cabeceras, sincronización) + **ECC**.  
+- El **ECC** corrige errores de lectura **sin** intervención del usuario.
+
+---
+
+### 5) Rendimiento: por qué un HDD “se siente” lento en aleatorio
+- **Accesos secuenciales**: el cabezal **no salta** de pista → solo cuenta latencia rotacional + transferencia ⇒ **MB/s decentes**.  
+- **Accesos aleatorios**: múltiples **seeks** + rotaciones ⇒ **tiempos de espera** constantes en cada operación ⇒ **IOPS muy bajos**.
+
+**Métricas típicas**
+- **Tiempo de acceso** (seek + rotacional) en **ms**.  
+- **Velocidad secuencial** (MB/s), mayor en **zonas externas**.  
+- **NCQ (Native Command Queuing)** en SATA: reordena peticiones para **reducir movimientos** del cabezal (mejora multiusuario).
+
+> Regla práctica: si tu carga son **muchos ficheros pequeños** (SO, apps, compilaciones), un HDD sufrirá; un SSD **vuela**.
+
+---
+
+### 6) Modos de grabación y densidad
+- **PMR/CMR (Conventional Magnetic Recording)**: pistas “normales”. Buen rendimiento **general**.  
+- **SMR (Shingled Magnetic Recording)**: pistas **solapadas** como tejas; **más densidad**, pero **reescrituras** implican mover datos de una “banda” ⇒ **mal** para cargas de **escritura aleatoria** sostenida (salvo con caché y gestión cuidadosa).  
+- **HAMR/MAMR** (nuevas técnicas): calentar/ayudar la grabación para **aumentar densidad** (usado en modelos de gran capacidad).  
+- **Helio**: discos llenos de **helio** reducen fricción y permiten **más platos** con menor consumo/vibración.
+
+---
+
+### 7) Fiabilidad, corrección y gestión de defectos
+- En fábrica se crea una **P-list** (defectos de fabricación) y durante la vida del disco una **G-list** (defectos “crecidos”).  
+- Cuando un sector se degrada, el firmware lo **remapea** a un **repuesto** (spare) transparente para el sistema.  
+- **S.M.A.R.T.**: monitoriza salud (atributos importantes:  
+  **5** Reallocated Sectors, **197** Current Pending Sector, **198** Uncorrectable, **194** Temperatura, **9** Power-On Hours, **193** Load/Unload Cycle).  
+- En entornos RAID, funciones tipo **TLER/ERC** limitan el tiempo de recuperación para no “expulsar” discos por tardar demasiado en reparar un sector.
+
+---
+
+### 8) Sistema de ficheros y fragmentación
+- Un **cluster** del sistema de archivos agrupa sectores (p. ej., 4 KiB).  
+- En HDD, la **fragmentación** dispersa clusters de un mismo fichero ⇒ **más seeks** ⇒ **peor** rendimiento.  
+- **Desfragmentar** puede **mejorar** (solo HDD). **No** desfragmentes SSD.  
+- Importa la **alineación a 4K** en discos **512e/4Kn** para evitar lecturas-modificaciones-reescrituras innecesarias.
+
+---
+
+### 9) Buenas prácticas de uso y montaje
+- **Evita golpes** y vibraciones; no muevas el equipo con el disco en acceso.  
+- **Fija** el HDD con tornillos y, si hay varios, usa bahías anti-vibración.  
+- **Ventilación**: mantener temperatura moderada.  
+- **Backups**: los fallos pueden ser bruscos (mecánica).  
+- Elige **CMR** para cargas de **escritura** exigentes; **SMR** solo para archivo/lectura.  
+- Para **rendimiento**: usa **NCQ**, evita fragmentación y coloca datos secuenciales en la **zona externa** si el software lo permite (algunas herramientas de clonación/particionado).
+
+---
+
+### 10) Resumen comparativo (HDD vs SSD, enfoque rendimiento)
+- **HDD**: mecánico; **seek + rotación** = cuello de botella; **barato/GB** y **muchos TB**; ideal para **almacenamiento masivo**.  
+- **SSD**: electrónico; **latencia muy baja** y alto **IOPS**; mejor para **SO, apps, BBDD, VMs**.
+
+> Dónde poner imagen 4 (comparativa tiempos):  
+> `![Acceso secuencial vs aleatorio en HDD](/assets/img/almacenamiento/hdd_secuencial_vs_aleatorio.jpg)`  
+> *Figura 2.4 — En aleatorio, los seeks y la rotación dominan el tiempo total.*
+
+---
 
