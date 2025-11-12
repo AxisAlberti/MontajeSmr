@@ -201,9 +201,13 @@ En este bloque vas a entender **cómo guardan los datos** los soportes “clási
 ### 1) Visión general
 Un **HDD** almacena datos usando **magnetismo** sobre **platos** que **giran** a alta velocidad. Un **brazo actuador** posiciona un **cabezal** a micras de la superficie para **escribir** (magnetizar dominios) y **leer** (medir variaciones de campo). Al ser un sistema **mecánico + magnético**, su **latencia** es mucho mayor que la de un SSD, especialmente en accesos **aleatorios**.
 
-> Dónde poner imagen 1 (corte físico del HDD):  
-> `![HDD abierto: platos, brazo y cabezal](/assets/img/almacenamiento/hdd_corte_fisico.jpg)`  
-> *Figura 2.1 — Platos, eje (spindle), brazo actuador y cabezal.*
+---
+
+<div style="text-align: center;">
+  <img src="../imagen/almacenamiento/hdd_corte_fisico.jpg" alt="Descripción de la imagen" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+</div>
+
+
 
 ---
 
