@@ -237,14 +237,13 @@ Un **HDD** almacena datos usando **magnetismo** sobre **platos** que **giran** a
 
 ---
 
-<div style="text-align: center;">
-  <img src="../imagen/almacenamiento/magnetizacion-hdd-longitudinal.jpg" alt="Descripción de la imagen" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
-</div>
-
----
-
-<div style="text-align: center;">
-  <img src="../imagen/almacenamiento/magnetizacion-hdd-perpendicular.jpg" alt="Descripción de la imagen" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+<div style="display:flex; justify-content:space-between; align-items:flex-start; gap:12px;">
+  <img src="../imagen/almacenamiento/magnetizacion-hdd-longitudinal.jpg"
+       alt="Magnetización longitudinal HDD"
+       style="width:49%; height:auto; display:block;" loading="lazy">
+  <img src="../imagen/almacenamiento/magnetizacion-hdd-perpendicular.jpg"
+       alt="Magnetización perpendicular HDD"
+       style="width:49%; height:auto; display:block;" loading="lazy">
 </div>
 
 ---
