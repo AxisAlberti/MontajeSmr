@@ -235,6 +235,21 @@ Un **HDD** almacena datos usando **magnetismo** sobre **platos** que **giran** a
 - **Procesado de señal**: técnicas modernas (**PRML/LDPC**, etc.) permiten recuperar datos con densidades muy altas tolerando ruido.  
 - **Servo**: la posición fina del cabezal se corrige leyendo **marcas de servo** grabadas a lo largo de los platos (mantiene el “seguimiento de pista”).
 
+---
+
+<div style="text-align: center;">
+  <img src="../imagen/almacenamiento/magnetizacion-hdd-longitudinal.jpg" alt="Descripción de la imagen" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+</div>
+
+---
+
+<div style="text-align: center;">
+  <img src="../imagen/almacenamiento/magnetizacion-hdd-perpendicular.jpg" alt="Descripción de la imagen" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+</div>
+
+---
+
+
 > ESTRUCTURA LOGICA HDD
 
 ---
