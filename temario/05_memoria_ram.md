@@ -19,6 +19,13 @@ nav_order: 7
 - [10. Diagnóstico, pruebas y sintomatología típica](#10-diagnóstico-pruebas-y-sintomatología-típica)
 - [11. Recomendaciones de compra y casos de uso](#11-recomendaciones-de-compra-y-casos-de-uso)
 
+---
+# Jerarquía de memorias
+
+
+
+---
+
 ## 0. **Definición y Vocabulario Fundamental (Memoria DDR)**
 
 La **memoria DDR** es la tecnología dominante de **DRAM** que se usa como **memoria principal** en PC y servidores. Se llama *Double Data Rate* porque **transfiere datos en los dos flancos del reloj** (subida y bajada), duplicando la tasa efectiva. Su misión es ofrecer un **espacio de trabajo** de baja latencia y alto ancho de banda entre la CPU (y su jerarquía de cachés) y el almacenamiento masivo (SSD/HDD).
@@ -235,6 +242,41 @@ Jerarquía por **latencia, ancho de banda, capacidad, coste/GB**. Cuanto más ar
 │             ALMACENAMIENTO REMOTO / EN RED / CLOUD            │
 │             • NAS/Servidor de ficheros • Object storage       │  ↓ Más lentos / más baratos / muchísima capacidad
 └───────────────────────────────────────────────────────────────┘
+
+El rendimiento y la eficiencia de los sistemas informáticos modernos dependen de una organización inteligente de las distintas tecnologías de memoria. Este modelo se representa habitualmente mediante una **pirámide de jerarquías de memoria**, como se ilustra a continuación:
+
+---
+
+<div style="text-align: center;">
+  <img src="../imagen/memoria/piramide_memoria.webp" alt="Descripción de la imagen" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+</div>
+
+---
+
+En la cúspide de la pirámide se posicionan los **dispositivos más rápidos y costosos por byte**, pero de baja capacidad, tales como los **registros** (L0) y las **cachés** (L1, L2, L3, normalmente SRAM). Estos almacenan los datos e instrucciones de acceso más inmediato, acelerando así la ejecución del procesador.
+
+A medida que se baja en la pirámide, se accede a memorias de **mayor capacidad y menor coste por byte**, pero menos veloces. En este contexto, la **memoria principal (L4)** corresponde a módulos **DDR SDRAM (Double Data Rate Synchronous Dynamic RAM)**, ampliamente extendidos en computadores actuales.
+
+## El papel de la memoria DDR
+
+- **Ubicación:** La memoria DDR se encuentra debajo de las cachés de último nivel (L3) y por encima del almacenamiento secundario (discos duros, SSD).
+- **Función:** Aloja la mayoría de datos y programas activos; es accedida directamente por la CPU para operaciones en curso.
+- **Velocidad:** Si bien es menos rápida que la caché, la memoria DDR ofrece un equilibrio óptimo entre velocidad, capacidad y coste, superando ampliamente el rendimiento de dispositivos de almacenamiento masivo.
+- **Evolución:** Desde DDR hasta DDR5, cada generación ha incrementado aún más la velocidad y el ancho de banda disponible, mejorando el rendimiento global del sistema.
+
+## Importancia de la jerarquía
+
+La existencia de niveles de memoria con diferentes características permite a los sistemas maximizar el rendimiento y la eficiencia:
+- Las memorias superiores proporcionan acceso ultrarrápido a los datos críticos.
+- Las memorias intermedias (DDR) ofrecen un gran volumen de almacenamiento rápido para la ejecución eficiente de múltiples tareas.
+- Los almacenamientos secundarios y remotos (L5, L6) proporcionan capacidad masiva a un coste bajo, aunque su acceso es mucho más lento.
+
+---
+
+**Resumen:**  
+> La memoria DDR, como memoria principal dentro de la jerarquía, constituye el punto de equilibrio entre la rapidez de la caché y la capacidad del almacenamiento secundario. Su
+> correcta selección y comprensión es esencial para el funcionamiento fluido y eficiente de cualquier sistema informático.
+
 
 # 9. Compatibilidad, instalación y UEFI (checklist)
 
