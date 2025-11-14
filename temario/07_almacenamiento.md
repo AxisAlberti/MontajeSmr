@@ -353,3 +353,47 @@ Un **HDD** almacena datos usando **magnetismo** sobre **platos** que **giran** a
 
 ---
 
+# Cronología de la evolución de las memorias ROM a vNAND (NVMe)
+
+## Años 1950-1960: Inicios de la Memoria ROM
+- **1956:** Primeras memorias ROM (Read Only Memory)
+  - Usadas para almacenar instrucciones básicas de arranque.
+  - Solo lectura, programadas de fábrica, no modificables.
+
+## Años 1970: Aparición de PROM, EPROM y EEPROM
+- **1971:** **PROM** (Programmable ROM)
+  - Programable una única vez por el usuario.
+- **1972:** **EPROM** (Erasable Programmable ROM)
+  - Puede borrarse con luz ultravioleta y reprogramarse varias veces.
+- **1978:** **EEPROM** (Electrically Erasable Programmable ROM)
+  - Permite borrado y reprogramación eléctricamente, más flexible.
+
+## Años 1980-1990: Primeras memorias Flash
+- **1984:** Invento de la memoria **Flash** (Toshiba)
+  - Permite borrado/escritura de bloques grandes más rápido.
+- **Finales de los 80:** Desarrollo de memorias **NOR** y **NAND Flash**
+  - **Flash NOR** para código de ejecución rápido.
+  - **Flash NAND** para almacenamiento de datos masivo (base para USB y SSD).
+
+## Años 2000: Expansión de SSD y NAND
+- **2003:** Primeras SSD comerciales basadas en **NAND Flash**
+  - Rápidas, sin partes móviles, resistente a golpes y vibraciones.
+  - Empiezan a popularizarse en servidores y PCs.
+
+## Años 2010: Llega la 3D NAND y la vNAND
+- **2013:** Samsung lanza la primera **3D V-NAND**
+  - Apilamiento vertical de celdas, mayor densidad y velocidad.
+  - Mejor rendimiento y durabilidad frente a NAND tradicional.
+- **2014-2017:** SSDs con 3D NAND/vNAND accesibles en mercado masivo.
+
+## Presente: NVMe y almacenamiento ultra-rápido
+- **2016 en adelante:** Explosión de NVMe
+  - Memorias **vNAND** y **3D NAND** aprovechando el protocolo NVMe (Non-Volatile Memory Express).
+  - Conexión directa a PCIe, superando SATA en velocidad y latencia.
+  - Implantación en estaciones de trabajo, portátiles y servidores modernos.
+
+---
+
+> **Resumen:**  
+> La memoria ROM ha evolucionado desde ser solo lectura rígida hasta convertirse en la memoria vNAND/NVMe ultra flexible, apilada, de enorme velocidad y durabilidad, clave en el  > almacenamiento sólido contemporáneo.
+
