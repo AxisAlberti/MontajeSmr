@@ -411,9 +411,11 @@ La memoria **flash NAND** empleada en las SSD almacena datos en matrices de celd
 
 
 ---
+
 <div style="text-align: center;">
   <img src="../imagen/almacenamiento/slc.jpg" alt="Descripción de la imagen" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
 </div>
+
 ---
 
 Existen varios tipos de celdas según la cantidad de bits almacenados:
@@ -423,6 +425,8 @@ Existen varios tipos de celdas según la cantidad de bits almacenados:
 - **QLC (Quad Level Cell):** almacena 4 bits por celda (máxima densidad y bajo coste, menos ciclos de escritura).
 
 > [Diferencia entre SLC, MLC, TLC y NAND 3D en unidades flash USB, SSD y tarjetas de memoria](https://www.kingston.com/es/blog/pc-performance/difference-between-slc-mlc-tlc-3d-nand "Documentación oficial")
+
+
 ### Funcionamiento: Escritura y lectura en las celdas
 
 - **Lectura:**  
