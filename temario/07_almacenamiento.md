@@ -397,3 +397,48 @@ Un **HDD** almacena datos usando **magnetismo** sobre **platos** que **giran** a
 > **Resumen:**  
 > La memoria ROM ha evolucionado desde ser solo lectura rígida hasta convertirse en la memoria vNAND/NVMe ultra flexible, apilada, de enorme velocidad y durabilidad, clave en el  > almacenamiento sólido contemporáneo.
 
+## 2.2 SSD (Unidades de Estado Sólido)
+
+Las **Unidades de Estado Sólido** (SSD, por sus siglas en inglés) representan una de las mayores revoluciones en almacenamiento de datos moderno. Surgieron para superar varias limitaciones de los discos duros mecánicos (HDD), como la lentitud de acceso, el desgaste mecánico, el ruido y la fragilidad ante impactos físicos.
+
+### Motivación para el desarrollo de los SSD
+
+El almacenamiento magnético tradicional (HDD) utiliza platos giratorios y cabezales móviles para ubicar físicamente los datos, lo que limita la velocidad y fiabilidad. A medida que la demanda de sistemas más rápidos y resistentes creció, especialmente en portátiles y centros de datos, se impulsó la investigación en tecnologías basadas en memoria flash: chips sin partes móviles, más eficientes y duraderos.
+
+### Tecnología de las celdas de memoria
+
+La memoria **flash NAND** empleada en las SSD almacena datos en matrices de celdas de memoria, construidas con transistores de puerta flotante. Cada celda es capaz de retener una carga eléctrica, representando así distintos valores binarios según la cantidad de carga.
+
+Existen varios tipos de celdas según la cantidad de bits almacenados:
+- **SLC (Single Level Cell):** almacena 1 bit por celda (más rápida, duradera y cara).
+- **MLC (Multi Level Cell):** almacena 2 bits por celda (compromiso entre coste, capacidad y durabilidad).
+- **TLC (Triple Level Cell):** almacena 3 bits por celda (más capacidad y menor coste, pero menor durabilidad).
+- **QLC (Quad Level Cell):** almacena 4 bits por celda (máxima densidad y bajo coste, menos ciclos de escritura).
+
+### Funcionamiento: Escritura y lectura en las celdas
+
+- **Lectura:**  
+Para leer datos, el controlador del SSD aplica distintos niveles de voltaje a las celdas. Según la resistencia encontrada (o el nivel de carga), se determina el valor almacenado en la celda (0 o 1, o más bits según el tipo).
+- **Escritura:**  
+La escritura implica aplicar voltajes precisos para establecer la carga eléctrica en la puerta flotante de cada celda. Es importante destacar que las celdas deben borrarse previamente antes de ser reescritas, bloque por bloque, lo que influye en la gestión interna y la durabilidad del SSD.
+
+### Tabla comparativa: SSD vs HDD
+
+|                 | **SSD**                                | **HDD**                               |
+|-----------------|----------------------------------------|---------------------------------------|
+| **Tecnología**  | Memoria flash NAND (sin partes móviles)| Platos magnéticos + cabezales móviles |
+| **Velocidad de lectura secuencial** | 400 - 7,000 MB/s                    | 80 - 200 MB/s                        |
+| **Velocidad de escritura secuencial** | 300 - 6,500 MB/s                    | 80 - 200 MB/s                        |
+| **Acceso aleatorio (latencia)** | 0.02 ms - 0.2 ms                      | 5 - 15 ms                            |
+| **Ruido**        | Nulo (sin partes móviles)              | Notable (por movimiento mecánico)     |
+| **Resistencia a golpes** | Muy alta                              | Baja                                 |
+| **Consumo energético** | Bajo                                   | Superior a SSD                       |
+| **Durabilidad (escrituras por celda)** | 1,000 - 100,000 ciclos (según tipo) | Sin desgaste por escritura, pero partes móviles sujetas a fallo |
+| **Precio/GB**    | Más alto (bajando rápidamente)         | Más bajo (aunque en declive)          |
+
+### Resumen:
+
+> - Los SSD ofrecen velocidades de acceso y transferencia de datos muy superiores, muy baja latencia, silencio, máxima resistencia a vibraciones y menor consumo.
+> - Su funcionamiento se basa en celdas de memoria NAND que retienen carga eléctrica para almacenar datos binarios, sin recurrir a partes móviles.
+> - Gracias a estas ventajas, las SSD han reemplazado a los HDD en multitud de dispositivos y escenarios críticos de rendimiento.
+
