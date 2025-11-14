@@ -422,6 +422,7 @@ Existen varios tipos de celdas según la cantidad de bits almacenados:
 - **TLC (Triple Level Cell):** almacena 3 bits por celda (más capacidad y menor coste, pero menor durabilidad).
 - **QLC (Quad Level Cell):** almacena 4 bits por celda (máxima densidad y bajo coste, menos ciclos de escritura).
 
+> [Diferencia entre SLC, MLC, TLC y NAND 3D en unidades flash USB, SSD y tarjetas de memoria](https://www.kingston.com/es/blog/pc-performance/difference-between-slc-mlc-tlc-3d-nand "Documentación oficial")
 ### Funcionamiento: Escritura y lectura en las celdas
 
 - **Lectura:**  
