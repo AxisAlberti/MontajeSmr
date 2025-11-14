@@ -17,7 +17,7 @@ nav_order: 9
   - [2.1 HDD (Discos Duros)](#21-hdd-discos-duros)
   - [2.2 SSD (Unidades de Estado Sólido)](#22-ssd-unidades-de-estado-sólido)
   - [2.3 Memorias Flash y USB](#23-memorias-flash-y-usb)
-  - [2.4 Tecnología óptica: CD, DVD, HD DVD y Blu-ray](#24-tecnología-óptica-cd-dvd-hd-y-blu-ray)
+  - [2.4 Tecnología óptica: CD, DVD, HD DVD y Blu-ray](#24-tecnologia-optica-cd-dvd-hd-dvd-y-blu-ray)
 
 - [3. Últimas tecnologías en almacenamiento de 2025](#3-últimas-tecnologías-en-almacenamiento-de-2025)
   - [3.1 Tecnología SMR (Grabación Magnética Escalonada) en HDD](#31-tecnología-smr-grabación-magnética-escalonada-en-hdd)
