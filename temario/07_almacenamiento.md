@@ -463,3 +463,49 @@ La escritura implica aplicar voltajes precisos para establecer la carga eléctri
 > - Su funcionamiento se basa en celdas de memoria NAND que retienen carga eléctrica para almacenar datos binarios, sin recurrir a partes móviles.
 > - Gracias a estas ventajas, las SSD han reemplazado a los HDD en multitud de dispositivos y escenarios críticos de rendimiento.
 
+---
+
+## 2.3 Memorias Flash y USB
+
+Las **memorias Flash** y las **unidades USB** han revolucionado el acceso, la portabilidad y almacenamiento de datos, permitiendo dispositivos compactos, resistentes y de alta capacidad a precios cada vez más competitivos.
+
+### Tecnología de las memorias Flash
+
+Las memorias flash son dispositivos de almacenamiento no volátil basados en tecnología NAND, similares a los SSD, pero optimizados para portabilidad y consumo reducido. Almacenan información en matrices de celdas que retienen carga eléctrica, permitiendo acceso rápido y seguro sin necesidad de alimentación continua.
+
+- Se utilizan transistores de **puerta flotante**, donde cada celda conserva o descarga electrones para guardar bits de información.
+- Existen memorias flash **SLC, MLC, TLC y QLC**, igual que en los SSD, cada una con distinta capacidad, durabilidad y velocidad.
+
+### Funcionamiento
+
+- **Lectura:** El controlador inserta voltajes en las celdas para identificar el nivel de carga y decodificar el valor binario almacenado.
+- **Escritura y borrado:** Para escribir nuevos datos, cada celda se carga eléctricamente. El borrado solo puede hacerse por bloques enteros, lo que afecta la gestión y la vida útil del dispositivo.
+- Las memorias flash USB suelen usar la arquitectura NAND TLC o QLC, equilibrando capacidad y coste. **¿Por qué?**
+
+### Historia y evolución
+
+- **1984:** Invento de la memoria flash (Toshiba), primero utilizada en tarjetas y pequeños módulos.
+- **Finales de los 90:** Popularización de los **pendrives USB** (llamados también unidades flash USB o "memorias USB"), que combinan memoria flash NAND con un controlador y conectividad USB.
+- **Siglo XXI:** Incremento exponencial de capacidad y velocidad; aparición de USB 3.0, 3.1 y 3.2, permitiendo transferencias comparables a unidades SSD externas.
+
+### Tabla comparativa: Memoria flash/USB vs. otras tecnologías
+
+|                 | **Memoria Flash/USB**            | **HDD**                  | **SD Card**             |
+|-----------------|----------------------------------|--------------------------|-------------------------|
+| **Tecnología**  | Flash NAND, sin partes móviles   | Platos magnéticos        | Flash NAND, formato SD  |
+| **Velocidad lectura/escritura** | 20-500 MB/s (USB 3.x)           | 80-200 MB/s              | 10-300 MB/s             |
+| **Portabilidad**| Muy alta                         | Baja                     | Muy alta                |
+| **Durabilidad** | Alta, resistente a golpes        | Baja, sensible a impactos| Alta                    |
+| **Capacidad típica** | 8 GB – 2 TB                     | 500 GB – 20 TB            | 8 GB – 1 TB             |
+| **Consumo energético** | Muy bajo                        | Superior                  | Muy bajo                |
+| **Costo/GB**    | Medio                             | Bajo                      | Medio                   |
+
+---
+
+### Resumen
+
+> Las memorias Flash y las unidades USB destacan por su versatilidad y comodidad. Ofrecen almacenamiento robusto, resistente y rápido para aplicaciones diarias, portabilidad y
+> transferencia rápida de datos entre sistemas. Su tecnología basada en NAND flash permite ciclos amplios de escritura y borrado, aunque con ciertas limitaciones frente a los
+> discos duros tradicionales en cuanto a durabilidad total y velocidad máxima.
+
+
