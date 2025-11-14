@@ -409,6 +409,13 @@ El almacenamiento magnético tradicional (HDD) utiliza platos giratorios y cabez
 
 La memoria **flash NAND** empleada en las SSD almacena datos en matrices de celdas de memoria, construidas con transistores de puerta flotante. Cada celda es capaz de retener una carga eléctrica, representando así distintos valores binarios según la cantidad de carga.
 
+
+---
+<div style="text-align: center;">
+  <img src="../imagen/almacenamiento/slc.jpg" alt="Descripción de la imagen" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+</div>
+---
+
 Existen varios tipos de celdas según la cantidad de bits almacenados:
 - **SLC (Single Level Cell):** almacena 1 bit por celda (más rápida, duradera y cara).
 - **MLC (Multi Level Cell):** almacena 2 bits por celda (compromiso entre coste, capacidad y durabilidad).
