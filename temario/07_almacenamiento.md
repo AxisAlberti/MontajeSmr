@@ -17,7 +17,7 @@ nav_order: 9
   - [2.1 HDD (Discos Duros)](#21-hdd-discos-duros)
   - [2.2 SSD (Unidades de Estado Sólido)](#22-ssd-unidades-de-estado-sólido)
   - [2.3 Memorias Flash y USB](#23-memorias-flash-y-usb)
-  - [2.4 Tecnología óptica: CD y DVD](#24-tecnología-óptica-cd-y-dvd)
+  - [2.4 Tecnología óptica: CD, DVD, HD DVD y Blu-ray](#24-tecnología-óptica-cd-y-dvd)
 
 - [3. Últimas tecnologías en almacenamiento de 2025](#3-últimas-tecnologías-en-almacenamiento-de-2025)
   - [3.1 Tecnología SMR (Grabación Magnética Escalonada) en HDD](#31-tecnología-smr-grabación-magnética-escalonada-en-hdd)
@@ -508,4 +508,70 @@ Las memorias flash son dispositivos de almacenamiento no volátil basados en tec
 > transferencia rápida de datos entre sistemas. Su tecnología basada en NAND flash permite ciclos amplios de escritura y borrado, aunque con ciertas limitaciones frente a los
 > discos duros tradicionales en cuanto a durabilidad total y velocidad máxima.
 
+---
+
+## 2.4 Tecnología óptica: CD, DVD, HD DVD y Blu-ray
+
+Las tecnologías ópticas como **CD**, **DVD**, **HD DVD** y **Blu-ray** marcaron sucesivas etapas en el almacenamiento y distribución de datos, música y vídeo, ofreciendo capacidades crecientes y mejor calidad frente a los formatos magnéticos y analógicos previos.
+
+### Principios de funcionamiento
+
+Todos estos soportes emplean un **láser** para leer (y en algunos casos escribir) información en la superficie del disco, interpretando las marcas microscópicas (pits y lands) en la capa reflectante del disco.
+
+- **Lectura:**  
+El haz láser incide sobre la superficie; las diferencias de reflexión identifican los datos binarios.
+- **Escritura:**  
+En discos grabables (CD-R, DVD±R, HD DVD-R, BD-R), el láser modifica la capa para representar datos, mientras que los discos regrabables (CD-RW, DVD±RW, BD-RE) permiten múltiples ciclos de escritura y borrado con una vida útil limitada.
+
+---
+
+<div style="text-align: center;">
+  <img src="../imagen/almacenamiento/cd.jpg" alt="Descripción de la imagen" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+</div>
+
+---
+
+### Historia y evolución
+
+- **1982:** Lanzamiento comercial del **CD Audio**.
+- **1995:** Aparición del **DVD**, que multiplica por más de 6 la capacidad del CD, adoptado en cine y distribución de datos.
+- **2006:** Salen al mercado **HD DVD** y **Blu-ray**. Ambos compiten por el estándar de alta definición:  
+  - **HD DVD** (Toshiba) ofrecía hasta 30 GB de capacidad, con láser azul; perdió la batalla comercial frente al Blu-ray.  
+  - **Blu-ray** (Sony/Philips) se impone como estándar, con capacidades iniciales de 25 GB (simple capa) hasta 100 GB (triple capa). Su láser azul-violeta de menor longitud de onda permite almacenar más información por área.
+
+### Características principales
+
+|                | **CD**        | **DVD**        | **HD DVD**       | **Blu-ray**           |
+|----------------|--------------|----------------|------------------|-----------------------|
+| **Capacidad**  | 700 MB       | 4.7 GB (1 capa)| 15-30 GB         | 25 GB (1 capa), 50 GB (2), 100 GB (triple) |
+| **Diámetro**   | 12 cm        | 12 cm          | 12 cm            | 12 cm                 |
+| **Longitud de onda láser** | 780 nm (rojo) | 650 nm (rojo)     | 405 nm (azul)         | 405 nm (azul-violeta)|
+| **Velocidad de lectura/escritura** | 150 KB/s - 7.2 MB/s | 1.3 MB/s - 16 MB/s    | ~36 MB/s              | 36 MB/s (1x), hasta 128 MB/s (4x) |
+| **Tipos**      | CD-ROM, CD-R, CD-RW | DVD-ROM, DVD±R, DVD±RW, DVD-RAM | HD DVD-ROM, HD DVD-R, HD DVD-RW | BD-ROM, BD-R, BD-RE           |
+| **Durabilidad**| Alta (si tratan bien)| Alta, sensible a rayaduras | Alta, sensible      | Alta, sensible a rayaduras     |
+| **Portabilidad**| Muy alta     | Muy alta       | Muy alta          | Muy alta                |
+| **Uso típico** | Música, datos, backups | Video, datos, backups   | Video HD, datos HD     | Video HD/4K, datos, backups    |
+| **Costo/GB**   | Muy bajo     | Bajo           | Medio (cada vez menos presente)   | Bajo (reciente bajada de precio)|
+
+### Ventajas y limitaciones
+
+**Ventajas:**
+- Gran capacidad relativa según generación
+- Bajo coste por unidad
+- Portabilidad y compatibilidad general
+- Soporte para contenidos multimedia de alta calidad (HD DVD y Blu-ray)
+
+**Limitaciones:**
+- Vulnerables a polvo, ralladuras y calor
+- Velocidad de acceso limitada frente a memorias flash y SSD
+- Requieren lector/grabador óptico compatible con formato
+- HD DVD tuvo escasa adopción y fue abandonado
+
+---
+
+### Resumen
+
+> La tecnología óptica evolucionó desde el CD para audio y datos, pasando por el DVD (video digital) y las ofertas de alta definición como HD DVD y Blu-ray. Estos últimos
+> permitieron distribución de vídeo en HD y 4K y almacenamiento de grandes volúmenes de datos. Hoy, Blu-ray se mantiene vigente en nichos de vídeo y backup profesional, mientras
+> que CD, DVD y HD DVD han dado paso a tecnologías más rápidas y compactas, aunque siguen siendo útiles en determinadas tareas de archivo y multimedia.
 
