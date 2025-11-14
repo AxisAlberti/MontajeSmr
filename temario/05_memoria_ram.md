@@ -229,19 +229,6 @@ Son mecanismos para **detectar/corregir errores** y estabilizar señales cuando 
 # 8. Pirámide jerárquica de memorias
 Jerarquía por **latencia, ancho de banda, capacidad, coste/GB**. Cuanto más arriba, **más rápido y caro**; cuanto más abajo, **más grande y lento**.
 
-┌───────────────────────────────────────────────────────────────┐
-│                         REGISTROS (CPU)                       │  ↑ Más rápidos / más caros / muy poca capacidad
-├───────────────────────────────────────────────────────────────┤
-│                 CACHÉS L1  •  L2  •  L3 (SRAM on-chip)        │
-├───────────────────────────────────────────────────────────────┤
-│                    MEMORIA PRINCIPAL (DRAM: DDR)              │
-├───────────────────────────────────────────────────────────────┤
-│            ALMACENAMIENTO MASIVO LOCAL (No volátil)           │
-│            • SSD NVMe (PCIe)  • SSD SATA  • HDD               │
-├───────────────────────────────────────────────────────────────┤
-│             ALMACENAMIENTO REMOTO / EN RED / CLOUD            │
-│             • NAS/Servidor de ficheros • Object storage       │  ↓ Más lentos / más baratos / muchísima capacidad
-└───────────────────────────────────────────────────────────────┘
 
 El rendimiento y la eficiencia de los sistemas informáticos modernos dependen de una organización inteligente de las distintas tecnologías de memoria. Este modelo se representa habitualmente mediante una **pirámide de jerarquías de memoria**, como se ilustra a continuación:
 
