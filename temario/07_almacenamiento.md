@@ -434,6 +434,15 @@ Para leer datos, el controlador del SSD aplica distintos niveles de voltaje a la
 - **Escritura:**  
 La escritura implica aplicar voltajes precisos para establecer la carga eléctrica en la puerta flotante de cada celda. Es importante destacar que las celdas deben borrarse previamente antes de ser reescritas, bloque por bloque, lo que influye en la gestión interna y la durabilidad del SSD.
 
+
+---
+
+<div style="text-align: center;">
+  <img src="../imagen/almacenamiento/NAND-celda-acciones.svg.png" alt="Descripción de la imagen" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+</div>
+
+---
+
 ### Tabla comparativa: SSD vs HDD
 
 |                 | **SSD**                                | **HDD**                               |
