@@ -648,12 +648,42 @@ La **memoria persistente** (PMem) es una tecnología que une la velocidad de la 
 
 **Resumen visual**:
 
-- ![NVMe vs SATA](https://upload.wikimedia.org/wikipedia/commons/6/6a/NVME_vs_SATA_SSD.png)  
-  *(Gráfico comparativo: NVMe se conecta hoy día directamente a la CPU a través de PCIe, mientras que SATA/SAS pasan por controladores intermedios más lentos.)*
+| Característica            | NVMe (Non-Volatile Memory Express)   | SATA (Serial ATA)                    |
+|---------------------------|--------------------------------------|--------------------------------------|
+| Protocolo                 | NVMe (diseñado para SSD)             | AHCI/SATA (diseñado para HDD)        |
+| Interfaz física           | PCI Express (PCIe)                   | SATA (cable y puerto específico)     |
+| Velocidad de transferencia| 3.500 MB/s – 7.000 MB/s (o más)      | Máx. 600 MB/s (SATA III)             |
+| Latencia                  | Muy baja (decenas de microsegundos)  | Superior (cientos de microsegundos)  |
+| Número de colas           | Hasta 64.000 colas                   | 1 cola                               |
+| Comandos por cola         | 64.000                               | 32                                   |
+| Paralelismo               | Alto (aprovecha CPUs multinúcleo)    | Limitado                             |
+| Instalación               | Directo en placa base o ranura M.2   | SATA tradicional, cableado           |
+| Uso principal             | SSD de alto rendimiento, servidores  | SSD básicos y discos duros mecánicos |
+| Consumo energético        | Mejor eficiencia por operación       | Más consumo relativo                 |
+| Actualidad/Futuro         | Estándar en equipos modernos         | En desuso para almacenamiento rápido |
+
+---
+### Whitepapers y documentación técnica recomendada
+
+- **Samsung V-NAND:**
+  - [Evaluating MLC, TLC and V-NAND SSDs (Samsung White Paper)](https://www.samsung.com/semiconductor/minisite/ssd/downloads/document/Samsung_SSD_V-NAND_whitepaper.pdf)
+  - [Samsung SSD 950 PRO - White Paper](https://semiconductor.samsung.com/resources/white-paper/Samsung_SSD_950_PRO_Whitepaper.pdf)
+
+- **Western Digital (WD) NVMe:**
+  - [WD Black™ NVMe™ SSD data sheet](https://documents.westerndigital.com/content/dam/doc-library/en_us/assets/public/western-digital/product/data-sheet/ssd/black-nvme-ssd-data-sheet.pdf)
+  - [Western Digital OpenFlex Data24 - Shared High Performance NVMe Storage](https://documents.westerndigital.com/content/dam/doc-library/en_us/assets/public/western-digital/product/data-sheet/data-center-platforms/openflex-data24-data-sheet.pdf)
+
+- **Intel NVMe:**
+  - [Intel® Hot-Plug Capability of NVMe SSDs in Server Platforms (White Paper)](https://www.intel.com/content/dam/www/public/us/en/documents/white-papers/nvme-hot-plug-white-paper.pdf)
+
+- **Kioxia V-NAND / 3D NAND:**
+  - [Kioxia and Sandisk Unveil Next-Generation 3D Flash Memory](https://apac.kioxia.com/en-apac/business/news/2025/20250219-01.html)
+  - [Kioxia and Western Digital to Reveal 300+ Layer 3D NAND Memory Breakthroughs](https://www.guru3d.com/news-story/kioxia-and-western-digital-to-reveal-300-layer-3d-nand-memory-breakthroughs.html)
+
+- **Micron NVMe:**
+  - [Microseconds Matter - Micron 9300 NVMe SSD](https://bostondownloads.blob.core.windows.net/white-papers/Micron-9300-NVMe-SSD-Whitepaper.pdf)
+  - [UFS & NVMe Storage Stack System Level Performance (Micron)](https://assets.micron.com/Documents/ufs-nvme-storage-stack-system-level-performance-in-embedded-systems.pdf)
 
 ---
 
-**Referencias**:  
-- Whitepapers de Samsung, WD, Intel, Kioxia, Micron sobre V-NAND y NVMe.
-- Especificaciones oficiales PCI-SIG, NVM Express.
-- Análisis de tendencias en almacenamiento de AnandTech, StorageReview, Tom's Hardware.
+
