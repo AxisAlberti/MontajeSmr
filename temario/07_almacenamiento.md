@@ -688,7 +688,7 @@ La **memoria persistente** (PMem) es una tecnología que une la velocidad de la 
 - [¿Qué son PCIe 4.0 y 5.0? - Intel Latinoamérica](https://www.intel.la/content/www/xl/es/products/docs/memory-storage/solid-state-drives/consumer/what-are-pcie-4-0-and-5-0.html)
 - [¿Qué es la 3D NAND y cómo funciona? - Pure Storage](https://www.purestorage.com/es/knowledge/what-is-3d-nand.html)
 - [PCI express, qué es y por qué es lo mejor para los SSD - PCComponentes](https://www.pccomponentes.com/ssd-pci-express-que-es-y-por-que-es-lo-mejor-para-los-ssd) 
-- [SSD NVMe M.2 PCIe | Transferencias rápidas - Crucial](https://www.crucial.es/ssd-nvme-m2-pcie)
+- [SSD NVMe M.2 PCIe - Transferencias rápidas - Crucial](https://www.crucial.es/ssd-nvme-m2-pcie)
 
 ---
 
