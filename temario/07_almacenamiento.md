@@ -665,24 +665,15 @@ La **memoria persistente** (PMem) es una tecnología que une la velocidad de la 
 ---
 ### Whitepapers y documentación técnica recomendada
 
-- **Samsung V-NAND:**
-  - [Evaluating MLC, TLC and V-NAND SSDs (Samsung White Paper)](https://www.samsung.com/semiconductor/minisite/ssd/downloads/document/Samsung_SSD_V-NAND_whitepaper.pdf)
-  - [Samsung SSD 950 PRO - White Paper](https://semiconductor.samsung.com/resources/white-paper/Samsung_SSD_950_PRO_Whitepaper.pdf)
-
-- **Western Digital (WD) NVMe:**
-  - [WD Black™ NVMe™ SSD data sheet](https://documents.westerndigital.com/content/dam/doc-library/en_us/assets/public/western-digital/product/data-sheet/ssd/black-nvme-ssd-data-sheet.pdf)
-  - [Western Digital OpenFlex Data24 - Shared High Performance NVMe Storage](https://documents.westerndigital.com/content/dam/doc-library/en_us/assets/public/western-digital/product/data-sheet/data-center-platforms/openflex-data24-data-sheet.pdf)
-
-- **Intel NVMe:**
-  - [Intel® Hot-Plug Capability of NVMe SSDs in Server Platforms (White Paper)](https://www.intel.com/content/dam/www/public/us/en/documents/white-papers/nvme-hot-plug-white-paper.pdf)
-
-- **Kioxia V-NAND / 3D NAND:**
-  - [Kioxia and Sandisk Unveil Next-Generation 3D Flash Memory](https://apac.kioxia.com/en-apac/business/news/2025/20250219-01.html)
-  - [Kioxia and Western Digital to Reveal 300+ Layer 3D NAND Memory Breakthroughs](https://www.guru3d.com/news-story/kioxia-and-western-digital-to-reveal-300-layer-3d-nand-memory-breakthroughs.html)
-
-- **Micron NVMe:**
-  - [Microseconds Matter - Micron 9300 NVMe SSD](https://bostondownloads.blob.core.windows.net/white-papers/Micron-9300-NVMe-SSD-Whitepaper.pdf)
-  - [UFS & NVMe Storage Stack System Level Performance (Micron)](https://assets.micron.com/Documents/ufs-nvme-storage-stack-system-level-performance-in-embedded-systems.pdf)
+- [SSD NVMe: conoce las ventajas y los casos de uso - SanDisk/Western Digital](https://shop.sandisk.com/es-es/blog/ssd-nvme-conoce-las-ventajas-y-los-casos-de-uso)
+- [Descubrimos la tecnología SSD: NVMe, SATA, M.2 - Kingston](https://www.kingston.com/es/blog/pc-performance/ssd-difference-nvme-vs-sata-vs-m2)
+- [¿Qué es NVMe? Ventajas y casos de uso - NetApp](https://www.netapp.com/es/data-storage/nvme/)
+- [Avances en tecnología V-NAND de Samsung (2025)](https://gocarelectronic.com/actualidad/avances-tecnologia-v-nand-samsung)
+- [Las diferencias entre NAND y V-NAND de las que todo el mundo habla - Zoostock](https://zoostock.com/blogs/news/las-diferencias-entre-nand-y-v-nand-de-las-que-todo-el-mundo-habla)
+- [¿Qué son PCIe 4.0 y 5.0? - Intel Latinoamérica](https://www.intel.la/content/www/xl/es/products/docs/memory-storage/solid-state-drives/consumer/what-are-pcie-4-0-and-5-0.html)
+- [¿Qué es la 3D NAND y cómo funciona? - Pure Storage](https://www.purestorage.com/es/knowledge/what-is-3d-nand.html)
+- [PCI express, qué es y por qué es lo mejor para los SSD - PCComponentes](https://www.pccomponentes.com/ssd-pci-express-que-es-y-por-que-es-lo-mejor-para-los-ssd)
+- [SSD NVMe M.2 PCIe | Transferencias rápidas - Crucial](https://www.crucial.es/ssd-nvme-m2-pcie)
 
 ---
 
