@@ -618,6 +618,20 @@ La **memoria persistente** (PMem) es una tecnología que une la velocidad de la 
 - Los fabricantes combinan varios chips de 3D NAND/ V-NAND en un solo módulo para ofrecer terabytes de capacidad ocupando muy poco espacio físico.
 - Los controladores modernos reparten las operaciones de lectura/escritura de manera óptima entre bancos/dispositivos, equilibrando carga y maximizando la vida útil (tecnología *wear leveling*).
 
+
+---
+
+<div style="display:flex; justify-content:space-between; align-items:flex-start; gap:12px;">
+  <img src="../imagen/almacenamiento/3DNAND1.png"
+       alt="VNand 3D"
+       style="width:49%; height:auto; display:block;" loading="lazy">
+  <img src="../imagen/almacenamiento/3DNAND2.webp"
+       alt="VNand 3D"
+       style="width:49%; height:auto; display:block;" loading="lazy">
+</div>
+
+---
+
 #### e) Ventajas sobre tecnologías anteriores (SATA/SAS):
 
 - **SATA** fue diseñado para discos duros mecánicos (HDD), con un ancho de banda máximo teórico de 600 MB/s (SATA III). Incluso los SSD más básicos superan este límite.
