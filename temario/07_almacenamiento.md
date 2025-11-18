@@ -575,3 +575,85 @@ En discos grabables (CD-R, DVD±R, HD DVD-R, BD-R), el láser modifica la capa p
 > permitieron distribución de vídeo en HD y 4K y almacenamiento de grandes volúmenes de datos. Hoy, Blu-ray se mantiene vigente en nichos de vídeo y backup profesional, mientras
 > que CD, DVD y HD DVD han dado paso a tecnologías más rápidas y compactas, aunque siguen siendo útiles en determinadas tareas de archivo y multimedia.
 
+## 3. Últimas tecnologías en almacenamiento de 2025
+
+### 3.1. Almacenamiento basado en memoria persistente (PMem)
+
+La **memoria persistente** (PMem) es una tecnología que une la velocidad de la RAM con la capacidad de guardar datos tras apagado, como ocurre en discos duros. Esto se logra gracias a módulos de memoria especiales (ej. Intel Optane), capaces de acceder a la información de forma muy rápida, casi igual que la RAM tradicional, pero manteniéndola incluso si el sistema se apaga.  
+**Ventajas**:
+- Lectura/escritura ultrarrápidas.
+- Menor latencia respecto a SSD tradicionales.
+- Persistencia ante interrupción de energía.
+**Aplicaciones**:
+- Servidores con alta carga de trabajo.
+- Bases de datos transaccionales.
+- Virtualización, permitiendo migración rápida de máquinas sin perder datos.
+
+*Ejemplo práctico*: Un servidor con PMem puede restaurar el estado de una base de datos tras un reinicio en segundos, evitando largos procesos de recuperación.
+
+### 3.2. Unidades NVMe, NVMe over Fabrics y tecnologías asociadas
+
+#### a) Introducción a NVMe
+
+- **NVMe (Non-Volatile Memory Express)** es un protocolo de comunicación optimizado específicamente para unidades de estado sólido (SSD) modernas. Aprovecha la alta velocidad del bus PCI Express (PCIe) para transferir datos mucho más rápido que los antiguos protocolos para discos duros como SATA o SAS.
+- NVMe soporta múltiples colas de comandos (hasta 64,000 por cola) y operaciones simultáneas, lo que mejora la eficiencia en entornos multitarea, virtualización y uso intensivo de datos.
+
+#### b) Protocolo PCIe (Peripheral Component Interconnect Express)
+
+- **PCIe** es la interfaz de alto rendimiento que conecta los SSD NVMe directamente a la placa base y al procesador, evitando los cuellos de botella de las interfaces tradicionales.
+- Cada generación de PCIe duplica el ancho de banda del anterior (por ejemplo, PCIe 4.0 puede alcanzar 16 GT/s por lane; PCIe 5.0 y 6.0 continúan aumentando la velocidad).
+- Los SSD NVMe pueden usar varios "lanes" en paralelo (x1, x2, x4, x8, x16) para lograr velocidades de transferencia que hoy superan los 7 GB/s por unidad.
+
+#### c) Arquitectura de celdas de almacenamiento: V-NAND y 3D NAND
+
+- Las memorias flash tradicionales (NAND plano) tenían limitaciones físicas al miniaturizar, ya que todas las celdas se disponían sobre una sola superficie.
+- **V-NAND** o **Vertical NAND** (también llamada **3D NAND**) soluciona este problema apilando las celdas de memoria en múltiples capas verticales, formando una especie de rascacielos de celdas.
+    - En 2025 se comercializan chips con más de 200 capas, lo que permite aumentar drásticamente la capacidad y la durabilidad sin aumentar el tamaño físico del chip.
+    - Esto reduce el coste por GB y mejora la eficiencia energética y la longevidad del dispositivo (menos desgaste por escritura).
+- La disposición en 3D también permite mejorar el paralelismo interno de los discos, ya que varios canales pueden operar de manera independiente entre capas.
+
+#### d) Concepto de bancos de almacenamiento 3D
+
+- Los avances en 3D NAND permiten crear **bancos** o "pools" de almacenamiento compactos y de alta densidad en servidores, centros de datos y hasta en dispositivos personales.
+- Los fabricantes combinan varios chips de 3D NAND/ V-NAND en un solo módulo para ofrecer terabytes de capacidad ocupando muy poco espacio físico.
+- Los controladores modernos reparten las operaciones de lectura/escritura de manera óptima entre bancos/dispositivos, equilibrando carga y maximizando la vida útil (tecnología *wear leveling*).
+
+#### e) Ventajas sobre tecnologías anteriores (SATA/SAS):
+
+- **SATA** fue diseñado para discos duros mecánicos (HDD), con un ancho de banda máximo teórico de 600 MB/s (SATA III). Incluso los SSD más básicos superan este límite.
+- **NVMe/PCIe** elimina las limitaciones de los buses antiguos y el cuello de botella del controlador AHCI:
+    - Mayor número de operaciones de entrada/salida por segundo (IOPS).
+    - Menor latencia de acceso.
+    - Mejor soporte para cargas de trabajo concurrentes y virtualización.
+- **SAS** (Serial Attached SCSI) sigue siendo útil en entornos empresariales, pero NVMe ofrece mejor rendimiento y menor consumo en la mayoría de escenarios.
+
+#### f) NVMe over Fabrics (NVMe-oF)
+
+- Permite extender la velocidad de NVMe a través de redes de alta velocidad (Ethernet, Fibre Channel, InfiniBand), logrando almacenamiento compartido ultra rápido en centros de datos modernos.
+- NVMe-oF puede conectarse a decenas o cientos de servidores a la vez, obteniendo almacenamiento escalable, tolerante a fallos y con acceso remoto casi tan rápido como el acceso local.
+
+#### g) Aplicaciones y escenarios actuales
+
+- Centros de datos, servicios en la nube, virtualización de escritorios (VDI), procesamiento intensivo de datos (IA, ML, Big Data).
+- Equipos de alto rendimiento (workstations, servidores HPC).
+- Dispositivos de consumo profesional (laptops, estaciones de trabajo portátiles).
+
+#### h) Futuro de NVMe y memoria flash 3D
+
+- Nuevas tecnologías como **QLC NAND** (cuatro bits por celda) permiten aún más capacidad a menor costo por GB, aunque con menor durabilidad que TLC.
+- Tendencias en refrigeración avanzada, firmware especializado y optimización por software para explotar al máximo el potencial de 3D NAND y NVMe.
+- Integración de inteligencia artificial para gestionar la distribución de datos, mantenimiento predictivo y aprendizaje de patrones de acceso.
+
+---
+
+**Resumen visual**:
+
+- ![NVMe vs SATA](https://upload.wikimedia.org/wikipedia/commons/6/6a/NVME_vs_SATA_SSD.png)  
+  *(Gráfico comparativo: NVMe se conecta hoy día directamente a la CPU a través de PCIe, mientras que SATA/SAS pasan por controladores intermedios más lentos.)*
+
+---
+
+**Referencias**:  
+- Whitepapers de Samsung, WD, Intel, Kioxia, Micron sobre V-NAND y NVMe.
+- Especificaciones oficiales PCI-SIG, NVM Express.
+- Análisis de tendencias en almacenamiento de AnandTech, StorageReview, Tom's Hardware.
