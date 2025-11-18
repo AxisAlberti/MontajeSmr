@@ -677,6 +677,7 @@ La **memoria persistente** (PMem) es una tecnología que une la velocidad de la 
 | Actualidad/Futuro         | Estándar en equipos modernos         | En desuso para almacenamiento rápido |
 
 ---
+
 ### Whitepapers y documentación técnica recomendada
 
 - [SSD NVMe: conoce las ventajas y los casos de uso - SanDisk/Western Digital](https://shop.sandisk.com/es-es/blog/ssd-nvme-conoce-las-ventajas-y-los-casos-de-uso)
@@ -688,6 +689,7 @@ La **memoria persistente** (PMem) es una tecnología que une la velocidad de la 
 - [¿Qué es la 3D NAND y cómo funciona? - Pure Storage](https://www.purestorage.com/es/knowledge/what-is-3d-nand.html)
 - [PCI express, qué es y por qué es lo mejor para los SSD - PCComponentes](https://www.pccomponentes.com/ssd-pci-express-que-es-y-por-que-es-lo-mejor-para-los-ssd)
 - [SSD NVMe M.2 PCIe | Transferencias rápidas - Crucial](https://www.crucial.es/ssd-nvme-m2-pcie)
+
 
 ---
 
