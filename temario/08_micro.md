@@ -207,6 +207,12 @@ Es importante entender que **un hilo no es un núcleo físico**. Los hilos compa
 
 Las tecnologías de multihilo permiten que **un único núcleo físico ejecute más de un hilo al mismo tiempo**.
 
+---
+<div style="text-align: center;">
+  <img src="../imagen/micro/ht1.jpg" alt="Descripción de la imagen" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+</div>
+---
+
 ### 6.4.1 Hyper-Threading (Intel)
 
 **Hyper-Threading** es una tecnología desarrollada por Intel que permite que cada núcleo físico se comporte como **dos núcleos lógicos** desde el punto de vista del sistema operativo.
