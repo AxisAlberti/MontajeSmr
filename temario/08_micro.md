@@ -347,12 +347,187 @@ En entornos profesionales:
 
 # 12. Gestión avanzada de energía y temperatura
 
-Las CPUs ajustan dinámicamente:
+En los microprocesadores modernos, el rendimiento ya no se basa únicamente en ejecutar instrucciones lo más rápido posible, sino en **hacerlo de forma eficiente**, controlando cuidadosamente el **consumo energético** y la **temperatura**. Por este motivo, las CPUs actuales incorporan sistemas avanzados de **gestión dinámica de energía y temperatura**, que ajustan su funcionamiento en tiempo real según la carga de trabajo.
+
+Esta gestión es fundamental para:
+- Evitar daños físicos en el procesador.
+- Reducir el consumo eléctrico.
+- Mejorar la eficiencia energética.
+- Aumentar la vida útil del equipo.
+- Mantener un equilibrio entre rendimiento y ruido (ventiladores).
+
+---
+
+## 12.1 Ajuste dinámico de frecuencia
+
+La **frecuencia de reloj** de una CPU indica cuántos ciclos puede ejecutar por segundo y se mide en **GHz**. Tradicionalmente, los procesadores funcionaban siempre a una frecuencia fija, pero esto resultaba ineficiente cuando el equipo estaba en reposo o realizando tareas ligeras.
+
+Las CPUs modernas pueden:
+- **Aumentar la frecuencia** cuando se necesita más rendimiento.
+- **Reducir la frecuencia** cuando la carga es baja.
+
+Este ajuste dinámico permite ahorrar energía y reducir la temperatura sin sacrificar rendimiento cuando realmente se necesita.
+
+Ejemplo:
+- Navegar por Internet → frecuencia baja.
+- Compilar un programa o jugar → frecuencia alta (modo turbo).
+
+---
+
+## 12.2 Ajuste dinámico de voltaje
+
+El **voltaje** es la energía eléctrica que alimenta al microprocesador. A mayor voltaje:
+- Mayor consumo eléctrico.
+- Mayor generación de calor.
+
+Las CPUs actuales ajustan el voltaje **junto con la frecuencia**, ya que ambos están estrechamente relacionados. Si la frecuencia baja, el voltaje también puede reducirse, lo que disminuye significativamente el consumo energético.
+
+Este ajuste dinámico es clave para:
+- Mejorar la eficiencia.
+- Reducir el calentamiento.
+- Evitar un consumo innecesario en tareas simples.
+
+---
+
+## 12.3 Estados de energía: P-states y C-states
+
+Los procesadores utilizan **estados de energía** para adaptarse a la carga de trabajo del sistema.
+
+### P-states (Performance States)
+
+Los **P-states** controlan el **nivel de rendimiento del procesador**:
 - Frecuencia.
 - Voltaje.
-- Estados de energía (C-states, P-states).
 
-Incluyen sensores térmicos y protecciones para evitar daños.
+Ejemplo:
+- P0 → máximo rendimiento.
+- P1, P2, P3… → rendimiento progresivamente menor.
+
+Cuando el sistema necesita potencia, la CPU sube a un P-state alto. Cuando la carga baja, desciende a estados más eficientes.
+
+---
+
+### C-states (Idle States)
+
+Los **C-states** controlan el comportamiento del procesador cuando **no está ejecutando instrucciones**.
+
+- C0 → el núcleo está activo.
+- C1 → reposo ligero.
+- C6, C7… → reposo profundo, con partes del núcleo apagadas.
+
+Cuanto más profundo es el C-state:
+- Menor consumo.
+- Mayor ahorro energético.
+- Mayor latencia al volver a estar activo.
+
+Estos estados son especialmente importantes en:
+- Portátiles.
+- Servidores.
+- Equipos encendidos muchas horas.
+
+---
+
+## 12.4 Sensores térmicos y protección del procesador
+
+Las CPUs modernas incorporan **sensores térmicos internos** distribuidos por todo el chip. Estos sensores:
+- Miden la temperatura en tiempo real.
+- Detectan puntos calientes.
+- Informan al sistema de control energético.
+
+Si la temperatura supera ciertos límites:
+- Se reduce automáticamente la frecuencia (thermal throttling).
+- Se limita el voltaje.
+- En casos extremos, el sistema se apaga para evitar daños.
+
+Estas protecciones evitan:
+- Daños permanentes en el silicio.
+- Fallos del sistema.
+- Reducción drástica de la vida útil del procesador.
+
+---
+
+## 12.5 Consumo energético y vatios (W)
+
+El **consumo energético** de un procesador se mide en **vatios (W)** y representa la cantidad de energía que utiliza durante su funcionamiento.
+
+Es importante entender que:
+- Un procesador no consume siempre la misma cantidad de vatios.
+- El consumo varía según la carga, la frecuencia y el voltaje.
+- En reposo, el consumo puede ser muy bajo.
+- En carga máxima, el consumo puede aumentar considerablemente.
+
+Por ejemplo:
+- Un procesador puede consumir 10–15 W en reposo.
+- Bajo carga intensa, puede superar ampliamente los 100 W.
+
+---
+
+## 12.6 Qué es el TDP y qué significa realmente
+
+El **TDP (Thermal Design Power)** es uno de los conceptos más importantes —y a la vez más malinterpretados— en los procesadores.
+
+El TDP:
+- Se expresa en vatios (W).
+- Indica el **calor máximo que el sistema de refrigeración debe ser capaz de disipar**.
+- No es exactamente el consumo real máximo, sino una **referencia térmica**.
+
+Ejemplo:
+- Un procesador con TDP de 65 W necesita un sistema de refrigeración capaz de disipar al menos esa cantidad de calor.
+
+En procesadores modernos:
+- El consumo real puede superar el TDP durante picos de rendimiento (modo turbo).
+- Esto es normal y está previsto por el fabricante.
+
+---
+
+## 12.7 Importancia actual del TDP en la elección de procesadores
+
+Hoy en día, el TDP es clave para:
+- Elegir correctamente el sistema de refrigeración.
+- Diseñar equipos silenciosos.
+- Montar equipos compactos o portátiles.
+- Optimizar consumo energético en servidores.
+
+Un procesador con alto TDP:
+- Ofrece más rendimiento sostenido.
+- Genera más calor.
+- Requiere mejor refrigeración.
+- Consume más energía eléctrica.
+
+Un procesador con bajo TDP:
+- Consume menos.
+- Genera menos calor.
+- Es ideal para equipos pequeños, portátiles o de bajo ruido.
+
+---
+
+## 12.8 Tecnologías de turbo dinámico
+
+Los fabricantes incluyen tecnologías como:
+- **Intel Turbo Boost**
+- **AMD Precision Boost**
+
+Estas tecnologías permiten que la CPU:
+- Supere su frecuencia base.
+- Aumente el consumo y la temperatura temporalmente.
+- Aproveche el margen térmico disponible.
+
+El sistema decide automáticamente:
+- Cuándo subir la frecuencia.
+- Cuánto tiempo mantenerla.
+- Cuándo reducirla para proteger el procesador.
+
+---
+
+## 12.9 Importancia para el montaje y mantenimiento
+
+Para el alumnado de montaje y mantenimiento, comprender la gestión energética es esencial para:
+- Elegir una fuente de alimentación adecuada.
+- Seleccionar un disipador correcto.
+- Diagnosticar problemas de sobrecalentamiento.
+- Entender por qué un procesador baja su rendimiento (throttling).
+- Optimizar equipos según su uso.
+
 
 ---
 
