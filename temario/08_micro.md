@@ -5,7 +5,7 @@ nav_order: 10
 ---
 
 
-# El microprocesador
+## TEMA 8. MICROPROCESADOR
 
 ## Consulta también el [Guia Eleccion](guia.md).
 
