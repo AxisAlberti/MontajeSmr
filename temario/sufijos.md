@@ -64,7 +64,13 @@ Dominar estos términos es un paso imprescindible para aprender a **comparar y e
 
 ## Nomenclatura de procesadores AMD
 
+---
 
+<div style="text-align: center;">
+  <img src="../imagen/micro/sufijo_amd.jpg" alt="Descripción de la imagen" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+</div>
+
+---
 
 Ejemplo representativo:
 
@@ -102,6 +108,14 @@ En AMD, el **sufijo es clave** para saber si el procesador tiene GPU integrada, 
 ---
 
 ## Nomenclatura de procesadores Intel
+
+---
+
+<div style="text-align: center;">
+  <img src="../imagen/micro/sufijo_intel.jpg" alt="Descripción de la imagen" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+</div>
+
+---
 
 Ejemplo representativo:
 
