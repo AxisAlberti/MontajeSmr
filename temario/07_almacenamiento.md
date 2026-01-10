@@ -6,8 +6,7 @@ nav_order: 9
 
 
 
-## TEMA 7. Dispositivos de almacenamiento
-
+## TEMA 7. DISPOSITIVOS ALMACENAMIENTO
 
 - [1. Introducción a los dispositivos de almacenamiento](#1-introducción-a-los-dispositivos-de-almacenamiento)
   - [1.1 Definición y tipos principales](#11-definición-y-tipos-principales)
