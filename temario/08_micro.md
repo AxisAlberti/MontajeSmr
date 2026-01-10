@@ -1,5 +1,8 @@
 # El microprocesador
 
+## Consulta también el [Guia Eleccion](guia.md).
+
+
 ## Índice
 
 1. [Qué es el microprocesador](#1-qué-es-el-microprocesador)  
