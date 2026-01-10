@@ -7,7 +7,8 @@ nav_order: 10
 
 ## TEMA 8. MICROPROCESADOR
 
-## Consulta también el [Guia Eleccion](guia.md).
+### Consulta también  [Guia Eleccion](guia.md).
+### Nomenclatura procesadores  [Sufijos](sufijos.md).
 
 
 ## Índice
