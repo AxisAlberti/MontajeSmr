@@ -1,3 +1,10 @@
+---
+layout: default
+title: "TEMA 8. MICROPROCESADOR"
+nav_order: 10
+---
+
+
 # El microprocesador
 
 ## Consulta también el [Guia Eleccion](guia.md).
