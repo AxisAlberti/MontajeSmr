@@ -155,7 +155,7 @@ La idea principal es que:
 | Acceso a memoria | Muy limitado | Directo en muchas instrucciones | Solo load/store |
 | Facilidad de pipeline | Muy baja | Baja | Muy alta |
 | Consumo energético | Muy bajo | Alto | Bajo |
-| Uso actual | Educativo | PCs y servidores | Móviles, servidores, embebidos |
+| Uso actual | Educativo/Industrial | PCs y servidores | Móviles, servidores, embebidos |
 
 ---
 
