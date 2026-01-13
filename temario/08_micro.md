@@ -9,7 +9,7 @@ nav_order: 10
 
 ### Consulta también  [Guia Eleccion](guia.md).
 ### Nomenclatura procesadores  [Sufijos](sufijos.md).
-
+### Arquitectura [Arquitectura](arquitectura.md)
 
 ## Índice
 
