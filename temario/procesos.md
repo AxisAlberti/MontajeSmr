@@ -59,6 +59,11 @@ Durante su vida, un proceso puede pasar por varios estados:
 El sistema operativo mueve continuamente los procesos entre estos estados para repartir el tiempo de CPU.
 
 ---
+<div style="text-align: center;">
+  <img src="../imagen/micro/procesos1.jpg" alt="Descripción de la imagen" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+</div>
+---
+
 
 ## 4. Multitarea y planificación
 
