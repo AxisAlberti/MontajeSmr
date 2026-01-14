@@ -10,7 +10,7 @@ nav_order: 10
 ### Consulta también  [Guia Eleccion](guia.md).
 ### Nomenclatura procesadores  [Sufijos](sufijos.md).
 ### Arquitectura [Arquitectura](arquitectura.md)
-
+### Procesos [Procesos](procesos.md)
 ## Índice
 
 1. [Qué es el microprocesador](#1-qué-es-el-microprocesador)  
